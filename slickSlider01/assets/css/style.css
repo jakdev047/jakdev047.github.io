@@ -1,0 +1,76 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+/*-------------------------------------
+		Screenshot
+--------------------------------------*/
+.welcome-slider{
+   padding: 120px 0;
+   background-image:linear-gradient(to-left, #482cbf 0%, #6bb7ed 100%);
+	background-image: -moz-linear-gradient(left, #482cbf 0%, #6bb7ed 100%);
+	background-image: -webkit-linear-gradient(left, #482cbf 0%, #6bb7ed 100%);
+	background-image: -ms-linear-gradient(left, #482cbf 0%, #6bb7ed 100%);
+}
+
+.screenshot-content {
+   border: 2px solid #fff;
+   padding: 50px 40px 90px 0;
+   border-left: transparent;
+}
+
+.vedio-content.single-screenshot-content  .vedio-title {
+    position: relative;
+    max-width: 237px;
+}
+.vedio-content.single-screenshot-content .vedio-title h3{
+	font-weight:400;
+}
+.vedio-content.single-screenshot-content .vedio-title h3,.vedio-content.single-screenshot-content .vedio-head h2,.vedio-content.single-screenshot-content .vedio-para p {
+    color: #fff;
+}
+
+
+/* slick-slide */
+.slick-dotted.slick-slider {
+   margin-bottom: 0px;
+}
+.slick-list {
+    padding-left:0px;
+}
+.slick-dots {
+   position: absolute;
+   bottom:40px;
+   left: 0px;
+   text-align: left;
+}
+.slick-dots li button:before {
+    font-family: 'slick';
+    font-size:5px;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0px;
+    height:0px;
+    content: '•';
+    text-align: center;
+    opacity: .5;
+    color: #fff;
+}
+.slick-dots li.slick-active  button:before {
+    font-family: 'slick';
+    font-size:10px;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0px;
+    height:0px;
+    content: '•';
+    text-align: center;
+    opacity:1;
+    color: #fff;
+}
