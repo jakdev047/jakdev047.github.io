@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <title>Game</title>
+
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+      <link rel="stylesheet" type="text/css" media="screen" href="app.css" />
+   </head>
+   <body>
+
+      <div class="container">
+         <h1 class="text-center my-5">Let's Play Game</h1>
+         
+         <div class="visual">
+            <h2>Player One : <span class="p1_times">0</span> times <span class="p1_score"></span></h2>
+            <h2 class="my-3">Player Two : <span class="p2_times">0</span> times <span class="p2_score"></span></h2>
+            <h3>Winning Score : <span class="wScore">0</span></h3>
+         </div>
+
+         <div class="control my-5">
+            <button class="btn btn-primary" id="refreash">Refreash</button>
+            <button class="btn btn-primary" id="p1_btn">Player One</button>
+            <button class="btn btn-primary" id="p2_btn">Player Two</button>
+            <button class="btn btn-primary" id="reset">Reset</button>
+         </div>
+      </div>
+      
+      <script src="app.js"></script>   
+   </body>
+</html>
