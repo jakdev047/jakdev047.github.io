@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <title>Product catalog</title>
+
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
+
+      <link rel="stylesheet" type="text/css" media="screen" href="app.css" />
+   </head>
+   <body>
+
+    <section class="header">
+      <nav class="navbar navbar-dark bg-dark">
+        <h1 class="navbar-brand m-auto">Product Catalog</h1>
+        <input type="text" name="filter" id="filter" class="form-control m-3" placeholder="Filter your product...">
+      </nav>
+    </section>
+
+    <section class="add-form">
+      <div class="container my-5">
+        <form >
+          <div class="row">
+            <div class="col">
+              <input type="text" class="form-control product-name" placeholder="product name">
+            </div>
+            <div class="col">
+              <input type="text" class="form-control product-price" placeholder="product price">
+            </div>
+          </div>
+          <button class="btn mt-3 btn-block btn-primary add-product">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="card-list-section">
+      <div class="container">
+          <div class="">
+            <ul class="list-group collection"></ul>
+          </div>
+          <h3 class="msg"></h3>
+      </div>
+    </section>
+
+
+      
+      <script src="app.js"></script>   
+   </body>
+</html>
