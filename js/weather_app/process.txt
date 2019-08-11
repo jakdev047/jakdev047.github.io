@@ -1,0 +1,12 @@
+1st Phase: UI Create in HTML5
+
+  1. to ready form & id declare
+  2. to ready list item & id declare
+
+2nd Phase: data ready
+
+  1. to create object for data
+
+3rd Phase: Data to UI
+  1. select component (constructor)
+  2. data insert to component (method)

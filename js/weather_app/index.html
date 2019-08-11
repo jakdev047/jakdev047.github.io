@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- all meta tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- bootstrap.min.css -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+  <!-- title -->
+  <title>Weather API</title>
+
+</head>
+
+<body>
+
+  <!-- heading part start -->
+  <div class="container">
+    <div class="jumbotron my-2">
+      <h2>Welcome to Weather Application</h2>
+      <p class="para">
+        Now you can search weather of your city
+      </p>
+    </div>
+  </div>
+  <!-- heading part end -->
+
+  <!-- weather-form part start -->
+  <div class="container">
+    <div class="weather-form jumbotron my-3">
+      <form id="w-form">
+
+        <div class="form-group">
+          <label for="city">City</label>
+          <input type="text" class="form-control" id="city" placeholder="Enter City...">
+        </div>
+
+        <div class="form-group">
+          <label for="country">Country</label>
+          <input type="text" class="form-control" id="country" placeholder="Enter Country...">
+          <small class="form-text text-muted">
+            Type your is ISO 3166 Format, you can try first two letters of your country, If you are in luck
+          </small>
+        </div>
+
+        <button class="btn btn-primary">Get Weather</button>
+
+      </form>
+    </div>
+  </div>
+  <!-- weather-form part end -->
+
+  <!-- weather-card part start -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 mx-auto my-3">
+        <div class="card">
+          <div class="card-header text-center" id="w-city"></div>
+          <ul class="list-group">
+            <li class="list-group-item text-center">
+              <img id="w-icon" src="http://openweathermap.org/img/w/09d.png" alt="icon" />
+              <br>
+              <span id="w-feels"></span>
+            </li>
+            <li class="list-group-item" id="w-temp"></li>
+            <li class="list-group-item" id="w-pressure"></li>
+            <li class="list-group-item" id="w-humidity"></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- weather-card part end -->
+
+
+
+
+
+  <!-- JavaScript file link -->
+  <script src="js/app.js"></script>
+</body>
+
+</html>
