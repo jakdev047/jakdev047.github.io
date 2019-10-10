@@ -203,6 +203,8 @@ a.register-btn:before {
   height: 100%;
 }
 
+.menu-btn { display: none !important;}
+
 .menu-btn,.service-tab-btn {
   float: right;
   align-items: center !important;
@@ -705,7 +707,11 @@ ul.office-address-list li span.time-duration {
 /*-------------------------------------
   Tab-service-content
 --------------------------------------*/
-
+.service-tab{
+  position: relative;
+  z-index: 0;
+  background: #f7f8fa;
+}
 .tab-service-area {
   position: relative;
 }
@@ -716,7 +722,7 @@ ul.office-address-list li span.time-duration {
   height: 130px;
   top: 40px;
   margin-left: -10px;
-  z-index: 1;
+  z-index: 3;
 }
 
 /* .service-tab-btn */
@@ -730,14 +736,20 @@ ul.office-address-list li span.time-duration {
 }
 
 /* .single-service-content-img */
-.single-service-tab{
+.single-service-tab {
   position: relative;
-  height: 800px;
-  overflow: hidden;
+  padding-bottom: 22.7%;
+}
+.single-service-content-img {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
 }
 .single-service-content-img img {
   position: absolute;
-  z-index: -1;
   top: 0;
   left: 0;
   width: 100%;
@@ -746,6 +758,8 @@ ul.office-address-list li span.time-duration {
 .service-single-tab-txt-content {
   max-width: 1170px;
   margin: 0 auto;
+  position: relative;
+  z-index: 2;
 }
 .service-tab-sec-title {
   max-width: 585px;
@@ -811,6 +825,15 @@ ul.office-address-list li span.time-duration {
 .tab-service li a:hover:before{
   background: #000;
   width: 100%;
+}
+
+.tab-pane.active {
+  animation: slide-down .7s ease-out;
+}
+
+@keyframes slide-down {
+  0% { opacity: 0; transform: translateX(-100%); }
+  100% { opacity: 1; transform: translateX(0); }
 }
 
 /*-------------------------------------

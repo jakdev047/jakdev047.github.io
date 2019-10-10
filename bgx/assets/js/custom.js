@@ -39,11 +39,6 @@ $(document).ready(function() {
       $(".main-menu").toggleClass("smart-menu-active");
       $(".offcanvas-overlay").toggleClass("offcanvas-overlay-active");
     });
-
-    $(".service-tab-btn").on("click", function(e) {
-      e.preventDefault();
-      $(".tab-service").toggleClass("tab-service-menu-active");
-    });
   
   /*----------------------------
 		3. Banner slider
