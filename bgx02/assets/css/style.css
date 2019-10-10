@@ -821,13 +821,20 @@ ul.office-address-list li span.time-duration {
   width: 100%;
 }
 
-.tab-pane.active {
+.service-tab-sec-title {
   animation: slide-down .7s ease-out;
+}
+.tab-pane.active {
+  animation: fade .7s ease-out;
 }
 
 @keyframes slide-down {
   0% { opacity: 0; transform: translateX(-100%); }
   100% { opacity: 1; transform: translateX(0); }
+}
+@keyframes fade {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
 /*-------------------------------------
