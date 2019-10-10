@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="85" height="63.75" viewBox="0 0 85 63.75">
+    <defs>
+        <style>
+            .cls-1{opacity:.15}.cls-2{fill:#7dc4a6}
+        </style>
+    </defs>
+    <g id="double-quotes" class="cls-1">
+        <g id="right_x5F_quote">
+            <g id="Group_250" data-name="Group 250">
+                <path id="Path_301" d="M35.061 67.75V35.875H11.687c0-11.714 10.477-21.25 23.374-21.25V4C15.728 4 0 18.3 0 35.875V67.75z" class="cls-2" data-name="Path 301" transform="translate(49.939 -4)"/>
+                <path id="Path_302" d="M55.061 67.75V35.875H31.687c0-11.714 10.477-21.25 23.374-21.25V4C35.728 4 20 18.3 20 35.875V67.75z" class="cls-2" data-name="Path 302" transform="translate(-20 -4)"/>
+            </g>
+        </g>
+    </g>
+</svg>
