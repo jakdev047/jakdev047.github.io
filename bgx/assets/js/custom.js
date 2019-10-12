@@ -92,5 +92,13 @@ $(document).ready(function() {
     $(this).css({boxShadow: 'none',opacity:'1',border:'1px solid #7dc4a6'})
   });
 
+  /*----------------------------
+		5. magnific-popup
+	------------------------------ */
+	// vedio-popup
+	$('.vedio-play').magnificPopup({
+		type:'video'
+	});
+
 
 });
