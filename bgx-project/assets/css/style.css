@@ -817,6 +817,20 @@ a.register-btn:before {
   line-height: 2.06;
 }
 
+/* .work-section2 */
+.work.work-section2 {padding: 106px 0 100px;}
+
+.work-section2 .work-process-info{margin:0;}
+.work-process-info h2{
+  font-weight: 700;
+  text-transform: inherit;
+  margin-bottom: 5px;
+}
+.work-section2 .work-content-process {
+  margin-top: 40px;
+}
+.work-section2 .work-content-process-txt h3{font-weight: 700;}
+
 /*-------------------------------------
   Location
 --------------------------------------*/
