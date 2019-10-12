@@ -1197,6 +1197,15 @@ a.subscribe-btn:hover {
   max-width: 275px;
 }
 
+/* .footer-app-download */
+.footer-app-download{margin: 30px 0;}
+.footer-app-download img {
+  width: 102px;
+}
+.footer-app-download a {
+  margin-right: 20px;
+}
+
 .single-footer-widget{margin-bottom: 30px;}
 
 .single-footer-widget h3 {
