@@ -28,6 +28,16 @@ font-family: 'Poppins', sans-serif;
 
 @import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&display=swap');
 
+/* variable */
+
+:root {
+  --primary-color: #999;
+  --heading-color: #3d4642;
+  --secondary-color: #7dc4a6;
+}
+
+
+
 * {padding: 0;margin: 0;}
 * {
     -webkit-box-sizing: border-box;
@@ -36,15 +46,18 @@ font-family: 'Poppins', sans-serif;
     -ms-box-sizing: border-box;
     box-sizing: border-box;
 }
+html,body{
+  height: 100%;
+}
 body {
-    font-family: 'Poppins', sans-serif;
-    font-size: 14px;
-    color: #999999;
-    text-transform: initial;
-    max-width: 1920px;
-    background-color: #ffffff;
-    margin: 0 auto;
-    overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  color: #999999;
+  text-transform: initial;
+  max-width: 1920px;
+  background-color: #ffffff;
+  margin: 0 auto;
+  overflow-x: hidden!important;
 }
 a,a:hover,a:active,a:focus {
 	display:inline-block;
@@ -89,11 +102,22 @@ html,body{height: 100%;}
 }
 .p0{padding: 0!important}
 
+.m0{margin: 0!important}
+.mb60{margin-bottom: 60px!important}
+
+.top-100{margin-top: 100px!important}
+.p50{padding-top: 50px;}
+
 h2.title {
   font-size: 34px;
   line-height: 1.29;
   text-align: center;
   text-transform: inherit;
+}
+
+/* section-padding */
+.section-padding{
+  padding: 120px 0 90px!important;
 }
 
 /* sec-title */
@@ -107,6 +131,17 @@ h2.title {
   font-size: 16px;
   line-height: 1.88;
 }
+
+.section-padding{
+  padding: 120px 0 60px!important;
+}
+
+.default-section-padding{
+  padding: 120px 0!important;
+}
+
+/* background */
+.bg-gray{background: #f7f8fa;}
 
 /*-------------------------------------
   2. Header
@@ -275,6 +310,10 @@ li.select-opt:last-child{margin-right: 0;}
   display: block;
 }
 
+/* .header-menu-layer2 */
+.header-menu-layer2 .main-menu nav ul li {
+  margin-left: 45px;
+}
 /*-------------------------------------
   Welcome-hero
 --------------------------------------*/
@@ -1214,7 +1253,11 @@ a.subscribe-btn:hover {
 .footer.fo {margin-top: 0px;}
 
 /* .footer-bottom */
-.footer-info-text {
+.f-logo img {
+  width: 98px;
+  margin-bottom: 30px;
+}
+.footer-info-text p {
   opacity: 0.5;
   font-size: 14px;
   font-weight: 200;
@@ -1324,6 +1367,8 @@ a.subscribe-btn:hover {
 .office-address h2.title {
   margin-bottom: 45px;
 }
+.office-address.office-address2 h2.title { margin-bottom: 60px; }
+
 .single-office-address-content h3 {
   font-size: 14px;
   font-weight: 600;
@@ -1331,6 +1376,13 @@ a.subscribe-btn:hover {
   line-height: 1.57;
 }
 .single-office-address-content{margin-bottom: 30px;}
+.office-address.office-address2 .single-office-address-content {
+  padding-top: 30px;
+  max-width: 245px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 47px;
+}
 ul.office-address-list li{margin-bottom: 10px;}
 ul.office-address-list li span {
   color: #3d4642;
@@ -1338,6 +1390,15 @@ ul.office-address-list li span {
 }
 ul.office-address-list li span.time-duration {
   text-transform: uppercase;
+}
+
+/* f7f8fa */
+
+.col-border-right {
+  border-right: 1px solid #f7f8fa;
+}
+.col-border-top {
+  border-top: 1px solid #f7f8fa;
 }
 
 /*-------------------------------------
@@ -1584,6 +1645,180 @@ ul.office-address-list li span.time-duration {
   text-align: center;
 }
 
+/*=======================================
+  About us page
+=========================================*/
+
+/*-------------------------------------
+  Ceo-section
+--------------------------------------*/
+.single-ceo-section-txt {
+  margin: 175px 0 0;
+}
+.single-ceo-section-txt h2 {
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 1.29;
+  margin-bottom: 13px;
+}
+.single-ceo-section-txt h4 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.88;
+  color: #999;
+  padding-bottom: 12px;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(129, 129, 129,.5);
+  max-width: 258px;
+}
+
+.single-ceo-section-txt p {
+  font-size: 16px;
+  line-height: 1.88;
+  color: #999;
+  font-style: italic;
+  margin: 15px 0 45px;
+  max-width: 460px;
+}
+
+.single-ceo-section-txt-icon-list a>img {
+  width: 24px;
+  margin-right: 27px;
+}
+
+.single-ceo-section-content-img {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 134%;
+}
+
+.single-ceo-section-content-img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+/*-------------------------------------
+  About contact section
+--------------------------------------*/
+.about-contact-section {
+  padding: 100px 0;
+  background: #f7f8fa;
+}
+.about-contact-section-content  {
+  margin: 0 auto;
+  max-width: 470px;
+  text-align: center;
+}
+.about-contact-section-content .sec-title h2 {
+  font-weight: 500;
+  margin-bottom: 17px;
+}
+
+.about-contact-section-content  .contact-btn a {
+  color: #fff;
+  box-shadow: 0 10px 50px 0 rgba(125, 196, 166, 0.4);
+  background-color: #7dc4a6;
+}
+
+/*-------------------------------------
+  Left-right section
+--------------------------------------*/
+.left-right-section {
+  padding: 100px 0 30px;
+}
+.left-right-section .sec-title h2 {
+  text-align: center;
+  margin-bottom:60px;
+}
+.left-right-section-content {
+  margin-bottom: 10px;
+}
+.single-left-right-section-content-txt{
+  margin-bottom: 60px;
+}
+.single-left-right-section-content-txt h2 {
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 1.29;
+  margin-bottom: 10px;
+}
+.single-left-right-section-content-txt p {
+  font-size: 16px;
+  line-height: 1.88;
+}
+.single-left-right-section-content-img {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 86%;
+}
+
+.single-left-right-section-content-img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/*-------------------------------------
+  Blog
+--------------------------------------*/
+.blog {
+  padding: 0px 0 60px;
+}
+.blog .sec-title h2 {
+  text-align: center;
+  margin-bottom:60px;
+}
+
+.single-blog-content {
+  margin-bottom: 60px;
+  transition: .5s;
+}
+
+.blog-img {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 62%;
+  margin-bottom: 40px;
+}
+
+.blog-img a>img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.blog-txt h2>a {
+  font-size: 18px;
+  margin-bottom: 20px;
+  transition: .5s;
+}
+.blog-txt p {
+  color: #999;
+  margin-bottom: 20px;
+}
+
+.blog-btn a {
+  font-size: 14px;
+  line-height: 2;
+  text-decoration: underline;
+}
+
+.blog-btn img {
+  width: 33px;
+  margin-left: 10px;
+}
+
+.blog-txt:hover h2>a {
+  color: var(--secondary-color) ;
+}
 
 /*===============================
     Scroll Top
