@@ -314,6 +314,12 @@ li.select-opt:last-child{margin-right: 0;}
 .header-menu-layer2 .main-menu nav ul li {
   margin-left: 45px;
 }
+.header-menu-layer2 .main-menu { margin-left: 10px; }
+
+/*=======================================
+ Salon page
+=========================================*/
+
 /*-------------------------------------
   Welcome-hero
 --------------------------------------*/
@@ -829,7 +835,7 @@ a.register-btn:before {
 }
 
 /*-------------------------------------
-    Work
+  Work
 --------------------------------------*/
 .work {
   padding: 120px 0 40px;
@@ -1305,6 +1311,10 @@ a.subscribe-btn:hover {
   margin-right: 25px;
 }
 
+/*=======================================
+  Contact Page
+=========================================*/
+
 /*-------------------------------------
   Contact-us
 --------------------------------------*/
@@ -1392,14 +1402,16 @@ ul.office-address-list li span.time-duration {
   text-transform: uppercase;
 }
 
-/* f7f8fa */
-
 .col-border-right {
   border-right: 1px solid #f7f8fa;
 }
 .col-border-top {
   border-top: 1px solid #f7f8fa;
 }
+
+/*=======================================
+  Home page
+=========================================*/
 
 /*-------------------------------------
   Tab-service-content
@@ -1648,6 +1660,86 @@ ul.office-address-list li span.time-duration {
 /*=======================================
   About us page
 =========================================*/
+
+/*-------------------------------------
+  About welcome
+--------------------------------------*/
+.about-welcome-hero {
+  position: relative;
+}
+
+/* .about-welcome-hero-carousel */
+.about-welcome-hero-carousel {
+  position: absolute;
+  top: 55px;
+  right: 0px;
+  width: 50.5%;
+  z-index: 0;
+  height: 450px;
+  overflow: hidden;
+}
+
+.about-welcome-inner-slider {
+  display: flex;
+  align-items: baseline;
+}
+
+.about-welcome-inner-slider-img.about-big-slide{
+  position: relative;
+  /* padding-bottom: 28%; */
+  margin-right: 60px;
+}
+
+.about-welcome-inner-slider-img.small-big-slide {
+  position: relative;
+  margin-right: 40px;
+  top: 80px;
+}
+
+.about-carousel-footer {
+  position: absolute;
+  bottom: 0%;
+  right: 40px;
+  width: 280px;
+  height: 20px;
+}
+.about-welcome-hero .carousel-control-prev {
+  left: auto;
+  right: 60px;
+}
+
+.about-welcome-inner-slider-img .play-button {
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about-welcome-inner-slider-img.small-big-slide .play-button img {
+  width: 25px;
+  height: 25px;
+}
+
+
+/* .about-welcome-hero */                   
+.about-welcome-hero-content {
+  max-width: 530px;
+  padding: 165px 0 234px;
+}
+
+.about-welcome-hero-content h2 {
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 1.29;
+  margin-bottom: 20px;
+  text-transform: initial;
+}
+
+.about-welcome-hero-content p {
+  font-size: 16px;
+  line-height: 1.88;
+  color: #999;
+}
 
 /*-------------------------------------
   Ceo-section

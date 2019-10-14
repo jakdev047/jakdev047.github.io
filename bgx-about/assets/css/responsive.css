@@ -29,6 +29,8 @@
   .ml-30 {margin-left: 0px;}
   .tab-service {top: 15px;}
   .service-tab-sec-title{top: 145px;}
+  .about-welcome-hero-content {padding: 120px 0px;}
+  .about-welcome-inner-slider-img.small-big-slide{top: 40px;}
 } /*max-width:1440px*/
 
 @media screen and (min-width: 1199px){
@@ -94,6 +96,8 @@
   /* left-right-section  */
   .single-left-right-section-content-img { padding-bottom: 0;max-width: 350px;height: 350px;margin: 0 auto;}
 
+  /* .about-welcome-hero */
+  .about-welcome-hero-carousel {  position: relative; width: 100%; padding: 0 30px;height: 530px; }
 } /*max-width:1199px*/
 
 @media screen and (max-width: 1024px) {
@@ -119,6 +123,10 @@
   .welcome-hero-slider-section { position: relative;width: 100%;}
   .welcome-hero:before {display: none;}
   .welcome-hero-content {padding: 80px 0 120px;margin: 0 auto; max-width: 501px;}
+
+  /* .about-welcome-hero */
+  .about-welcome-hero-content { max-width: 530px; padding: 60px 0;}
+  .about-welcome-hero-carousel { height: 430px; }
 
   /* flash-information */
   .flash-core-info {padding: 60px 0 25px;}
@@ -151,6 +159,8 @@
   h2.location-title{display: block;}
   .location-content h2 {display: none;}
   .location-content { margin: 30px auto 0;}
+
+  .col-border-right,.col-border-top { border: 0; }
 
   /* .client */
   .client { padding: 0 0 38px;}
@@ -203,6 +213,16 @@
   .welcome-hero-slider-section .carousel-indicators{
     display: block;
   }
+
+  /* .about-welcome-section */
+  .about-welcome-hero-carousel { height: auto; }
+  .about-welcome-inner-slider { align-items: center; flex-wrap: wrap;justify-content: space-between;}
+  .about-welcome-inner-slider-img.about-big-slide {padding-bottom: 0;margin-right: 0;max-width: 280px;margin: 30px auto;}
+  .about-welcome-inner-slider-img.small-big-slide {top: 0;max-width: 280px;margin: 0 auto;}
+  .about-welcome-inner-slider-img {margin: 30px 0;}
+  .about-welcome-hero-content { padding: 120px 0 60px;}
+  .about-carousel-footer {display: none;}
+  .about-welcome-inner-slider-img.small-big-slide .play-button img,.about-welcome-inner-slider-img.about-big-slide .play-button img  { width: 40px;height: 40px;}
 
   /* flash-information */
   .flash-border {display: none;}
