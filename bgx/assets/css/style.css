@@ -1519,6 +1519,7 @@ ul.office-address-list li span.time-duration {
   font-size: 14px;
   color: #818181;
   line-height: 1.5;
+  text-transform: initial;
   position: relative;
   transition: all 0.6s linear;
 }
