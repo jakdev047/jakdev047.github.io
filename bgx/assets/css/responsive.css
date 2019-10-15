@@ -252,7 +252,7 @@
   .service-tab-sec-title h2 {font-size: 28px;}
   .service-tab-sec-title p{font-size: 16px;}
 
-  .container.tab-service-top { overflow-x: auto;overflow-y: hidden; }
+  .container.tab-service-top { overflow-x: scroll;overflow-y: hidden; }
   .tab-service { min-width: 614px; }
   /* .container.tab-service-top::-webkit-scrollbar{ display: none; } */
 
