@@ -29,6 +29,8 @@
   .ml-30 {margin-left: 0px;}
   .tab-service {top: 15px;}
   .service-tab-sec-title{top: 145px;}
+  .about-welcome-hero-content {padding: 120px 0px;}
+  .about-welcome-inner-slider-img.small-big-slide{top: 40px;}
 } /*max-width:1440px*/
 
 @media screen and (min-width: 1199px){
@@ -80,10 +82,7 @@
   /* service-tab */
   .tab-service li a, .tab-service li a.active {padding: 36px;}
   .tab-service { left: 30px;}
-  .tab-service li { margin-right: 30px;}
-
-  .service-tab-sec-title {top: 0;}
-  .service-tab-sec-title{left: 5px;}
+  .service-tab-sec-title { max-width: 760px;top: 0;left: 5px; }
   .service-single-tab-txt-content { padding: 170px 15px 60px; }
   .single-service-content-img{position: relative;padding-bottom: 56%;}
   .single-service-content-img img{position: absolute;}
@@ -94,6 +93,8 @@
   /* left-right-section  */
   .single-left-right-section-content-img { padding-bottom: 0;max-width: 350px;height: 350px;margin: 0 auto;}
 
+  /* .about-welcome-hero */
+  .about-welcome-hero-carousel {  position: relative; width: 100%; padding: 0 30px;height: 530px; }
 } /*max-width:1199px*/
 
 @media screen and (max-width: 1024px) {
@@ -119,6 +120,10 @@
   .welcome-hero-slider-section { position: relative;width: 100%;}
   .welcome-hero:before {display: none;}
   .welcome-hero-content {padding: 80px 0 120px;margin: 0 auto; max-width: 501px;}
+
+  /* .about-welcome-hero */
+  .about-welcome-hero-content { max-width: 530px; padding: 60px 0;}
+  .about-welcome-hero-carousel { height: 430px; }
 
   /* flash-information */
   .flash-core-info {padding: 60px 0 25px;}
@@ -152,6 +157,8 @@
   .location-content h2 {display: none;}
   .location-content { margin: 30px auto 0;}
 
+  .col-border-right,.col-border-top { border: 0; }
+
   /* .client */
   .client { padding: 0 0 38px;}
   .client h2 {font-size: 20px; max-width: 290px;margin: 0 auto;margin-bottom: 38px;}
@@ -162,6 +169,7 @@
 
   /* tab-features */
   .tab-feature {padding: 80px 0 0px;}
+  .service-tab-sec-title { margin: 0 auto; }
   .tab-feature-img {margin: 0 auto 30px;}
   .tab-features-arer,.app-download-area { margin-left: 0px;margin: 0 auto;}
   .app-download-area {margin: 45px auto 0;text-align: center;}
@@ -176,8 +184,9 @@
 
   /* service-tab */
   .service-single-tab-txt-content {padding: 60px 15px;}
-  .tab-service { left: -15px;  position: relative; height: auto; }
-  .tab-service li a, .tab-service li a.active { padding: 24px; height: auto;margin-bottom: 20px;}
+  .tab-service { min-width: 760px;position: relative;left: -20px;}
+  .tab-service li a, .tab-service li a.active { padding: 24px 35px; height: auto;margin-bottom: 20px;}
+  .tab-service li a:before{top: auto;bottom: 0;}
 
   /* single-left-right-section */
   .sec-title h2 { font-size: 20px; }
@@ -200,9 +209,17 @@
   .welcome-hero-content p  {font-size: 22px;}
   .welcome-hero-content p img {width: 70px;}
 
-  .welcome-hero-slider-section .carousel-indicators{
-    display: block;
-  }
+  .welcome-hero-slider-section .carousel-indicators{  display: block; }
+
+  /* .about-welcome-section */
+  .about-welcome-hero-carousel { height: auto; }
+  .about-welcome-inner-slider { align-items: center; flex-wrap: wrap;justify-content: space-between;}
+  .about-welcome-inner-slider-img.about-big-slide {padding-bottom: 0;margin-right: 0;max-width: 280px;margin: 30px auto;}
+  .about-welcome-inner-slider-img.small-big-slide {top: 0;max-width: 280px;margin: 0 auto;}
+  .about-welcome-inner-slider-img {margin: 30px 0;}
+  .about-welcome-hero-content { padding: 120px 0 60px;}
+  .about-carousel-footer {display: none;}
+  .about-welcome-inner-slider-img.small-big-slide .play-button img,.about-welcome-inner-slider-img.about-big-slide .play-button img  { width: 40px;height: 40px;}
 
   /* flash-information */
   .flash-border {display: none;}
@@ -232,7 +249,15 @@
   .service-tab-sec-title h2 {font-size: 28px;}
   .service-tab-sec-title p{font-size: 16px;}
 
+  /* .container.tab-service-top,.container.tab-service-top.smart-menu-scrollbar { overflow-x: auto;overflow-y: hidden; } */
+  /* .container.tab-service-top.smart-menu-scrollbar::-webkit-scrollbar{ display: none; } */
+
+  .container.tab-service-top { overflow-x: auto;overflow-y: hidden; }
+  .tab-service { min-width: 614px; }
+  .container.tab-service-top::-webkit-scrollbar{ display: none; }
+
   /* single-left-right-section */
+  /* .tab-service {  min-width: 615px;position: relative; left: 0;overflow-x: auto;overflow-y: hidden; } */
   .single-left-right-section-content-img { height: 250px;}
 
 

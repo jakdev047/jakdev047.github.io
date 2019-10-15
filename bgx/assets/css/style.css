@@ -143,6 +143,15 @@ h2.title {
 /* background */
 .bg-gray{background: #f7f8fa;}
 
+/* .smart-menu-scrollbar */
+/* .smart-menu-scrollbar {overflow-y: hidden;}
+.smart-menu-scrollbar::-webkit-scrollbar {width:5px;}
+.smart-menu-scrollbar::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 8px transparent;
+  box-shadow: inset 0 0 8px transparent;
+}
+.smart-menu-scrollbar::-webkit-scrollbar-thumb {background-color:#000} */
+
 /*-------------------------------------
   2. Header
 --------------------------------------*/
@@ -314,6 +323,12 @@ li.select-opt:last-child{margin-right: 0;}
 .header-menu-layer2 .main-menu nav ul li {
   margin-left: 45px;
 }
+.header-menu-layer2 .main-menu { margin-left: 10px; }
+
+/*=======================================
+ Salon page
+=========================================*/
+
 /*-------------------------------------
   Welcome-hero
 --------------------------------------*/
@@ -829,7 +844,7 @@ a.register-btn:before {
 }
 
 /*-------------------------------------
-    Work
+  Work
 --------------------------------------*/
 .work {
   padding: 120px 0 40px;
@@ -881,6 +896,10 @@ a.register-btn:before {
   margin-top: 40px;
 }
 .work-section2 .work-content-process-txt h3{font-weight: 700;}
+
+.work-section2 .work-content-process-icon .iconmoon {
+  font-size: 50px;
+}
 
 /*-------------------------------------
   Location
@@ -1305,6 +1324,10 @@ a.subscribe-btn:hover {
   margin-right: 25px;
 }
 
+/*=======================================
+  Contact Page
+=========================================*/
+
 /*-------------------------------------
   Contact-us
 --------------------------------------*/
@@ -1392,14 +1415,16 @@ ul.office-address-list li span.time-duration {
   text-transform: uppercase;
 }
 
-/* f7f8fa */
-
 .col-border-right {
   border-right: 1px solid #f7f8fa;
 }
 .col-border-top {
   border-top: 1px solid #f7f8fa;
 }
+
+/*=======================================
+  Home page
+=========================================*/
 
 /*-------------------------------------
   Tab-service-content
@@ -1513,6 +1538,19 @@ ul.office-address-list li span.time-duration {
   background: rgba(255,255,255,1);
   color: #1a1d1c;
 }
+.tab-service li a.active .iconmoon{
+  color: #1a1d1c;
+}
+
+.tab-service li a:hover .icon-beauty-treatment:before,
+.tab-service li a:hover .icon-shop:before,
+.tab-service li a:hover .icon-salon:before,
+.tab-service li a:hover .icon-retail:before,
+.tab-service li a:hover .icon-branding:before,
+.tab-service li a:hover .icon-develop:before{
+  color: #1a1d1c;
+}
+
 .tab-service li a.active:before{
   background: #000;
   width: 100%;
@@ -1648,6 +1686,86 @@ ul.office-address-list li span.time-duration {
 /*=======================================
   About us page
 =========================================*/
+
+/*-------------------------------------
+  About welcome
+--------------------------------------*/
+.about-welcome-hero {
+  position: relative;
+}
+
+/* .about-welcome-hero-carousel */
+.about-welcome-hero-carousel {
+  position: absolute;
+  top: 55px;
+  right: 0px;
+  width: 50.5%;
+  z-index: 0;
+  height: 450px;
+  overflow: hidden;
+}
+
+.about-welcome-inner-slider {
+  display: flex;
+  align-items: baseline;
+}
+
+.about-welcome-inner-slider-img.about-big-slide{
+  position: relative;
+  /* padding-bottom: 28%; */
+  margin-right: 60px;
+}
+
+.about-welcome-inner-slider-img.small-big-slide {
+  position: relative;
+  margin-right: 40px;
+  top: 80px;
+}
+
+.about-carousel-footer {
+  position: absolute;
+  bottom: 0%;
+  right: 40px;
+  width: 280px;
+  height: 20px;
+}
+.about-welcome-hero .carousel-control-prev {
+  left: auto;
+  right: 60px;
+}
+
+.about-welcome-inner-slider-img .play-button {
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about-welcome-inner-slider-img.small-big-slide .play-button img {
+  width: 25px;
+  height: 25px;
+}
+
+
+/* .about-welcome-hero */                   
+.about-welcome-hero-content {
+  max-width: 530px;
+  padding: 165px 0 234px;
+}
+
+.about-welcome-hero-content h2 {
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 1.29;
+  margin-bottom: 20px;
+  text-transform: initial;
+}
+
+.about-welcome-hero-content p {
+  font-size: 16px;
+  line-height: 1.88;
+  color: #999;
+}
 
 /*-------------------------------------
   Ceo-section
