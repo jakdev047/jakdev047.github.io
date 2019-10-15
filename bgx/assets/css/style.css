@@ -1637,6 +1637,7 @@ ul.office-address-list li span.time-duration {
 }
 .single-partner-vedio-content {
   margin-bottom: 60px;
+  overflow: hidden;
 }
 .single-partner-vedio-content-img {
   position: relative;
