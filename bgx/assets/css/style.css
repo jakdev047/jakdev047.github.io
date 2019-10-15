@@ -869,6 +869,8 @@ a.register-btn:before {
   box-shadow: 0 3px 6px 0 rgba(125, 196, 166, 0.15);
   background-color: #ffffff;
   margin-bottom: 80px;
+  min-height: 320px;
+  overflow: hidden;
 }
 .work-approve-card {
   margin-left: 30px;

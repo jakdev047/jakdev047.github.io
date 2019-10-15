@@ -84,6 +84,7 @@
   .tab-service li a, .tab-service li a.active {padding: 36px;}
   .tab-service { left: 30px;top: 0;}
   .service-tab-sec-title { max-width: 758px; top: 130px;left: 20px; }
+  .tab-service { min-width: 900px;overflow: hidden; }
 
   /* .ceo-section */
   .single-ceo-section-txt {margin: 60px 0;}
