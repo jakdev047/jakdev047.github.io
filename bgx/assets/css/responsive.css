@@ -249,15 +249,11 @@
   .service-tab-sec-title h2 {font-size: 28px;}
   .service-tab-sec-title p{font-size: 16px;}
 
-  /* .container.tab-service-top,.container.tab-service-top.smart-menu-scrollbar { overflow-x: auto;overflow-y: hidden; } */
-  /* .container.tab-service-top.smart-menu-scrollbar::-webkit-scrollbar{ display: none; } */
-
   .container.tab-service-top { overflow-x: auto;overflow-y: hidden; }
   .tab-service { min-width: 614px; }
-  .container.tab-service-top::-webkit-scrollbar{ display: none; }
+  /* .container.tab-service-top::-webkit-scrollbar{ display: none; } */
 
   /* single-left-right-section */
-  /* .tab-service {  min-width: 615px;position: relative; left: 0;overflow-x: auto;overflow-y: hidden; } */
   .single-left-right-section-content-img { height: 250px;}
 
 
