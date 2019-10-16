@@ -1709,26 +1709,82 @@ ul.office-address-list li span.time-duration {
   z-index: 0;
   height: 450px;
   overflow: hidden;
-  background: #ddd;
+  /* background: #eee; */
 }
 
-/* .about-welcome-hero-carousel */
-.single-about-welcome-slider {
+/* owl-cloned */
+.owl-carousel.about-welcome-hero-carousel-content.owl-loaded.owl-drag {
   position: relative;
+  height: 450px;
 }
-.single-about-welcome-slider-img {
-  position: relative;
-  overflow: hidden;
-  padding-bottom: 16%;
-  width: 220px;
+.about-welcome-hero-carousel .owl-item {
+  opacity: 0;
+}
+.about-welcome-hero-carousel .owl-item.cloned {
+  margin-right: -120px;
+  opacity: 0;
 }
 
-.single-about-welcome-slider-img img {
+/* .owl-active */
+.about-welcome-hero-carousel .owl-item.active {
+  width: 220px!important;
+  position: relative;
+  padding-bottom: 4%;
+  right: 60px;
+  top: 244px;
+  opacity: 1;
+}
+.about-welcome-hero-carousel .owl-item.active img {
   position: absolute;
-  top: 0;
   left: 0;
+  top: 0;
   width: 100%;
   height: 100%;
+}
+
+/* .owl-center */
+.about-welcome-hero-carousel .owl-item.active.center,
+.about-welcome-hero-carousel .owl-item.cloned.active.center  {
+  position: relative;
+  padding-bottom: 14%;
+  width: 650px!important;
+  margin-right: 97px;
+  right: auto;
+  top: auto;
+}
+.about-welcome-hero-carousel .owl-item.cloned.active.center{
+  margin-left: -118px;
+}
+.about-welcome-hero-carousel .owl-item.active.center img,
+.about-welcome-hero-carousel .owl-item.cloned.active.center img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* play-btn */
+.about-welcome-hero-carousel .owl-carousel .owl-item .single-about-welcome-slider  .play-button img {
+  width: 25px;
+  height: 25px;
+}
+
+.owl-item.active.center .single-about-welcome-slider  .play-button img {
+  width: 75px;
+  height: 75px;
+}
+
+/* owl-nav */
+.about-welcome-hero-carousel .owl-nav {
+  margin: 0;
+  position: absolute;
+  bottom: 10px;
+  right: 35px;
+}
+
+.about-welcome-hero-carousel button.owl-prev {
+  margin-right: 20px;
 }
 
 /* .about-welcome-hero */                   

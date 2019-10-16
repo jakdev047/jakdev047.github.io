@@ -4,10 +4,14 @@
 
 @media screen and (max-width: 1899px) {
   .modal-lg { max-width:75%; }
+  .about-welcome-hero-carousel .owl-item.active.center, .about-welcome-hero-carousel .owl-item.cloned.active.center { width: 550px!important;}
 } /*max-width:1899px*/
 
 @media screen and (max-width: 1799px){
   .single-service-tab { padding-bottom: 12.7%;min-height: auto; }
+  .about-welcome-hero-carousel .owl-item.active.center, .about-welcome-hero-carousel .owl-item.active.center, .about-welcome-hero-carousel .owl-item.cloned.active.center {width: 650px!important;padding-bottom: 0%;height: 350px;}
+  .about-welcome-hero-carousel .owl-nav { margin: 0;position: absolute;bottom: 40px; right: auto;left: 20px; }
+  .about-welcome-hero-carousel .play-button {left: 60%;}
 }/*max-width:1799px*/
 
 @media screen and (max-width: 1680px) {
@@ -84,6 +88,10 @@
   .tab-service { left: 30px;top: 0;}
   .service-tab-sec-title { max-width: 758px; top: 130px;left: 20px; }
   .tab-service { min-width: 900px;overflow: hidden; }
+
+  /* about-welcome-hero-slider */
+  .about-welcome-hero-carousel {position: relative;top: 0;right: 0;width: 100%;height: auto; max-width: 350px;margin: 0 auto;}
+  .about-welcome-hero-content {max-width: 530px; padding: 0px 0 80px; margin: 0 auto; }
 
   /* .ceo-section */
   .single-ceo-section-txt {margin: 60px 0;}

@@ -41,33 +41,63 @@ $(document).ready(function() {
     });
   
   /*----------------------------
-		3. Banner slider
+		3. slider
 	------------------------------ */
-	$('.brand-carousel').owlCarousel({
-    items:10,
-		loop: true,
-		autoplay: true,
-		margin: 0,
-		dots: false,
-		smartSpeed: 1000,
-		nav: false,
-		navText: ['<img src="assets/images/testimonial/left-arrow.svg" alt="left">', '<img src="assets/images/testimonial/right-arrow.png" alt="right">'],
-		responsiveClass: true,
-		responsive: {
-			0: {
-				items: 3
-			},
-      440: {
-				items: 5
-			},
-			600: {
-				items: 6
-			},
-			1340: {
-				items: 10
-			}
-		}
-	});
+    // i. brand slider
+    $('.brand-carousel').owlCarousel({
+      items:10,
+      loop: true,
+      autoplay: true,
+      margin: 0,
+      dots: false,
+      smartSpeed: 1000,
+      nav: false,
+      navText: ['<img src="assets/images/testimonial/left-arrow.svg" alt="left">', '<img src="assets/images/testimonial/right-arrow.png" alt="right">'],
+      responsiveClass: true,
+      responsive: {
+        0: {
+          items: 3
+        },
+        440: {
+          items: 5
+        },
+        600: {
+          items: 6
+        },
+        1340: {
+          items: 10
+        }
+      }
+    });
+
+    // ii. brand slider
+    $('.about-welcome-hero-carousel-content').owlCarousel({
+      items:2,
+      loop: true,
+      autoplay: false,
+      margin: 0,
+      dots: false,
+      smartSpeed: 1000,
+      nav: true,
+      navText: ['<img src="assets/images/testimonial/left-arrow.svg" alt="left">', '<img src="assets/images/testimonial/right-arrow.png" alt="right">'],
+      responsiveClass: true,
+      center:true,
+      autoplayHoverPause:true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 1
+        },
+        1800: {
+          items: 2
+        }
+      }
+    });
+
+    // $('.owl-carousel .owl-item.active').attr("style", "width:px;")
+    // $('.owl-carousel .owl-item.active.center').attr("style", "width:650px;")
 
    /*----------------------------
 		4. blur system
