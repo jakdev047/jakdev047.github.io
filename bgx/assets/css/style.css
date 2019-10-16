@@ -1462,7 +1462,9 @@ ul.office-address-list li span.time-duration {
 /* .single-service-content-img */
 .single-service-tab {
   position: relative;
-  padding-bottom: 22.7%;
+  /* padding-bottom: 22.7%; */
+  min-height: 800px;
+  overflow: hidden;
 }
 .single-service-content-img {
   position: absolute;
@@ -1703,53 +1705,31 @@ ul.office-address-list li span.time-duration {
   position: absolute;
   top: 55px;
   right: 0px;
-  width: 50.5%;
+  width: 49.5%;
   z-index: 0;
   height: 450px;
   overflow: hidden;
+  background: #ddd;
 }
 
-.about-welcome-inner-slider {
-  display: flex;
-  align-items: baseline;
-}
-
-.about-welcome-inner-slider-img.about-big-slide{
+/* .about-welcome-hero-carousel */
+.single-about-welcome-slider {
   position: relative;
-  /* padding-bottom: 28%; */
-  margin-right: 60px;
 }
-
-.about-welcome-inner-slider-img.small-big-slide {
+.single-about-welcome-slider-img {
   position: relative;
-  margin-right: 40px;
-  top: 80px;
+  overflow: hidden;
+  padding-bottom: 16%;
+  width: 220px;
 }
 
-.about-carousel-footer {
+.single-about-welcome-slider-img img {
   position: absolute;
-  bottom: 0%;
-  right: 40px;
-  width: 280px;
-  height: 20px;
-}
-.about-welcome-hero .carousel-control-prev {
-  left: auto;
-  right: 60px;
-}
-
-.about-welcome-inner-slider-img .play-button {
   top: 0;
   left: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 100%;
+  height: 100%;
 }
-.about-welcome-inner-slider-img.small-big-slide .play-button img {
-  width: 25px;
-  height: 25px;
-}
-
 
 /* .about-welcome-hero */                   
 .about-welcome-hero-content {
