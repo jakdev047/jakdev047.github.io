@@ -76,7 +76,7 @@ $(document).ready(function() {
       loop: true,
       autoplay: true,
       margin: 0,
-      dots: false,
+      dots: true,
       smartSpeed: 1000,
       nav: true,
       navText: ['<img src="assets/images/testimonial/left-arrow.svg" alt="left">', '<img src="assets/images/testimonial/right-arrow.png" alt="right">'],
