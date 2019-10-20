@@ -287,6 +287,9 @@
   .newsroom-topic-tab-inner-area-list { overflow-x: scroll;overflow-y: hidden; }
   .newsroom-topic-tab-inner-area-list .tab-features { min-width: 665px; }
 
+  /* products page */
+  .single-products-list-item-info ul li { display: inline-block;margin-bottom: 20px; margin-right: 15px;}
+
 } /*max-width:767px*/
 
 @media screen and (max-width: 575px) {

@@ -140,6 +140,8 @@ h2.title {
   padding: 120px 0!important;
 }
 
+.text-initial{ text-transform: initial!important; }
+
 /* background */
 .bg-gray{background: #f7f8fa;}
 
@@ -2222,6 +2224,186 @@ ul.page-pagination li a.next.page-numbers {
   height: auto;
 }
 
+/*=======================================
+  Newsroom Details page
+=========================================*/
+
+/*-------------------------------------
+  newsroom-details-content
+--------------------------------------*/
+.newsroom-details-content {
+  padding: 50px 0 95px;
+}
+
+.newsroom-details-inner-content-body {
+  max-width: 770px;
+  margin: 53px auto 0;
+}
+.news-publish-date {
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 1.88;
+  color: #999999;
+}
+
+.newsroom-details-inner-content-body h2 {
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 1.29;
+  text-transform: initial;
+  max-width: 560px;
+  margin-bottom: 16px;
+}
+
+.news-author p,.news-author p a {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.88;
+  color: #999999;
+  transition: .3s ease-in-out;
+}
+
+.newsroom-details-inner-content-body p a:hover {
+  color: #7dc4a6;
+}
+
+.news-author p {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 30px;
+}
+
+.news-author p:before {
+  position: absolute;
+  top: 15px;
+  left: 0;
+  content: '';
+  width: 25px;
+  height: 1px;
+  background: rgba(129, 129, 129,.5);
+}
+
+.newsroom-details-inner-content-body-txt p{
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.88;
+  color: #3d4642;
+  margin-bottom: 20px;
+}
+
+/*-------------------------------------
+  newsroom-details-list
+--------------------------------------*/
+.newsroom-details-list {
+  padding: 108px 0 102px;
+  background: #f7f8fa;
+}
+.newsroom-details-list-content-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+.newsroom-details-list-content-head h2 {
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 1.69;
+  margin-right: 15px;
+}
+.newsroom-details-list-content-head p a {
+  color: #7dc4a6;
+  font-size: 16px;
+  line-height: 2.75;
+}
+
+/*=======================================
+  Products page
+=========================================*/
+/*-------------------------------------
+  products-list
+--------------------------------------*/
+.products-list {
+  padding: 35px 0 60px;
+}
+
+.single-products-list-inner-content h2 {
+  display: flex;
+  align-items: center;
+}
+
+.single-products-list-inner-content h2 span{
+  font-size: 34px;
+  font-weight: 500;
+  line-height: 1.29;
+  color: #3d4642;
+}
+.single-products-list-inner-content  .iconmoon {
+  font-size: 50px;
+  color: #3d4642;
+  margin-right: 25px;
+}
+.single-products-list-item-info ul li {
+  display:block;
+}
+.single-products-list-item-info ul li a {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 2.3;
+  color: #3d4642;
+  text-transform: uppercase;
+  transition: .3s linear;
+}
+
+/* .single-products-list-inner-content-body */
+.single-products-list-inner-content-body {
+  margin: 30px 0 35px;
+}
+.single-products-list-item-info ul li a:hover {
+  color: #7dc4a6;
+  transform: translate(5px);
+}
+
+.single-products-list-item {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.single-products-list-item li {
+  display: inline-block;
+  background-color: #f7f8fa;
+  width: 148px;
+  height: 148px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.single-products-list-item li:last-child{
+  margin-right: 0;
+}
+.single-products-list-item-img img {
+  width: 60px;
+  height: 60px;
+}
+.single-products-list-item li h3 a {
+  font-size: 16px;
+  line-height: 1.56;
+  color: #3d4642;
+  margin-top: 15px;
+}
+
+.single-products-list-inner-content .icon-beauty-treatment:before,
+.single-products-list-inner-content .icon-shop:before,
+.single-products-list-inner-content .icon-salon:before,
+.single-products-list-inner-content .icon-retail:before,
+.single-products-list-inner-content .icon-branding:before,
+.single-products-list-inner-content .icon-develop:before{
+  color: #3d4642;
+}
 
 /*===============================
   Scroll Top
