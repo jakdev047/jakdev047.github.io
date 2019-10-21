@@ -77,7 +77,7 @@ $(document).ready(function() {
       autoplay: true,
       margin: 0,
       dots: true,
-      smartSpeed: 1000,
+      smartSpeed: 2000,
       nav: true,
       navText: ['<img src="assets/images/testimonial/left-arrow.svg" alt="left">', '<img src="assets/images/testimonial/right-arrow.png" alt="right">'],
       responsiveClass: true,

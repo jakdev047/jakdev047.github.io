@@ -846,6 +846,87 @@ a.register-btn:before {
 }
 
 /*-------------------------------------
+  location-slider
+--------------------------------------*/
+.location-slider {
+  padding: 0px 0 120px;
+}
+
+.location-slider h2{
+  font-size: 34px;
+  font-weight: 500;
+  line-height: 1.29;
+  text-align: center;
+}
+
+.location-slider-inner-content {
+  margin: 80px 0 0;
+}
+
+.single-location-slider-img {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 43.3%;
+}
+
+.single-location-slider-img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.single-location-slider-img .play-button {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 42%;
+  left: 47%;
+}
+.single-location-slider-txt-head {
+  position: absolute;
+  top: 70px;
+  left: 70px;
+}
+.single-location-slider-txt-body {
+  position: absolute;
+  bottom: 70px;
+  left: 70px;
+}
+.single-location-slider-txt-head h3 {
+  font-size: 26px;
+  line-height: 1.38;
+  color: #fff;
+  max-width: 400px;
+  text-transform: initial;
+  font-weight: normal;
+}
+.single-location-slider-txt-body p {
+  height: 36px;
+  font-size: 26px;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 1.38;
+  color: #fff;
+}
+
+.location-slider .carousel-indicators {
+  bottom: -55px;
+}
+.location-slider  .carousel-indicators li {
+  width: 35px;
+  height: 4px;
+  background: #e6e4e4;
+  margin-right: 20px;
+}
+.location-slider  .carousel-indicators li:last-child{
+  margin: 0;
+}
+.location-slider  .carousel-indicators .active {
+  background: #7dc4a6;
+}
+
+/*-------------------------------------
   Work
 --------------------------------------*/
 .work {
@@ -883,8 +964,12 @@ a.register-btn:before {
   right: 12%;
 }
 .work-content-process-txt h3 {
-  margin: 30px 0 10px;
+  margin: 25px 0 10px;
   line-height: 2.06;
+}
+
+.work-content-process-icon .iconmoon {
+  font-size: 50px;
 }
 
 /* .work-section2 */
@@ -909,7 +994,7 @@ a.register-btn:before {
   Location
 --------------------------------------*/
 .location {
-  padding: 130px 0 160px;
+  padding: 130px 0 120px;
 }
 h2.location-title{
   font-size: 20px;

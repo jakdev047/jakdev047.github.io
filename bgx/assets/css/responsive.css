@@ -140,6 +140,10 @@
   .flash-img {float: none;margin-bottom: 60px;}
   .flash-border {height: 360px; margin-left: 10px;}
 
+  /* .location-slider */
+  .single-location-slider-txt-head,.single-location-slider-txt-body { position: relative; top: 0;left: 0;bottom: 0; margin: 30px 0; }
+  .single-location-slider-txt-head h3,.single-location-slider-txt-body p{color: #3d4642;}
+
   /* .work */
   .work-submit-card { position: relative;top: 0;left: 0;}
   .work-approve-card {margin-left: 0px;}
