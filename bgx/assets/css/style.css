@@ -2521,6 +2521,8 @@ ul.page-pagination li a.next.page-numbers {
 .login-section-content {
   position: relative;
   text-align: center;
+  max-width: 1095px;
+  margin: 0 auto;
 }
 .login-logo {
   margin-bottom: 35px;
@@ -2540,6 +2542,7 @@ ul.page-pagination li a.next.page-numbers {
 .login-form-content {
   max-width: 400px;
   margin: 0 auto;
+  overflow: hidden;
 }
 .register-form-content.login-form-content form input.form-control {
   margin-bottom: 30px;
