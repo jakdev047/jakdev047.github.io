@@ -154,6 +154,10 @@ h2.title {
 }
 .smart-menu-scrollbar::-webkit-scrollbar-thumb {background-color:#000} */
 
+/* ::-webkit-scrollbar {
+  display: none;
+} */
+
 /*-------------------------------------
   2. Header
 --------------------------------------*/

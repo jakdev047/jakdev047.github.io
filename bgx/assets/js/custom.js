@@ -74,7 +74,7 @@ $(document).ready(function() {
     $('.about-welcome-hero-carousel-content').owlCarousel({
       items:2,
       loop: true,
-      autoplay: true,
+      autoplay: false,
       margin: 0,
       dots: true,
       smartSpeed: 2000,
