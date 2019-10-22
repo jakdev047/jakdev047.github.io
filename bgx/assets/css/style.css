@@ -2120,7 +2120,7 @@ ul.office-address-list li span.time-duration {
 .newsroom-topic-tab-txt-head h2 {
   font-size: 26px;
   font-weight: 600;
-  line-height: 1.69;
+  line-height: 1.70;
   max-width: 286px;
   height: 35px;
   overflow: hidden;
@@ -2128,6 +2128,7 @@ ul.office-address-list li span.time-duration {
 .newsroom-topic-tab-txt-head .date {
   font-size: 16px;
   font-weight: 200;
+  line-height: 1.88;
 }
 .newsroom-topic-tab-txt-body p {
   font-size: 16px;

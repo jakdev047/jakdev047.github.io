@@ -308,8 +308,7 @@
 
   .newsroom-gallary { padding: 60px 0 55px; }
   .single-newsroom-gallary-img { padding-bottom: 48.5%; margin-bottom: 18px;}
-  .single-newsroom-gallary-txt h2 a { font-size: 18px;line-height: 2.45; }
-  .single-newsroom-gallary-txt p { font-size: 14px; }
+  .single-newsroom-gallary-txt h2 a { font-size: 18px;line-height: 1.67;max-width: 300px; }
   .single-newsroom-gallary {height: 470px;margin-bottom: 30px;}
   .page-pagination {margin-top: 8px; }
   ul.page-pagination li a {width: 25px;height: 25px;font-size: 12px;}
