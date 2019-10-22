@@ -2112,7 +2112,7 @@ ul.office-address-list li span.time-duration {
 }
 .newsroom-topic-tab-txt-head {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   flex-wrap: wrap;
   margin-bottom: 15px;
@@ -2213,7 +2213,7 @@ ul.office-address-list li span.time-duration {
 .single-newsroom-gallary-txt h2 a{
   font-size: 26px;
   font-weight: 600;
-  line-height: 1.69;
+  line-height: 1.39;
   max-width: 370px;
   text-transform: initial;
   margin-bottom: 10px;
@@ -2240,14 +2240,15 @@ ul.office-address-list li span.time-duration {
   width: 93%;
 }
 .single-newsroom-gallary-author p {
-  font-size: 14px;
+  font-size: 16px;
   text-transform: capitalize;
   margin-right: 10px;
   height: auto;
 }
 .single-newsroom-gallary-author p a {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 300;
+  line-height: 1.88;
 }
 .single-newsroom-gallary-date p {
   font-size: 16px;
@@ -2338,7 +2339,7 @@ ul.page-pagination li a.next.page-numbers {
 .newsroom-details-inner-content-body h2 {
   font-size: 34px;
   font-weight: 600;
-  line-height: 1.29;
+  line-height: 1.30;
   text-transform: initial;
   max-width: 560px;
   margin-bottom: 16px;
