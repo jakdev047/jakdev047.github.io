@@ -2544,6 +2544,9 @@ ul.page-pagination li a.next.page-numbers {
   margin: 0 auto;
   overflow: hidden;
 }
+.register-form-content.login-form-content  form {
+  width: 400px;
+}
 .register-form-content.login-form-content form input.form-control {
   margin-bottom: 30px;
 }
