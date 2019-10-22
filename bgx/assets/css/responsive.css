@@ -331,6 +331,9 @@
   .single-products-list-item-info ul li { display: inline-block;margin-bottom: 20px; margin-right: 15px;}
   .newsroom-card2 .single-newsroom-gallary-txt h2 a { height: 35px;}
 
+  /* login page */
+  .login-section {padding: 20px 0;height: auto;}
+
 } /*max-width:767px*/
 
 @media screen and (max-width: 575px) {
