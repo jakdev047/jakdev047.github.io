@@ -247,6 +247,10 @@
   a.learn-btn,a.learn-btn:hover,a.learn-btn:focus { width: 126px; height: 40px; }
   .newsroom-topic-tab-txt-body p { margin-bottom: 31px; }
 
+  /* login page */
+  .login-section {background: #222;}
+  .register-form-content.login-form-content form { width: auto;max-width: 400px; overflow: hidden; }
+
 } /*max-width:991px*/
 
 @media screen and (max-width: 767px) {
@@ -330,9 +334,6 @@
   /* products page */
   .single-products-list-item-info ul li { display: inline-block;margin-bottom: 20px; margin-right: 15px;}
   .newsroom-card2 .single-newsroom-gallary-txt h2 a { height: 35px;}
-
-  /* login page */
-  .login-section {padding: 60px 0 175px;height: auto;}
 
 } /*max-width:767px*/
 

@@ -2501,10 +2501,11 @@ ul.page-pagination li a.next.page-numbers {
   Login  page
 =========================================*/
 .login-section {
-  background-image: url(../images/others/login-banner.png);
-  background-position: center;
+  background-image: url(../images/others/login-banner.jpg);
+  background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   padding: 63px 0;
   height: 100vh;
   overflow: hidden;
