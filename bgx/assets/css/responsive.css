@@ -1,5 +1,6 @@
 @media screen and (min-width: 1900px) {
   .modal-lg { max-width: 1600px; }
+  .login-section { min-height: auto;padding-bottom: 32%; }
 }/*min-width:1900px*/
 
 @media screen and (max-width: 1899px) {
@@ -105,6 +106,13 @@
   /* left-right-section  */
   .single-left-right-section-content-img { padding-bottom: 0;max-width: 350px;height: 350px;margin: 0 auto;}
 
+  /* login page */
+  .login-body{background: #3d4642;height: auto;}
+  .register-form-content.login-form-content form { width: auto;max-width: 400px; overflow: hidden; }
+  .login-img:before,.login-img{display: none;}
+  .login-section-content{padding: 0;}
+  .login-section {padding: 40px 0;min-height: auto; }
+  
 } /*max-width:1199px*/
 
 @media screen and (max-width: 1024px) {
@@ -246,11 +254,6 @@
   .newsroom-topic-tab-txt-head .date  { line-height: 1.25;} 
   a.learn-btn,a.learn-btn:hover,a.learn-btn:focus { width: 126px; height: 40px; }
   .newsroom-topic-tab-txt-body p { margin-bottom: 31px; }
-
-  /* login page */
-  .login-body{background: #3d4642;height: auto;}
-  .register-form-content.login-form-content form { width: auto;max-width: 400px; overflow: hidden; }
-  .login-body:before{display: none;}
 
 } /*max-width:991px*/
 
