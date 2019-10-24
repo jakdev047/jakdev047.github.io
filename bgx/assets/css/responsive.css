@@ -109,7 +109,7 @@
   /* login page */
   .login-body{background: #3d4642;height: auto;}
   .register-form-content.login-form-content form { width: auto;max-width: 400px; overflow: hidden; }
-  .login-img:before,.login-img{display: none;}
+  .login-body:before{display: none;}
   .login-section-content{padding: 0;}
   .login-section {padding: 40px 0;min-height: auto; }
 

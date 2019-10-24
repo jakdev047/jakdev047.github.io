@@ -2508,6 +2508,16 @@ ul.page-pagination li a.next.page-numbers {
   background-attachment: fixed;
   position: relative;
 }
+.login-body:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.25);
+  z-index: 1;
+}
 /* .login-section {
   position: relative;
   min-height: 1080px;
