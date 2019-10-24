@@ -2501,19 +2501,19 @@ ul.page-pagination li a.next.page-numbers {
   Login  page
 =========================================*/
 .login-body {
-  /* background-image: url(../images/others/login-banner.jpg);
+  background-image: url(../images/others/login-banner.jpg);
   background-position: center center;
-  background-size: cover;
+  background-size: inherit;
   background-repeat: no-repeat;
-  background-attachment: fixed; */
-  /* position: relative; */
+  background-attachment: fixed;
+  position: relative;
 }
-.login-section {
+/* .login-section {
   position: relative;
   min-height: 1080px;
   overflow: hidden;
-}
-.login-img {
+} */
+/* .login-img {
   position: absolute;
   top: 0;
   left: 0;
@@ -2538,7 +2538,7 @@ ul.page-pagination li a.next.page-numbers {
   height: 100%;
   background: rgba(0,0,0,.25);
   z-index: 0;
-}
+} */
 .login-section-content {
   position: relative;
   text-align: center;

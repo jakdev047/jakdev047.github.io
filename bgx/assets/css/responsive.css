@@ -1,6 +1,6 @@
 @media screen and (min-width: 1900px) {
   .modal-lg { max-width: 1600px; }
-  .login-section { min-height: auto;padding-bottom: 32%; }
+  /* .login-section { min-height: auto;padding-bottom: 32%; } */
 }/*min-width:1900px*/
 
 @media screen and (max-width: 1899px) {
@@ -112,7 +112,7 @@
   .login-img:before,.login-img{display: none;}
   .login-section-content{padding: 0;}
   .login-section {padding: 40px 0;min-height: auto; }
-  
+
 } /*max-width:1199px*/
 
 @media screen and (max-width: 1024px) {
