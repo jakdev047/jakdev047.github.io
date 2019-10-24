@@ -2500,7 +2500,7 @@ ul.page-pagination li a.next.page-numbers {
 /*=======================================
   Login  page
 =========================================*/
-.login-section {
+.login-body {
   background-image: url(../images/others/login-banner.jpg);
   background-position: center center;
   background-size: cover;
@@ -2510,7 +2510,7 @@ ul.page-pagination li a.next.page-numbers {
   height: 100vh;
   overflow: hidden;
 }
-.login-section:before {
+.login-body:before {
   position: absolute;
   top: 0;
   left: 0;
