@@ -17,12 +17,14 @@
   }
   .about-welcome-hero-carousel .owl-nav { margin: 0;position: absolute;bottom: 40px; right: auto;left: 20px; }
   .about-welcome-hero-carousel .play-button {left: 45%;}
+  .login-section-content {left: 15%;}
 }/*max-width:1799px*/
 
 @media screen and (max-width: 1680px) {
   .register-form-content form { width: auto; max-width: 640px;}
   .register-modal-left, .register-modal-right { padding: 120px 50px;}
   .tab-service li a, .tab-service li a.active { padding: 36px 46px;}
+  
 }/*max-width:1680px*/
 
 @media screen and (max-width: 1499px) {
@@ -40,6 +42,7 @@
   .tab-service {top: 15px;}
   .service-tab-sec-title{top: 145px;}
   .tab-service li a, .tab-service li a.active {  padding: 36px 50px; } 
+  .login-section-content { left: 5%; }
 } /*max-width:1440px*/
 
 @media screen and (min-width: 1200px){
@@ -109,9 +112,7 @@
   /* login page */
   .login-body{background: #3d4642;height: auto;}
   .register-form-content.login-form-content form { width: auto;max-width: 400px; overflow: hidden; }
-  .login-body:before{display: none;}
-  .login-section-content{padding: 0;}
-  .login-section {padding: 40px 0;min-height: auto; }
+  .login-img:before,.login-img {display: none;}
 
 } /*max-width:1199px*/
 
