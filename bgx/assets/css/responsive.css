@@ -114,6 +114,10 @@
   .register-form-content.login-form-content form { width: auto;max-width: 400px; overflow: hidden; }
   .login-img:before,.login-img {display: none;}
 
+  /* work-page */
+  .single-work-welcome-txt { margin: 0px 0 0; }
+  .work-welcome-hero {  padding: 60px 0; }
+
 } /*max-width:1199px*/
 
 @media screen and (max-width: 1024px) {
@@ -259,7 +263,8 @@
 } /*max-width:991px*/
 
 @media screen and (max-width: 767px) {
-  .iconmoon { font-size: 24px; } 
+  .iconmoon { font-size: 24px; }
+  h2.title{font-size: 20px;} 
 
   /* welcome-hero */
   .welcome-hero-slider-footer {display: none;}
@@ -386,6 +391,11 @@
   .single-newsroom-gallary-img {padding-bottom: 70.5%;max-width: 320px;}
   .newsroom-details-list-content-head p a {bottom: 30%;}
   .single-newsroom-gallary {padding: 15px;}
+
+  /* work-page */
+  .single-work-welcome-hero-img {max-width: 400px; padding-bottom: 85%; }
+  .single-work-welcome-hero-img .play-button img { width: 35px; height: 35px; }
+  .single-work-welcome-hero-img .play-button {top: 40%;left: 40%; }
 
 } /*max-width:440px*/
 

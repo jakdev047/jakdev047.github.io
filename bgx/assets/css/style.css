@@ -12,7 +12,14 @@ font-family: 'Poppins', sans-serif;
 /*=========== TABLE OF CONTENTS ===========
 01.  General css (Reset code)
 02.  Header
-
+03.  Salon page
+04.  Contact Page
+05.  Home page
+06.  About us page
+07.  Newsroom  page
+08.  Newsroom Details page
+09.  Login  page
+10.  Work  page
 
 
 ==========================================*/
@@ -110,7 +117,7 @@ html,body{height: 100%;}
 
 h2.title {
   font-size: 34px;
-  line-height: 1.29;
+  line-height: 1.30;
   text-align: center;
   text-transform: inherit;
 }
@@ -130,6 +137,12 @@ h2.title {
 .sec-title p {
   font-size: 16px;
   line-height: 1.88;
+}
+
+h2.title {
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 1.29;
 }
 
 .section-padding{
@@ -240,6 +253,10 @@ h2.title {
 }
 .main-menu nav ul li a:hover,.main-menu nav ul li a.active {
   color: #7dc4a6;
+}
+
+.main-menu nav ul li a span {
+  text-transform: lowercase;
 }
 
 .main-menu-right-section {
@@ -376,6 +393,7 @@ li.select-opt:last-child{margin-right: 0;}
   height: 100%;
 }
 
+
 .welcome-hero-slider-footer {
   padding: 0 40px;
   position: absolute;
@@ -483,6 +501,9 @@ li.select-opt:last-child{margin-right: 0;}
   width: 100px;
   margin-left: 18px;
 }
+.welcome-hero-content p a {
+  font-size: inherit;
+}
 .register-btn-card {
   margin: 80px 0 0;
   display: inline-block;
@@ -564,10 +585,6 @@ a.register-btn:before {
 .register-modal .modal-body {
   padding: 0;
 }
-
-/* .register-modal-left,.register-modal-right {
-  max-width: 800px;
-} */
 .register-modal-body {
   display: flex;
 }
@@ -683,7 +700,6 @@ a.register-btn:before {
   background: #fff;
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
 }
-
 
 .register-select-angle{
   position: absolute;
@@ -827,6 +843,7 @@ a.register-btn:before {
 }
 .single-offer-content {
   margin-bottom: 90px;
+  text-align: center;
 }
 .single-offer-icon {
   width: 130px;
@@ -837,6 +854,7 @@ a.register-btn:before {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 0 auto;
 }
 
 .single-offer-txt h2{
@@ -1949,7 +1967,6 @@ ul.office-address-list li span.time-duration {
   height: 100%;
 }
 
-
 /*-------------------------------------
   About contact section
 --------------------------------------*/
@@ -2500,14 +2517,7 @@ ul.page-pagination li a.next.page-numbers {
 /*=======================================
   Login  page
 =========================================*/
-.login-body {
-  /* background-image: url(../images/others/login-banner.jpg);
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed; */
-  /* position: relative; */
-}
+
 .login-section {
   position: relative;
 }
@@ -2675,6 +2685,55 @@ ul.page-pagination li a.next.page-numbers {
   color: #fff;
 }
 
+/*=======================================
+  Work  page
+=========================================*/
+
+/*-------------------------------------
+  work-welcome-hero 
+--------------------------------------*/
+.work-welcome-hero  {
+  padding: 55px 0 120PX;
+}
+.single-work-welcome-txt {
+  margin: 70px 0 0;
+}
+.single-work-welcome-txt h2 {
+  text-align: left;
+  line-height: 1.30;
+}
+.single-work-welcome-para {
+  margin: 44px 0 0;
+}
+.single-work-welcome-para  p {
+  font-size: 16px;
+  line-height: 1.88;
+  margin-bottom: 22px;
+}
+.single-work-welcome-hero-img {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 68%;
+}
+
+.single-work-welcome-hero-img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.single-work-welcome-hero-img .play-button {
+  top: 42%;
+  left: 45%;
+}
+
+.single-work-welcome-hero-img .play-button img {
+  width: 70px;
+  height: 70px;
+}
+
 /*===============================
   Scroll Top
 ===============================*/
@@ -2701,24 +2760,24 @@ ul.page-pagination li a.next.page-numbers {
 	z-index: 2;
 }
 #scroll-Top  .return-to-top:hover {
-    background:#fff;
-    color: #7dc4a6;
+  background:#fff;
+  color: #7dc4a6;
 	border:1px solid #7dc4a6;
 }
 
 #scroll-Top  .return-to-top i{
-    position:relative;
-    bottom:0;
+  position:relative;
+  bottom:0;
 }
 #scroll-Top  .return-to-top i{
-    position: relative;
-    animation-name: example;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
-    animation-duration:1s;
+  position: relative;
+  animation-name: example;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-duration:1s;
 }
 @keyframes example {
-    0%   {bottom:0px;}
-    100%  {bottom:7px;}
+  0%   {bottom:0px;}
+  100%  {bottom:7px;}
 }
 /*========================Thank you=================
