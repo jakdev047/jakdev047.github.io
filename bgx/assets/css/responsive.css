@@ -117,6 +117,7 @@
   /* work-page */
   .single-work-welcome-txt { margin: 0px 0 0; }
   .work-welcome-hero {  padding: 60px 0; }
+  .work-timeline-content:before {left: 436px;}
 
 } /*max-width:1199px*/
 
@@ -242,6 +243,7 @@
   /* work */
   .work-process-info h2 {  font-size: 26px; }
   .work.work-section2 {padding: 67px 0 52px; }
+  .single-work-timeline .time-circle,.work-timeline-content:before{display: none;}
 
   /* salon-list */
   .salon-list { margin: 80px 0 20px; }
@@ -259,6 +261,11 @@
   .newsroom-topic-tab-txt-head .date  { line-height: 1.25;} 
   a.learn-btn,a.learn-btn:hover,a.learn-btn:focus { width: 126px; height: 40px; }
   .newsroom-topic-tab-txt-body p { margin-bottom: 31px; }
+
+  /* work-page */
+  .single-work-timeline .time-circle {right: auto;left: -42px; }
+  .work-timeline-content:before { left: -15px;height: 80%; }
+  .work-time-bottom {margin: 0 0 30px; }
 
 } /*max-width:991px*/
 
@@ -291,7 +298,7 @@
   .offer h2.title {font-size: 20px; margin-bottom: 40px;}
   .single-offer-content {margin-bottom: 43px;}
   .single-offer-icon {width: 75px;height: 75px;}
-  .single-offer-icon img {width: 30px;}
+  .single-offer-icon .iconmoon {font-size: 30px; }
   .single-offer-txt h2 { margin: 23px 0 10px;font-size: 16px;}
 
   .brand-carousel {max-width: 550px; margin: 0 auto;text-align: center;}

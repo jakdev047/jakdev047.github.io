@@ -856,6 +856,9 @@ a.register-btn:before {
   justify-content: center;
   margin: 0 auto;
 }
+.single-offer-icon .iconmoon {
+  font-size: 48px;
+}
 
 .single-offer-txt h2{
   transition: .3s ease;
@@ -2734,7 +2737,58 @@ ul.page-pagination li a.next.page-numbers {
   height: 70px;
 }
 
-/*===============================
+/*-------------------------------------
+  work-timeline 
+--------------------------------------*/
+.work-timeline-content {
+  position: relative;
+}
+
+.work-timeline-content:before {
+  position: absolute;
+  content: "";
+  top: 70px;
+  left: 527px;
+  width: 1px;
+  height: 85%;
+  background: #7dc4a6;
+}
+.work-time-bottom {
+  margin: 0 0 100px;
+}
+.single-work-timeline{
+  position: relative;
+}
+.single-work-timeline-txt,.single-work-timeline-img{
+  margin-bottom: 30px;
+}
+.single-work-timeline-txt h2{
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 1.70;
+  margin-bottom: 12px;
+}
+.single-work-timeline-txt p {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.88;
+}
+
+.single-work-timeline .time-circle {
+  width: 25px;
+  height: 25px;
+  background-color: #7dc4a6;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 60px;
+  right: -77px;
+}
+
+/*=======rgb(165, 94, 94)=================
   Scroll Top
 ===============================*/
 #scroll-Top  .return-to-top {
