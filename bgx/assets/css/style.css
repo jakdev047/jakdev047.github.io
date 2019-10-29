@@ -2743,7 +2743,23 @@ ul.page-pagination li a.next.page-numbers {
 .work-timeline-content {
   position: relative;
 }
+.time-circle-parent {
+  position: relative;
+}
 
+.time-circle-parent .time-circle {
+  width: 25px;
+  height: 25px;
+  background-color: #7dc4a6;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50px;
+  left: 515px;
+}
 .work-timeline-content:before {
   position: absolute;
   content: "";
@@ -2756,8 +2772,8 @@ ul.page-pagination li a.next.page-numbers {
 .work-time-bottom {
   margin: 0 0 100px;
 }
-.single-work-timeline{
-  position: relative;
+.single-work-timeline-txt {
+  margin: 40px 0 0;
 }
 .single-work-timeline-txt,.single-work-timeline-img{
   margin-bottom: 30px;
@@ -2772,20 +2788,6 @@ ul.page-pagination li a.next.page-numbers {
   font-size: 16px;
   font-weight: 300;
   line-height: 1.88;
-}
-
-.single-work-timeline .time-circle {
-  width: 25px;
-  height: 25px;
-  background-color: #7dc4a6;
-  border-radius: 50%;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  top: 60px;
-  right: -77px;
 }
 
 /*=======rgb(165, 94, 94)=================
