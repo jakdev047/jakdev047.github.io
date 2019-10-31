@@ -1,0 +1,128 @@
+@media screen and (min-width: 1900px) {}/*min-width:1900px*/
+
+@media screen and (max-width: 1899px) {} /*max-width:1899px*/
+
+@media screen and (max-width: 1799px){}/*max-width:1799px*/
+
+@media screen and (max-width: 1680px) {}/*max-width:1680px*/
+
+@media screen and (max-width: 1499px) {}/*max-width:1499px*/
+
+@media screen and (max-width: 1440px) {} /*max-width:1440px*/
+
+@media screen and (min-width: 1200px){
+  .menu-btn { display: none !important;}
+}/*min-width:1200px*/
+
+@media screen and (max-width: 1199px) {
+
+  /* header */
+  .main-menu {margin-left: 20px;}
+  .logo { margin-left: 0px;}
+  .main-menu {display: block;}
+  .select-country { margin-right: 15px;}
+  .header.header-fix .main-menu nav ul li a { color: #3d4642; }
+  .header-fix .header-menu .main-menu nav ul li { margin-left: 0px; }
+  .header.header-fix .header-search a {color: #3d4642; }
+  .main-menu-right-section {padding: 5px 40px 25px 15px;}
+  .tech-responsive-img{display: block;}
+  .tech-logo-img{display: none;}
+  .header.header-fix { position: relative; }
+  .header-fix .menu-btn span{background: #999;}
+  .header.header-fix .logo a {width: 70px; height: 50px; }
+  .header.header-fix .header-menu { height: 70px;}
+  .header.header-fix .logo { padding-top: 10px; }
+  .header.header-fix  .menu-btn { margin-top: 20px;}
+
+  /* header */
+  .header-left {padding: 0 15px;}
+  .main-menu.offcanvas-menu {position: fixed; left: -120%;top: 0; width: 50%; height: 100%; overflow-y: scroll;background: #fff;z-index: 3; box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);transition: 0.5s;}
+  .main-menu.offcanvas-menu.smart-menu-active { top: 0;left: 0;margin: 0;transition: 0.7s;padding: 28px 0;}
+  .main-menu-right-section { display: block;height: auto;}
+  .contact-btn {margin-top: 30px;}
+  .main-menu nav ul li {display: block;padding-left: 15px; margin: 0 0 30px;}
+
+  /* technology-page */
+  .tech-welcome-hero-img {position: relative; padding-bottom: 35.5%; }
+  .tech-welcome-hero-content-txt h2,.tech-welcome-hero-content-txt p{color: #3d4642;}
+  .tech-welcome-hero-content-txt {padding: 80px 0 0;text-align: center;margin: 0 auto;}
+
+} /*max-width:1199px*/
+
+@media screen and (max-width: 1024px) {} /*max-width:1024px*/
+
+@media screen and (min-width: 992px) {} /*max-width:992px*/
+
+@media screen and (max-width: 991px) {
+  .p0{
+    padding-right: 15px!important;
+    padding-left: 15px!important;
+  }
+  .section-padding{ padding: 60px 0 30px!important; }
+  .default-section-padding{  padding: 60px 0 !important;}
+
+  .sec-title h2 { font-size: 26px; }
+  .sec-title p {font-size: 14px;}
+
+  /* .header-menu */
+  .header-menu {padding: 0 15px; }
+
+  /* technology page */
+  .single-tech-service {padding: 40px 35px 23px;max-width: 360px;margin: 0 auto 40px;}
+  .single-tech-service-txt h2 { margin: 45px 0 20px;}
+  .tech-service { padding: 120px 0 40px; }
+
+  .tech-partner { padding: 80px 0 50px; }
+  .single-tech-partner { max-width: 360px; margin: 0 auto 30px; }
+  .single-tech-partner-img img { height: 270px; }
+  .single-tech-partner-txt h2 a, .single-tech-partner-txt h2 a:hover {font-size: 18px;line-height: 2.45;}
+  .single-tech-partner-txt { padding: 12px 20px 25px;}
+  .single-tech-partner-txt p {font-size: 14px;line-height: 2;}
+  
+} /*max-width:991px*/
+
+@media screen and (max-width: 767px) {
+  .iconmoon { font-size: 24px; }
+  h2.title{font-size: 20px;} 
+
+  /* technology-page */
+  .tech-welcome-hero-img {position: relative;padding-bottom: 0;height: 400px; }
+  .tech-welcome-hero-content-txt h2 { font-size: 26px;line-height: 1.40; }
+  .tech-welcome-hero-content-txt p {font-size: 16px;line-height: 1.6;margin: 12px 0 0;}
+  .register-btn-card { margin: 22px 0 0;}
+  a.register-btn {letter-spacing: 1.82px;font-weight: normal; }
+  .tech-welcome-hero-content-txt { padding: 42px 0 0px;max-width: 287px;text-align: center; margin: 0 auto;}
+
+  .tech-service {padding: 100px 0 80px; }
+
+} /*max-width:767px*/
+
+@media screen and (max-width: 575px) {} /*max-width:575px*/
+
+@media screen and (max-width: 540px) {} /*max-width:540px*/
+
+@media screen and (max-width: 480px) {} /*max-width:480px*/
+
+@media screen and (min-width: 440px) {
+  .menu-sidebar-cross{ display: none!important }
+}
+
+@media screen and (max-width: 440px) {
+  .main-menu.offcanvas-menu { width: 80%; }
+  .menu-sidebar-cross {
+    position: absolute;
+    font-size: 28px;
+    cursor: pointer;
+    padding: 8px 10px;
+    top: 0;
+    right: 15px;
+  }
+  .main-menu.offcanvas-menu.smart-menu-active {padding: 80px 0;}
+
+} /*max-width:440px*/
+
+@media screen and (max-width: 399px) {} /*max-width:399px*/
+
+@media screen and (max-width: 350px) {} /*max-width:350px*/
+
+@media screen and (max-width: 320px) {} /*max-width:320px*/
