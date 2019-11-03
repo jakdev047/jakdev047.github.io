@@ -176,7 +176,7 @@ h2.title {
 --------------------------------------*/
 
 /* .offcanvas-overlay */
-.offcanvas-overlay {
+.offcanvas-overlay,.offcanvas-overlay2{
   position: fixed;
   content: "";
   top: 0;
@@ -189,7 +189,8 @@ h2.title {
   visibility: hidden;
 }
 
-.offcanvas-overlay.offcanvas-overlay-active {
+.offcanvas-overlay.offcanvas-overlay-active,
+.offcanvas-overlay2.offcanvas-overlay-active {
   opacity: 1;
   visibility: visible;
 }
@@ -276,9 +277,16 @@ h2.title {
   letter-spacing: 1.3;
   font-weight: 700;
   text-align: center;
-  background: #7dc4a6;
+  background: rgba(125, 196, 166,.9);
   color: #fff;
   text-transform: uppercase;
+  box-shadow: 0 10px 50px 0 rgba(125, 196, 166, 0.1);
+  transition: .5s ease-in-out;
+}
+
+.contact-btn a:hover {
+  box-shadow: 0 10px 50px 0 rgba(125, 196, 166, 0.4);
+  background: rgba(125, 196, 166,1);
 }
 
 .select-country {
@@ -286,14 +294,14 @@ h2.title {
   margin-right: 42px;
 }
 
-.menu-btn {
+.menu-btn,.single-details-tech-menu {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
 
-.menu-btn span {
+.menu-btn span{
   width: 22px;
   height: 1.4px;
   background: #999;
@@ -591,22 +599,214 @@ ul.single-tech-service-list li span.txt{
   margin-right: 25px;
 }
 
+/*=======================================
+ Single Technology Details page
+=========================================*/
+
+/*-------------------------------------
+  single-details-tec-partner
+--------------------------------------*/
+.single-details-tec-partner {
+  padding: 60px 0 245px;
+  position: relative;
+}
+.single-details-tec-partner:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 41%;
+  height: 100%;
+  background: #f7f8fa;
+}
+.single-details-tec-partner-menu-component{
+  margin-bottom: 20px;
+}
+.single-details-tec-partner-menu-component .panel-heading>h4>a {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 2.45;
+  color: #999;
+  display: block;
+  padding: 15px;
+}
+.single-details-tec-partner-list li a{
+  font-size: 16px;
+  line-height: 1.88;
+  color: #999;
+  text-transform: initial;
+  transition: .5s ease-in-out;
+}
+.single-details-tec-partner-list li a:hover,
+.single-details-tec-partner-list li a.active {
+  color: #7dc4a6;
+}
+
+.single-details-tec-partner-list li{
+  display: block;
+  margin-bottom: 6px;
+  transition: .5s linear;
+}
+.single-details-tec-partner-list li:last-child{
+  margin-bottom: 0px;
+}
+
+/* .single-details-tec-partner-left-sidebar.single-details-tec-partner-mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 500px;
+  height: 100%;
+  z-index: 1;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,.2);
+} */
+
+/* .single-details-tec-partner-left-sidebar */
+
+/* accordion */
+.single-details-tec-partner-left-sidebar .accordion {
+  max-width: 350px;
+}
+
+/* panel-title */
+.single-details-tec-partner-left-sidebar .panel-default>.panel-heading {
+  background-color:#fff;
+}
+
+.single-details-tec-partner-left-sidebar .panel-title a{
+  position: relative;
+  -webkit-transition: 0.3s linear;
+  -moz-transition: 0.3s linear;
+  -ms-transition: 0.3s linear;
+  -o-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+.single-details-tec-partner-left-sidebar .panel-title a:after{
+  position: absolute;
+  top: 25px;
+  right: 15px;
+  content: "\f107";
+  font: 20px fontAwesome;
+}
+.single-details-tec-partner-left-sidebar .panel-title a.collapsed:after{
+  position:absolute;
+  top: 25px;
+  right: 15px;
+  content: "\f105";
+  font: 20px fontAwesome;
+}
+.single-details-tec-partner-left-sidebar .panel-title a:focus,.single-details-tec-partner-left-sidebar .panel-title a:hover {
+  color: #3d4642;
+  text-decoration: none;  
+}
+.single-details-tec-partner-left-sidebar .panel-title a:focus{
+  border-left:3px solid #7dc4a6;
+}/* panel-title */
+
+/*panel-heading*/
+.single-details-tec-partner-left-sidebar .panel-default>.single-details-tec-partner-left-sidebar .panel-heading {
+  background-color: #fff;
+  border-left:3px solid #7dc4a6;
+}/*panel-heading*/
+
+/* panel-body */
+.panel-body {
+  background: #fcfcfc;
+  padding: 20px 25px 20px 27px;
+}
+.single-details-tec-partner-left-sidebar .panel-default>.panel-heading+.single-details-tec-partner-left-sidebar .panel-collapse>.panel-body {
+  border-top: none;
+  border-left:3px solid #7dc4a6;
+  color: #8790af;
+  font-size: 16px;
+  padding: 0 0 0 66px;
+  max-width: 496px;
+  padding-bottom:38px;
+}
+.sidebar-accordion-item-list li a:hover{color:#7dc4a6;}
+/* panel-body */
+
+/* accordion */
+
+/* .single-details-tec-partner-body */
+.single-details-tec-partner-body {
+  margin-left: 50px;
+}
+.single-details-tec-partner-body-head--mobile-select-txt {
+  padding: 35px 0;
+  border-top: solid 1px #f2f2f2;
+  border-bottom: solid 1px #f2f2f2;
+  margin-bottom: 25px;
+  display: none;
+  cursor: pointer;
+}
+.single-details-tec-partner-body-head--mobile-inner-select-txt{
+  padding: 10px 15px;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.single-details-tec-partner-body-head--mobile-inner-select-txt p {
+  font-size: 14px;
+  color: #7dc4a6;
+}
+
+.single-details-tec-partner-body-head-txt {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 0 34px;
+  border-bottom: solid 1px #f2f2f2;
+}
+.single-details-tec-partner-body-head-txt h2 {
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 1.70;
+  text-transform: initial;
+}
+.tec-details-suggest {
+  font-size: 14px;
+  font-weight: 200;
+  line-height: 1.5;
+  text-align: center;
+  color: #3d4642;
+  text-transform: uppercase;
+}
+.tec-details-suggest .iconmoon {
+  font-size: 12px;
+  margin-right: 8px;
+}
+.single-details-tec-partner-body-para {
+  padding: 40px 0 0;
+}
+.single-details-tec-partner-body-para p {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.75;
+  color: #3d4642;
+  margin-bottom: 30px;
+}
+
 /*=======rgb(165, 94, 94)=================
   Scroll Top
 ===============================*/
 #scroll-Top  .return-to-top {
-    position: fixed;
-    right: 30px;
-    bottom: 30px;
-    display: none;
-    width: 40px;
-    line-height: 40px;
-    height: 40px;
-    text-align: center;
-    font-size: 20px;
-    cursor: pointer;
-    color: #fff;
-    background:#7dc4a6;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  display: none;
+  width: 40px;
+  line-height: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 20px;
+  cursor: pointer;
+  color: #fff;
+  background:#7dc4a6;
 	border:1px solid #7dc4a6;
 	border-radius:50%;
 	-webkit-transition: .5s; 

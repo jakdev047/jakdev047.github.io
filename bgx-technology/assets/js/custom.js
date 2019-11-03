@@ -96,9 +96,6 @@ $(document).ready(function() {
       }
     });
 
-    // $('.owl-carousel .owl-item.active').attr("style", "width:px;")
-    // $('.owl-carousel .owl-item.active.center').attr("style", "width:650px;")
-
    /*----------------------------
 		4. blur system
 	------------------------------ */
@@ -129,6 +126,12 @@ $(document).ready(function() {
 	$('.vedio-play').magnificPopup({
 		type:'video'
 	});
+
+  $('.single-details-tec-partner-body-head--mobile-inner-select-txt,.offcanvas-overlay2').on("click", function(e) {
+    e.preventDefault();
+    $('.single-details-tec-partner-left-sidebar').toggleClass('left-zero');
+    $(".offcanvas-overlay2").toggleClass("offcanvas-overlay-active");
+  });
 
 
 });

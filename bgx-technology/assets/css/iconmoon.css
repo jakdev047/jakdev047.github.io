@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?54tuje');
-  src:  url('../fonts/icomoon.eot?54tuje#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?54tuje') format('truetype'),
-    url('../fonts/icomoon.woff?54tuje') format('woff'),
-    url('../fonts/icomoon.svg?54tuje#icomoon') format('svg');
+  src:  url('../fonts/icomoon.eot?e9myc2');
+  src:  url('../fonts/icomoon.eot?e9myc2#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?e9myc2') format('truetype'),
+    url('../fonts/icomoon.woff?e9myc2') format('woff'),
+    url('../fonts/icomoon.svg?e9myc2#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -13,6 +13,7 @@
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
+  speak: none;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -26,9 +27,26 @@
 
 .iconmoon {
   font-size: 36px;
-  color: #818181
+  color: #818181;
 }
 
+.icon-Component-0:before {
+  content: "\e923";
+}
+.icon-Component:before {
+  content: "\e924";
+}
+.icon-edit:before {
+  content: "\e925";
+  color: #7dc4a6;
+}
+.icon-menu:before {
+  content: "\e926";
+  color: #999;
+}
+.icon-search:before {
+  content: "\e927";
+}
 .icon-approve .path1:before {
   content: "\e900";
   color: rgb(125, 196, 166);
@@ -180,148 +198,4 @@
 .icon-website:before {
   content: "\e922";
   color: #7dc4a6;
-}
-.icon-world-map .path1:before {
-  content: "\e923";
-  color: rgb(247, 248, 250);
-}
-.icon-world-map .path2:before {
-  content: "\e924";
-  margin-left: -1.9658203125em;
-  color: rgb(247, 248, 250);
-}
-.icon-world-map .path3:before {
-  content: "\e925";
-  margin-left: -1.9658203125em;
-  color: rgb(247, 248, 250);
-}
-.icon-world-map .path4:before {
-  content: "\e926";
-  margin-left: -1.9658203125em;
-  color: rgb(247, 248, 250);
-}
-.icon-world-map .path5:before {
-  content: "\e927";
-  margin-left: -1.9658203125em;
-  color: rgb(247, 248, 250);
-}
-.icon-world-map .path6:before {
-  content: "\e928";
-  margin-left: -1.9658203125em;
-  color: rgb(247, 248, 250);
-}
-.icon-world-map .path7:before {
-  content: "\e929";
-  margin-left: -1.9658203125em;
-  color: rgb(247, 248, 250);
-}
-.icon-world-map .path8:before {
-  content: "\e92a";
-  margin-left: -1.9658203125em;
-  color: rgb(247, 248, 250);
-}
-.icon-world-map .path9:before {
-  content: "\e92b";
-  margin-left: -1.9658203125em;
-  color: rgb(247, 248, 250);
-}
-.icon-world-map .path10:before {
-  content: "\e92c";
-  margin-left: -1.9658203125em;
-  color: rgb(247, 248, 250);
-}
-.icon-world-map .path11:before {
-  content: "\e92d";
-  margin-left: -1.9658203125em;
-  color: rgb(247, 248, 250);
-}
-.icon-world-map .path12:before {
-  content: "\e92e";
-  margin-left: -1.9658203125em;
-  color: rgb(247, 248, 250);
-}
-.icon-world-map .path13:before {
-  content: "\e92f";
-  margin-left: -1.9658203125em;
-  color: rgb(247, 248, 250);
-}
-.icon-world-map .path14:before {
-  content: "\e930";
-  margin-left: -1.9658203125em;
-  color: rgb(247, 248, 250);
-}
-.icon-world-map .path15:before {
-  content: "\e931";
-  margin-left: -1.9658203125em;
-  color: rgb(247, 248, 250);
-}
-.icon-world-map .path16:before {
-  content: "\e932";
-  margin-left: -1.9658203125em;
-  color: rgb(247, 248, 250);
-}
-.icon-world-map .path17:before {
-  content: "\e933";
-  margin-left: -1.9658203125em;
-  color: rgb(247, 248, 250);
-}
-.icon-world-map .path18:before {
-  content: "\e934";
-  margin-left: -1.9658203125em;
-  color: rgb(247, 248, 250);
-}
-.icon-world-map .path19:before {
-  content: "\e935";
-  margin-left: -1.9658203125em;
-  color: rgb(247, 248, 250);
-}
-.icon-world-map .path20:before {
-  content: "\e936";
-  margin-left: -1.9658203125em;
-  color: rgb(247, 248, 250);
-}
-.icon-world-map .path21:before {
-  content: "\e937";
-  margin-left: -1.9658203125em;
-  color: rgb(247, 248, 250);
-}
-.icon-world-map .path22:before {
-  content: "\e938";
-  margin-left: -1.9658203125em;
-  color: rgb(247, 248, 250);
-}
-.icon-world-map .path23:before {
-  content: "\e939";
-  margin-left: -1.9658203125em;
-  color: rgb(247, 248, 250);
-}
-.icon-world-map .path24:before {
-  content: "\e93a";
-  margin-left: -1.9658203125em;
-  color: rgb(247, 248, 250);
-}
-.icon-world-map .path25:before {
-  content: "\e93b";
-  margin-left: -1.9658203125em;
-  color: rgb(125, 196, 166);
-}
-.icon-world-map .path26:before {
-  content: "\e93c";
-  margin-left: -1.9658203125em;
-  color: rgb(125, 196, 166);
-}
-.icon-world-map .path27:before {
-  content: "\e93d";
-  margin-left: -1.9658203125em;
-  color: rgb(125, 196, 166);
-}
-.icon-world-map .path28:before {
-  content: "\e93e";
-  margin-left: -1.9658203125em;
-  color: rgb(125, 196, 166);
-}
-.icon-world-map .path29:before {
-  content: "\e93f";
-  margin-left: -1.9658203125em;
-  color: rgb(125, 196, 166);
 }

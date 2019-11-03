@@ -4,7 +4,9 @@
 
 @media screen and (max-width: 1799px){}/*max-width:1799px*/
 
-@media screen and (max-width: 1680px) {}/*max-width:1680px*/
+@media screen and (max-width: 1680px) {
+  .single-details-tec-partner:before {width: 38%;}
+}/*max-width:1680px*/
 
 @media screen and (max-width: 1499px) {}/*max-width:1499px*/
 
@@ -47,6 +49,29 @@
   .tech-welcome-hero-content-txt h2,.tech-welcome-hero-content-txt p{color: #3d4642;}
   .tech-welcome-hero-content-txt {padding: 80px 0 0;text-align: center;margin: 0 auto;}
 
+  /* single-details-tech-partner */
+  .single-details-tec-partner { padding: 0 0 50px;}
+  .single-details-tec-partner:before {display: none;}
+  .single-details-tec-partner-body { margin-left: 0;}
+  .single-details-tec-partner-body-head--mobile-select-txt {display: block;}
+  .single-details-tec-partner-body-head-txt h2 { font-size: 18px;}
+  .tec-details-suggest {font-size: 12px;}
+  .single-details-tec-partner-body-para { padding: 30px 0 0; }
+  .single-details-tec-partner-body-para p { font-size: 14px;line-height: 1.90;color: #999;margin-bottom: 12px; }
+
+  .single-details-tec-partner-menu-component .panel-heading>h4>a {font-size: 14px;line-height: 2;}
+  .single-details-tec-partner-menu-component {margin-bottom: 0px; }
+  .panel-body {background: transparent;padding: 0px;}
+  .single-details-tec-partner-list li a {font-size: 14px;line-height: 2;}
+  .single-details-tec-partner-left-sidebar .panel-title a:after,.single-details-tec-partner-left-sidebar .panel-title a.collapsed:after  {top: 18px;}
+  .single-details-tec-partner-left-sidebar .panel-title a:focus {border-left: 0px solid transparent;}
+  .single-details-tec-partner-left-sidebar { position: fixed;top: 0;left: -290px;background: #fff;width: 290px;height: 100%; z-index: 4;box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);transition: .5s linear;}
+  .single-details-tec-partner-left-sidebar .accordion {margin-top: 50px;margin-left: 5px;}
+  .single-details-tec-partner-list li,.single-details-tec-partner-list li:hover {margin-bottom: 0px;padding: 10px 0;background: transparent; }
+  .single-details-tec-partner-list li:hover {background: #f8f8f8; }
+  .single-details-tec-partner-list li a {margin-left: 25px; }
+  .single-details-tec-partner-left-sidebar.left-zero{left: 0;}
+  .single-details-tec-partner-body-head--mobile-inner-select-txt {max-width: 250px; }
 } /*max-width:1199px*/
 
 @media screen and (max-width: 1024px) {} /*max-width:1024px*/
@@ -58,14 +83,14 @@
     padding-right: 15px!important;
     padding-left: 15px!important;
   }
-  .section-padding{ padding: 60px 0 30px!important; }
+  .section-padding{ padding: 60px 15px 30px!important; }
   .default-section-padding{  padding: 60px 0 !important;}
 
   .sec-title h2 { font-size: 26px; }
   .sec-title p {font-size: 14px;}
 
   /* .header-menu */
-  .header-menu {padding: 0 15px; }
+  .header-menu {padding: 0; }
 
   /* technology page */
   .single-tech-service {padding: 40px 35px 23px;max-width: 360px;margin: 0 auto 40px;}
