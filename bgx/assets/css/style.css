@@ -1220,20 +1220,30 @@ ul.brand li:first-child {
   Tab-feature
 --------------------------------------*/
 .tab-feature {
-  padding: 120px 0 5px;
+  padding: 120px 0 0px;
+}
+.tab-feature.work-tab-feature {
+  padding-bottom: 30px;
+  padding-top: 170px;
 }
 
 .tab-feature-img {
   max-width: 287px;
   margin: 0 auto;
 }
-
-.tab-features {
-  border-color: #ddd
+/* .salon-feature-img */
+.salon-feature-img {
+  position: relative;
+  overflow: hidden;
+  left:118px;
+  top: -92px;
 }
-
-.tab-features-arer,.app-download-area {
-  margin-left: -48px;
+.salon-feature-img img {
+  height: 570px;
+}
+.tab-features {
+  border-color: #ddd;
+  max-width: 485px;
 }
 .tab-features-arer {
   max-width: 480px;
@@ -1307,6 +1317,9 @@ ul.brand li:first-child {
 /* tab-features-content */
 .tab-features-content{
   padding-top: 45px;
+}
+.tab-sec-title {
+  margin: 45px 0 0;
 }
 
 .tab-sec-title h2{
@@ -2789,6 +2802,8 @@ ul.page-pagination li a.next.page-numbers {
   font-weight: 300;
   line-height: 1.88;
 }
+
+
 
 /*=======rgb(165, 94, 94)=================
   Scroll Top
