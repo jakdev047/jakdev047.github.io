@@ -619,9 +619,6 @@ ul.single-tech-service-list li span.txt{
   height: 100%;
   background: #f7f8fa;
 }
-.single-details-tec-partner-menu-component{
-  margin-bottom: 20px;
-}
 .single-details-tec-partner-menu-component .panel-heading>h4>a {
   font-size: 18px;
   font-weight: 600;
@@ -651,17 +648,6 @@ ul.single-tech-service-list li span.txt{
   margin-bottom: 0px;
 }
 
-/* .single-details-tec-partner-left-sidebar.single-details-tec-partner-mobile-menu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 500px;
-  height: 100%;
-  z-index: 1;
-  background: #fff;
-  box-shadow: 0 0 10px rgba(0,0,0,.2);
-} */
-
 /* .single-details-tec-partner-left-sidebar */
 
 /* accordion */
@@ -670,10 +656,6 @@ ul.single-tech-service-list li span.txt{
 }
 
 /* panel-title */
-.single-details-tec-partner-left-sidebar .panel-default>.panel-heading {
-  background-color:#fff;
-}
-
 .single-details-tec-partner-left-sidebar .panel-title a{
   position: relative;
   -webkit-transition: 0.3s linear;
@@ -697,11 +679,12 @@ ul.single-tech-service-list li span.txt{
   font: 20px fontAwesome;
 }
 .single-details-tec-partner-left-sidebar .panel-title a:focus,.single-details-tec-partner-left-sidebar .panel-title a:hover {
-  color: #3d4642;
+  color: #7dc4a6;
   text-decoration: none;  
 }
 .single-details-tec-partner-left-sidebar .panel-title a:focus{
   border-left:3px solid #7dc4a6;
+  background: #fff;
 }/* panel-title */
 
 /*panel-heading*/
@@ -711,8 +694,10 @@ ul.single-tech-service-list li span.txt{
 }/*panel-heading*/
 
 /* panel-body */
-.panel-body {
+.single-details-tec-partner-left-sidebar .panel-collapse.show .panel-body {
   background: #fcfcfc;
+}
+.panel-body {
   padding: 20px 25px 20px 27px;
 }
 .single-details-tec-partner-left-sidebar .panel-default>.panel-heading+.single-details-tec-partner-left-sidebar .panel-collapse>.panel-body {

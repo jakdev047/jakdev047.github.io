@@ -58,9 +58,8 @@
   .tec-details-suggest {font-size: 12px;}
   .single-details-tec-partner-body-para { padding: 30px 0 0; }
   .single-details-tec-partner-body-para p { font-size: 14px;line-height: 1.90;color: #999;margin-bottom: 12px; }
-
   .single-details-tec-partner-menu-component .panel-heading>h4>a {font-size: 14px;line-height: 2;}
-  .single-details-tec-partner-menu-component {margin-bottom: 0px; }
+  .single-details-tec-partner-menu-component .panel-heading>h4>a:focus {color: #7dc4a6;;}
   .panel-body {background: transparent;padding: 0px;}
   .single-details-tec-partner-list li a {font-size: 14px;line-height: 2;}
   .single-details-tec-partner-left-sidebar .panel-title a:after,.single-details-tec-partner-left-sidebar .panel-title a.collapsed:after  {top: 18px;}
