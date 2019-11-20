@@ -1,0 +1,1 @@
+{"version":3,"sources":["App.css"],"names":[],"mappings":"AAAA,aACE,aACF,CACA,gBACE,cACF","file":"main.a6c4296b.chunk.css","sourcesContent":[".input-group {\r\n  display: block;\r\n}\r\n.todo-icon span {\r\n  cursor: pointer;\r\n}"]}
