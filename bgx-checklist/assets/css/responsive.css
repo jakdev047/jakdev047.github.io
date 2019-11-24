@@ -4,10 +4,7 @@
 
 @media screen and (max-width: 1799px){}/*max-width:1799px*/
 
-@media screen and (max-width: 1680px) {
-  .app-download-area { margin-top: 50px; }
-  .app-download-area img {  width: 148px;}
-}/*max-width:1680px*/
+@media screen and (max-width: 1680px) {}/*max-width:1680px*/
 
 @media screen and (max-width: 1499px) {}/*max-width:1499px*/
 
@@ -15,15 +12,7 @@
 
 @media screen and (min-width: 1200px){}/*min-width:1200px*/
 
-@media screen and (max-width: 1199px) {
-  .splash-section{  padding: 30px 0; }
-  .single-splash-section-img-groupe { max-width: 192px;margin: 0 auto; }
-  .single-splash-section-img-groupe-img img { width: 127px; }
-  .single-splash-section-img-groupe-img.splash-img-two {top: 40px; right: 0px;}
-  .single-splash-section-txt {margin: 95px auto 30px;max-width: 350px; }
-  .single-splash-section-txt-content h2 {font-size: 26px;}
-  .app-download-area {margin-top: 30px; }
-} /*max-width:1199px*/
+@media screen and (max-width: 1199px) {} /*max-width:1199px*/
 
 @media screen and (max-width: 1024px) {} /*max-width:1024px*/
 
@@ -43,9 +32,7 @@
 
 @media screen and (max-width: 440px) {} /*max-width:440px*/
 
-@media screen and (max-width: 399px) {
-  .app-download-area img { margin-bottom: 30px; }
-} /*max-width:399px*/
+@media screen and (max-width: 399px) {} /*max-width:399px*/
 
 @media screen and (max-width: 350px) {} /*max-width:350px*/
 

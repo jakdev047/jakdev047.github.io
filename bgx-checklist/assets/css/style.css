@@ -1,0 +1,453 @@
+/*==================================
+* Author        : "bgx"
+* Template Name : bgx HTML Template
+* Version       : 1.0
+==================================== */
+
+/*==================================
+font-family: 'Poppins', sans-serif;
+==================================== */
+
+
+/*=========== TABLE OF CONTENTS ===========
+01.  General css (Reset code)
+
+
+==========================================*/
+
+
+/*=============Style css=========*/
+
+/*-------------------------------------
+		1.General css (Reset code)
+--------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap');
+
+
+/* variable */
+
+:root {
+  --primary-color: #999;
+  --heading-color: #3d4642;
+  --secondary-color: #7dc4a6;
+}
+
+
+
+* {padding: 0;margin: 0;}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html,body{
+  height: 100%;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  color: #999999;
+  text-transform: initial;
+  max-width: 1920px;
+  background-color: #ffffff;
+  margin: 0 auto;
+  overflow-x: hidden!important;
+}
+a,a:hover,a:active,a:focus {
+	display:inline-block;
+	text-decoration:none;
+	color: #3d4642;
+  font-size: 16px;
+  line-height: 1.56;
+  font-weight: 400;
+  text-transform: capitalize; 
+}
+h1,h2,h3,h4,h5,h6,h2>a,h3>a,h4>a,h5>a,h6>a,h2>a:hover,h3>a:hover  { 
+	margin: 0;
+	color:#3d4642;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.56;
+    text-transform: capitalize;
+}
+p {margin: 0;font-size:14px;line-height: 1.79;text-transform: initial;font-weight: 300;}
+img{border:none;max-width:100%; height:auto;}
+ul{padding: 0;margin:0;list-style: none;}
+ul li {list-style: none;display: inline-block;}
+select,input,textarea,button,.form-control,.form-control:focus,input:focus{box-shadow:none;outline:0!important;}
+button {background: transparent;border: 0;font-size: 14px;text-transform: capitalize;line-height: 1.5;}
+html,body{height: 100%;}
+[placeholder]:focus::-webkit-input-placeholder {
+  -webkit-transition: opacity 0.3s 0.3s ease; 
+  -moz-transition: opacity 0.3s 0.3s ease; 
+  -ms-transition: opacity 0.3s 0.3s ease; 
+  -o-transition: opacity 0.3s 0.3s ease; 
+  transition: opacity 0.3s 0.3s ease; 
+  opacity: 0;
+}
+[placeholder]{
+  color: #999;
+  font-size: 14px;
+  line-height: 1.29;
+}
+
+.ml-30 {
+  margin-left: -30px;
+}
+.p0{padding: 0!important}
+
+.m0{margin: 0!important}
+.mb60{margin-bottom: 60px!important}
+
+.top-100{margin-top: 100px!important}
+.p50{padding-top: 50px;}
+
+h2.title {
+  font-size: 34px;
+  line-height: 1.30;
+  text-align: center;
+  text-transform: inherit;
+}
+
+/* section-padding */
+.section-padding{
+  padding: 120px 0 90px!important;
+}
+
+/* sec-title */
+.sec-title h2 {
+  font-size: 34px;
+  font-weight: 700;
+  text-transform: inherit;
+  margin-bottom: 10px;
+}
+.sec-title p {
+  font-size: 16px;
+  line-height: 1.88;
+}
+
+h2.title {
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 1.29;
+}
+
+.section-padding{
+  padding: 120px 0 60px!important;
+}
+
+.default-section-padding{
+  padding: 120px 0!important;
+}
+
+.text-initial{ text-transform: initial!important; }
+
+/* background */
+.bg-gray{background: #f7f8fa;}
+
+/* .smart-menu-scrollbar */
+/* .smart-menu-scrollbar {overflow-y: hidden;}
+.smart-menu-scrollbar::-webkit-scrollbar {width:5px;}
+.smart-menu-scrollbar::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 8px transparent;
+  box-shadow: inset 0 0 8px transparent;
+}
+.smart-menu-scrollbar::-webkit-scrollbar-thumb {background-color:#000} */
+
+/* ::-webkit-scrollbar {
+  display: none;
+} */
+
+/*-------------------------------------
+  2. cheklist-section
+--------------------------------------*/
+.cheklist-section{
+  position: relative;
+  max-width: 400px;
+  background: #fcfcfc;
+  margin: 0 auto;
+  height: 700px;
+  overflow: hidden;
+  top: 60px;
+}
+
+/* .cheklist-section-head */
+.cheklist-section-head {
+  position: relative;
+  height: 60px;
+  text-align: center;
+  -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.02);
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.02);
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cheklist-section-head-img img {
+  width: 60px;
+}
+.cheklist-section-head-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+/* cheklist-section-body */
+.cheklist-section-body {
+  padding: 20px;
+}
+
+.cheklist-section-body h2 {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.6;
+  text-transform: initial;
+  margin-bottom: 28px;
+}
+.cheklist-section-body p{
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.63;
+  color: #3d4642;
+  text-transform: capitalize;
+  margin-bottom: 24px;
+}
+.cheklist-section-body p span {
+  color: #7dc4a6;
+  margin-left: 10px;
+}
+.checklist-order {
+  height: 450px;
+  overflow-y: scroll;
+}
+.single-checklist-order {
+  padding: 40px 30px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 3px 10px 0 rgba(125, 196, 166, 0.16);
+  box-shadow: 0 3px 10px 0 rgba(125, 196, 166, 0.16);
+  background: #fff;
+  margin-bottom: 15px;
+}
+
+.checklist-order-scroll::-webkit-scrollbar {width:5px;}
+.checklist-order-scroll::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 8px #3d4642;
+  box-shadow: inset 0 0 8px #3d4642;
+}
+.checklist-order-scroll::-webkit-scrollbar-thumb {background-color: #7dc4a6;}
+
+.single-checklist-order-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+.cheklist-order-title {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.6;
+  color: #3d4642;
+}
+.cheklist-order-time {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.6;
+  color: #7dc4a6;
+}
+.cheklist-order-time img {
+  margin-right: 7px;
+}
+.single-checklist-order-body h3 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.6;
+  color: #a9a9a9;
+  margin-bottom: 30px;
+}
+
+ul.single-checklist-order-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+}
+ul.single-checklist-order-list li h4 {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #a9a9a9;
+  text-transform: uppercase;
+}
+ul.single-checklist-order-list li p.amount,
+ul.single-checklist-order-list li p.price {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #3d4642;
+}
+ul.single-checklist-order-list li p.price {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.6;
+  color: #3d4642;
+  text-transform: uppercase;
+}
+
+.btn-proceed,.btn-proceed:hover {
+  width: 250px;
+  height: 40px;
+  border-radius: 4px;
+  background-color: #7dc4a6;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: 2.8px;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin: 28px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .3s linear;
+  margin: 0 auto;
+}
+.btn-proceed:hover {
+  background-color: transparent;
+  border: 1px solid #7dc4a6;
+  color: #7dc4a6;
+}
+
+/* .cheklist-section-footer */
+.cheklist-section-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background: #fff;
+  padding: 0 60px;
+  overflow: hidden;
+}
+.cheklist-section-footer-icon-group {
+  max-width: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+}
+
+.single-cheklist-section-footer-icon,
+.single-cheklist-section-footer-icon.active{
+  transition: .5s;
+  padding: 14px 0;
+  border-bottom: 2px solid transparent;
+  width: 40px;
+  text-align: center;
+}
+
+.single-cheklist-section-footer-icon .icon-bell:before,.single-cheklist-section-footer-icon .icon-check-list:before,
+.single-cheklist-section-footer-icon .iconmoon {
+ color: #ddd;
+ transition: .5s;
+}
+
+.single-cheklist-section-footer-icon .iconmoon { font-size: 24px;}
+
+.single-cheklist-section-footer-icon:hover .icon-bell:before,.single-cheklist-section-footer-icon:hover .icon-check-list:before,
+.single-cheklist-section-footer-icon:hover .iconmoon {
+  color: #7dc4a6;
+}
+
+.single-cheklist-section-footer-icon.active .icon-bell:before,.single-cheklist-section-footer-icon.active .icon-check-list:before,
+.single-cheklist-section-footer-icon.active .iconmoon {
+  color: #7dc4a6;
+}
+
+.single-cheklist-section-footer-icon.active{
+  border-bottom: 2px solid #7dc4a6;
+}
+
+.single-cheklist-section-footer-icon:hover{
+  border-bottom: 2px solid #7dc4a6;
+}
+
+.checklist-notification {position: relative;}
+.checklist-notification-cirle {
+  width: 16px;
+  height: 15px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 4px 6px 0 rgba(125, 196, 166, 0.5);
+  box-shadow: 0 4px 6px 0 rgba(125, 196, 166, 0.5);
+  background-color: #7dc4a6;
+  color: #fff;
+  font-size: 10px;
+  line-height: 1.6;
+  position: absolute;
+  top: 8px;
+}
+
+/*-------------------------------------
+  2. cheklist-section-item-details
+--------------------------------------*/
+
+.cheklist-section-head-arrow {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+}
+
+
+/*=======rgb(165, 94, 94)=================
+  Scroll Top
+===============================*/
+#scroll-Top  .return-to-top {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  display: none;
+  width: 40px;
+  line-height: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 20px;
+  cursor: pointer;
+  color: #fff;
+  background:#7dc4a6;
+	border:1px solid #7dc4a6;
+	border-radius:50%;
+	-webkit-transition: .5s; 
+	-moz-transition:.5s; 
+	-ms-transition:.5s; 
+	-o-transition:.5s;
+  transition: .5s;
+	z-index: 2;
+}
+#scroll-Top  .return-to-top:hover {
+  background:#fff;
+  color: #7dc4a6;
+	border:1px solid #7dc4a6;
+}
+
+#scroll-Top  .return-to-top i{
+  position:relative;
+  bottom:0;
+}
+#scroll-Top  .return-to-top i{
+  position: relative;
+  animation-name: example;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-duration:1s;
+}
+@keyframes example {
+  0%   {bottom:0px;}
+  100%  {bottom:7px;}
+}
+/*========================Thank you=================
