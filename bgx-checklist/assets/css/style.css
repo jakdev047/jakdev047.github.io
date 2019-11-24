@@ -455,6 +455,7 @@ ul.single-checklist-order-list li p.price {
   box-shadow: 0 3px 10px 0 rgba(125, 196, 166, 0.16);
   background: #fff;
   margin-bottom: 15px;
+  order: 1px solid  rgba(248, 248, 248,.8);
 }
 .single-checklist-item-order-content {
   display: flex;
