@@ -578,3 +578,37 @@ ul.single-checklist-order-list li p.price {
   transform: rotate(45deg);
   transform: rotate(45deg);
 }
+
+/* checklist-view-modal */
+.checklist-view-modal-content {
+  max-width: 310px;
+  border-radius: 6px;
+  box-shadow: 0 3px 10px 0 rgba(125, 196, 166, 0.3);
+  background-color: #ffffff;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.single-checklist-view-modal-content-img img {
+  width: 150px;
+  margin-bottom: 60px;
+}
+
+.checklist-view-modal-content  {
+  position: relative;
+}
+
+.checklist-view-modal-content  .single-checklist-item-order-info-txt {
+  margin: 0 auto;
+}
+
+.checklist-view-modal-content .modal-body {
+  padding: 80px 0 30px;
+}
+
+.checklist-view-modal-content .cheklist-section-head-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
