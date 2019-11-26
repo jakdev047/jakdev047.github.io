@@ -180,7 +180,7 @@ h2.title {
   height: 60px;
   text-align: center;
   -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.02);
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.02);
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.03);
   background: #fff;
   display: flex;
   align-items: center;
@@ -316,8 +316,8 @@ ul.single-checklist-order-list li p.price {
   justify-content: center;
   transition: .3s linear;
 }
-.btn-proceed:hover,button.btn-proceed:hover  {
-  background-color: transparent;
+a.btn-proceed:hover  {
+  background: transparent;
   border: 1px solid #7dc4a6;
   color: #7dc4a6;
 }
@@ -611,4 +611,214 @@ ul.single-checklist-order-list li p.price {
   top: 20px;
   right: 20px;
   cursor: pointer;
+}
+
+/*-------------------------------------
+  2. cheklist-section-accept-section
+--------------------------------------*/
+.cheklist-section.cheklist-section-accept-section {
+  height: 795px;
+}
+
+/* cheklist-section-accept-title */
+.cheklist-item-details-title.cheklist-section-accept-title {
+  align-items: end;
+  padding: 20px 20px 16px;
+  background: #fff;
+  margin-bottom: 0;
+}
+.cheklist-section-accept-title-circle {
+  width: 55px;
+  height: 55px;
+  border: solid 1px #7dc4a6;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 16px;
+  position: relative;
+  top: -8px;
+}
+
+.cheklist-section-accept-title-info ul li p {
+  font-size: 14px;
+  line-height: 1.60;
+  color: #a9a9a9;
+  margin-bottom: 3px;
+  text-transform: initial;
+}
+.cheklist-section-accept-title-info ul li h3 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.63;
+  color: #3d4642;
+  text-transform: initial;
+}
+
+/* cheklist-section-accept-body */
+.cheklist-section-accept-body {
+  padding: 0px;
+}
+
+/* checklist-item-details-order */
+.checklist-item-details-order {
+  padding: 50px 20px 32px;
+  background: #fcfcfc;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+}
+.checklist-item-details-order-info p {
+  font-size: 12px;
+  color: #a9a9a9;
+  margin: 0 auto;
+}
+.checklist-item-details-order-info h3 {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.60;
+  color: #3d4642;
+}
+.checklist-item-details-order-time {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 1.58;
+  text-align: right;
+  color: #a9a9a9;
+}
+
+/* .cheklist-section-accept-product-list */
+.checklist-accept-order {
+  border-top: 1px solid #e6e4e4;
+}
+.cheklist-section-accept-product-list{
+  padding: 30px 20px 30px 25px;
+}
+
+.cheklist-section-accept-product-list-total {
+  padding-top: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.cheklist-section-accept-product-list-total h2 {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.57;
+  color: #3d4642;
+}
+.cheklist-section-accept-product-list-total p.amount{
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.63;
+  color: #3d4642;
+  text-transform: uppercase;
+}
+ul.cheklist-section-accept-product-list-content li {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 26px;
+}
+ul.cheklist-section-accept-product-list-content li .product-img>img {
+  width: 65px;
+  height: 65px;
+}
+ul.cheklist-section-accept-product-list-content li h2 {
+  font-size: 14px;
+  font-weight: normal;;
+  line-height: 1.57;
+  color: #3d4642;
+  width: 166px;
+  overflow: hidden;
+  height: 20px;
+}
+ul.cheklist-section-accept-product-list-content li p.single-price {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.57;
+  color: #3d4642;
+  text-transform: uppercase;
+}
+
+.checklist-accept-order.checklist-order {
+  height: 420px;
+}
+ul.cheklist-section-accept-product-list-content li:last-child{
+  margin: 0;
+  border-top: 1px solid #e6e4e4;
+}
+
+/* .cheklist-section-accept-footer */
+.cheklist-section-accept-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  padding: 0 50px;
+}
+.cheklist-section-accept-footer a.btn-proceed {
+  margin: 0 auto;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: 2.8px;
+  text-align: center;
+}
+
+/*-------------------------------------
+  2. cheklist-success
+--------------------------------------*/
+.cheklist-success-section {
+  position: relative;
+  background: #7dc4a6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.cheklist-success-section-body {
+  max-width: 335px;
+  margin: 0 auto;
+  text-align: center;
+}
+.cheklist-success-section-img {
+  width: 101px;
+  height: 101px;
+  box-shadow: 0 3px 10px 0 rgba(255, 255, 255, 0.16);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  margin: 0 auto 32px;
+}
+.cheklist-success-section .icon-close:before {
+  content: "\e904";
+  color: #fff;
+}
+.cheklist-success-section-txt-content h3{
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.6;
+  color: #ffffff;
+  text-transform: initial;
+  margin-bottom: 16px;
+}
+.cheklist-success-section-txt-content p {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.63;
+  text-align: center;
+  color: #ffffff;
+  text-transform: initial;
+  margin-bottom: 50px;
+}
+.cheklist-success-section-txt-content .btn-proceed, .cheklist-success-section-txt-content .btn-proceed:hover{
+  border: 1px solid #fff;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2.8px;
 }
