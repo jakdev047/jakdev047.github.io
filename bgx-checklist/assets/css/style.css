@@ -769,7 +769,7 @@ ul.cheklist-section-accept-product-list-content li:last-child{
 }
 
 /*-------------------------------------
-  2. cheklist-success
+  cheklist-success
 --------------------------------------*/
 .cheklist-success-section {
   position: relative;
@@ -821,4 +821,129 @@ ul.cheklist-section-accept-product-list-content li:last-child{
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 2.8px;
+}
+
+/*-------------------------------------
+  cheklist-notification-section
+--------------------------------------*/
+.cheklist-notification-section .checklist-order {
+  height: 525px;
+  overflow-y: scroll;
+}
+/* cheklist-notification-body */
+.cheklist-notification-body {
+  padding: 20px 0;
+}
+
+/* .tab-features  li */
+.cheklist-notification-body .tab-features  li a{
+  font-size: 18px;
+  line-height: 1.60;
+  font-weight: 500;
+  color: #a9a9a9;
+  padding: 0 0 6px 0;
+  margin: 0px;
+  border: 0px;
+  border-radius: 0px;
+  position: relative;
+  transition: all 0.6s linear;
+  padding: 0 48px 10px;
+}
+.cheklist-notification-body .tab-features  li a:before{
+  content: "";
+  width: 0px;
+  height: 1px;
+  bottom: -1px;
+  left: 0;
+  position: absolute;
+  background: transparent;
+  transition: all 0.5s linear;
+}
+.cheklist-notification-body .tab-features  li a:hover,
+.cheklist-notification-body .tab-features  li a:focus{
+  background: transparent;
+  color: #3d4642;
+}
+.cheklist-notification-body .tab-features  li a:hover:before,.tab-features  li a:focus:before{
+  background: #7dc4a6;
+  width: 100%;
+}
+/* .tab-features  li.active */
+.cheklist-notification-body .tab-features  li a.active{
+  color: #3d4642;
+  border: 0px;
+  border-radius: 0px;
+  cursor: pointer;
+}
+.cheklist-notification-body .tab-features  li a.active:before{
+  background: #7dc4a6;
+  width: 100%;
+}
+.cheklist-notification-body .tab-features  li a.active:hover,
+.cheklist-notification-body .tab-features  li a.active:focus{
+  border: 0px;
+  color: #3d4642;
+  cursor: pointer;
+}
+
+.cheklist-notification-body .checklist-order{
+  padding: 30px 0px;
+}
+
+/* single-checklist-nofication */
+.single-checklist-nofication {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  padding: 10px 20px;
+  margin-bottom: 8px;
+  transition: .3s ease-in-out;
+}
+.single-checklist-nofication.active{background: #fff;}
+.single-checklist-nofication-txt-content {
+  max-width: 220px;
+  display: -webkit-box;
+}
+.single-checklist-nofication-logo {
+  width: 42px;
+  height: 42px;
+  box-shadow: 0 3px 12px 0 rgba(125, 196, 166, 0.25);
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 16px;
+}
+
+.single-checklist-nofication-txt-content h4 {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.60;
+  color: #3d4642;
+  text-transform: initial;
+}
+.single-checklist-nofication-txt-content h4 span {
+  color: #7dc4a6;
+  font-weight: 500;
+}
+
+.single-checklist-nofication-time p {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 1.58;
+  text-align: right;
+  color: #a9a9a9;
+}
+
+.single-checklist-nofication:hover {
+  background: #fff;
+}
+span.online {
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  border-radius: 7px;
+  background-color: #7dc4a6;
+  border-radius: 50%;
 }
