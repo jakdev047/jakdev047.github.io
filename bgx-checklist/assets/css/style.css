@@ -259,6 +259,14 @@ h2.title {
   line-height: 1.6;
   color: #7dc4a6;
 }
+.cheklist-order-courier {
+  font-size: 12px;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 1.58;
+  text-align: right;
+  color: #7dc4a6;
+}
 .cheklist-order-time img {
   margin-right: 7px;
 }
@@ -280,8 +288,11 @@ ul.single-checklist-order-list li {
 ul.single-checklist-order-list li h4 {
   font-size: 14px;
   line-height: 1.6;
-  color: #a9a9a9;
+  color: #3d4642;
   text-transform: uppercase;
+}
+.order-courier-request ul.single-checklist-order-list li h4 {
+  color: #a9a9a9;
 }
 ul.single-checklist-order-list li p.amount,
 ul.single-checklist-order-list li p.price {
@@ -321,6 +332,17 @@ a.btn-proceed:hover  {
   border: 1px solid #7dc4a6;
   color: #7dc4a6;
 }
+a.order-history {
+  background: transparent;
+  border: 1px solid #7dc4a6;
+  color: #7dc4a6;
+}
+
+a.order-history:hover {
+  color: #fff;
+  background: #7dc4a6;
+}
+
 
 /* .cheklist-section-footer */
 .cheklist-section-footer {
@@ -414,6 +436,15 @@ a.btn-proceed:hover  {
   line-height: 1.6;
   margin: 0;
   text-transform: initial;
+}
+.cheklist-item-details-title-author h4 {
+  font-size: 16px;
+  font-weight: 500;;
+  line-height: 1.63;
+  color: #a9a9a9;
+  position: relative;
+  top: -14px;
+  margin-bottom: 5px;
 }
 
 /* .cheklist-item-details-footer  */
@@ -767,6 +798,19 @@ ul.cheklist-section-accept-product-list-content li:last-child{
   letter-spacing: 2.8px;
   text-align: center;
 }
+.cheklist-item-details-footer .btn-proceed.bg2 {
+  box-shadow: 0 5px 10px 0 rgba(246, 179, 45, 0.4)!important;
+  background-color: rgba(246, 179, 45, 0.9)!important;
+}
+a.btn-block.btn-proceed.bg2 {
+  box-shadow: 0 5px 10px 0 rgba(246, 179, 45, 0.4);
+  background-color: rgba(246, 179, 45, 0.9);
+  border: 1px solid rgba(246, 179, 45, 0.9);
+}
+a.btn-block.btn-proceed.bg2:hover {
+  color: rgba(246, 179, 45, 0.9);
+  background-color: transparent;
+}
 
 /*-------------------------------------
   cheklist-success
@@ -886,11 +930,10 @@ ul.cheklist-section-accept-product-list-content li:last-child{
   cursor: pointer;
 }
 
-.cheklist-notification-body .checklist-order{
-  padding: 30px 0px;
-}
-
 /* single-checklist-nofication */
+.checklist-notifications-section {
+  padding: 30px 0;
+}
 .single-checklist-nofication {
   display: flex;
   align-items: end;
@@ -946,4 +989,286 @@ span.online {
   border-radius: 7px;
   background-color: #7dc4a6;
   border-radius: 50%;
+}
+
+/* .message-section */
+.checklist-message-section{
+  position: relative;
+  height: 492px;
+  padding: 20px;
+  padding-right: 0;
+}
+.cheklist-notification-section .checklist-message-body.checklist-order {
+  height: 385px;
+  overflow-y: scroll;
+}
+.checklist-message-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  padding-right: 20px;
+}
+.checklist-message-head-img {
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 6px 12px 0 rgba(125, 196, 166, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.checklist-message-head-img img {
+  width: 20px;
+}
+.checklist-message-head h4{
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.57;
+  text-align: center;
+  color: #3d4642;
+}
+.checklist-message-head-menu span {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background: #ddd;
+  border-radius: 50%;
+}
+.checklist-message-body-online{
+  margin-bottom: 24px;
+}
+.checklist-message-body-online h4 {
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 1.58;
+  text-align: center;
+  color: #a9a9a9;
+  margin-bottom: 8px;
+}
+.checklist-message-body-online p {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.58;
+  text-align: center;
+  color: #a9a9a9;
+  margin: 0;
+}
+.checklist-message-body-other {
+  width: 250px;
+  height: 62px;
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.08);
+  background-color: #ffffff;
+  padding: 10px 12px;
+  margin-bottom: 16px;
+  clear: both;
+  border-radius: 7px 7px 7px 0;
+}
+.checklist-message-body-other p {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.57;
+  text-align: left;
+  color: #3d4642;
+  text-transform: initial;
+}
+
+.checklist-message-body-me {
+  width: 250px;
+  height: 65px;
+  box-shadow: 0 3px 10px 0 rgba(125, 196, 166, 0.3);
+  background-color: #7dc4a6;
+  padding: 10px 12px;
+  margin-bottom: 16px;
+  float: right;
+  border-radius: 7px 7px 0px 7px;
+}
+.checklist-message-body-me p {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.57;
+  text-align: left;
+  color: #fff;
+  text-transform: initial;
+}
+.checklist-message-body ul {
+  padding-right: 20px;
+}
+
+form.type-msaage-section {
+  position: absolute;
+  height: 50px;
+  width: 100%;
+  bottom: -30px;
+  left: 0;
+}
+form.type-msaage-section input.form-control,
+form.type-msaage-section input.form-control::placeholder {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+  line-height: 1.57;
+  text-align: left;
+  color: #a9a9a9;
+}
+.message-scroll {
+  width: 26px;
+  height: 26px;
+  border-radius: 2px;
+  background-color: #7dc4a6;
+  position: absolute;
+  right: 20px;
+  bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.message-scroll {
+  color: #fff;
+  font-size: 12px;
+}
+
+/*-------------------------------------
+  cheklist-notification-section
+--------------------------------------*/
+
+.cheklist-section-body.checklist-empty {
+  height: 580px;
+  background: #fcfcfc;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.checklist-empty-content  {
+  text-align: center;
+}
+.checklist-empty-content-img {
+  margin-bottom: 30px;
+}
+.checklist-empty-content h3 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.60;
+  text-align: center;
+  color: #3d4642;
+}
+
+/*-------------------------------------
+  cheklist-login-section
+--------------------------------------*/
+.cheklist-login-section {
+  background: #fff;
+}
+.cheklist-login-section-head {
+  background: #fff;
+  box-shadow: none;
+}
+.cheklist-login-section-body {
+  padding: 45px 20px 0;
+}
+
+/* .cheklist-login-section-body */
+
+.register-form-content form input.form-control {
+  padding: 14px 20px;
+  outline: 0;
+  margin-bottom: 35px;
+  width: 100%;
+  color: #1a1d1c;
+  border-radius: 4px;
+  box-shadow: 0 3px 6px 0 rgba(125, 196, 166, 0.16);
+  border: solid 0.1px rgba(230, 228, 228, 0.6);
+  background: #ffffff;
+}
+
+
+.register-form-content form input.form-control:focus {
+  /* border: 1px solid #7dc4a6; */
+  box-shadow: 0 3px 6px 0 rgba(125, 196, 166, 0.16);
+  border: solid 0.5px #7dc4a6;
+}
+
+.register-form-content form input::placeholder {
+  font-size: 14px;
+  line-height: 1.29;
+  color: #999;
+}
+.register-form-content button.btn-block.register-btn {
+  background: rgba(125, 196, 166,.8);
+  padding: 15px;
+  color: #fff;
+  font-size: 14px;
+  line-height: 1.29;
+  cursor: pointer;
+  transition: .5s;
+  box-shadow: 0 5px 10px 0 rgba(125, 196, 166, 0.4);
+}
+.register-form-content button.btn-block.register-btn:hover,
+.register-form-content button.btn-block.register-btn:focus  {
+  background: rgba(125, 196, 166,1);
+}
+
+
+.login-section-content {
+  position: relative;
+  text-align: center;
+  max-width: 400px;
+  margin: 0 auto;
+}
+.login-logo {
+  margin-bottom: 45px;
+}
+.login-logo img {
+  width: 100px;
+  height: auto;
+}
+.login-logo-para p {
+  font-size: 14px;
+  color: #3d4642;
+  line-height: 1.43;
+  text-transform: initial;
+  max-width: 334px;
+  margin: 0 auto 30px;
+}
+.login-logo-para p  span {
+  display: block;
+}
+
+.register-form-content {
+  max-width: 400px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.register-form-content form {
+  width: 356px;
+}
+.register-form-contentform input.form-control {
+  margin-bottom: 25px;
+}
+
+.register-form-contentbutton.btn-block.register-btn {
+  height: 48px;
+  box-shadow: 0 5px 10px 0 rgba(125, 196, 166, 0.4);
+  background-color: #7dc4a6;
+  margin-top: 18px;
+}
+
+
+.login-hr {
+  border-bottom: 1px solid rgba(255,255,255,.4);
+  margin: 68px 0;
+}
+.login-cpoyright{
+  font-size: 12px;
+  font-weight: 200;
+  line-height: 1.67;
+  text-align: center;
+  color: #3d4642;
 }
