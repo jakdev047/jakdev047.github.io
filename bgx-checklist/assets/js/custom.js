@@ -2,6 +2,7 @@
 let messageInput = document.querySelector('.message-input');
 const messageUl = document.querySelector('.check-reply');
 const formBtn = document.querySelector('.formSubmit');
+let div = document.querySelector(".checklist-message-body");
 
 // event
 
@@ -21,6 +22,13 @@ formBtn.addEventListener('click',function(e){
     messageUl.innerHTML += textMsg;
 
     messageInput.value = '';
+
+    scrolltoBottom(div)
   }
 })
+
+function scrolltoBottom(div){
+    div.scrollTop = div.scrollHeight - div.clientHeight;
+}
+
 
