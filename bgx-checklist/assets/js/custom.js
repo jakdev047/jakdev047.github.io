@@ -8,14 +8,19 @@ const formBtn = document.querySelector('.formSubmit');
 formBtn.addEventListener('click',function(e){
   e.preventDefault();
   
-  let msgContent = messageInput.value;
+  if(messageInput.value === '') {
+    alert('Please Type Something else...')
+  }
+  else {
+    let msgContent = messageInput.value;
 
-  const textMsg = `<li class="checklist-message-body-me">
-                    <p>${msgContent}</p>
-                  </li>`;
+    const textMsg = `<li class="checklist-message-body-me">
+                      <p>${msgContent}</p>
+                    </li>`;
 
-  messageUl.innerHTML += textMsg;
+    messageUl.innerHTML += textMsg;
 
-  messageInput.value = '';
+    messageInput.value = '';
+  }
 })
 
