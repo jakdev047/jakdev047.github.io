@@ -5,7 +5,6 @@ const formBtn = document.querySelector('.formSubmit');
 let div = document.querySelector(".checklist-message-body");
 
 // event
-
 formBtn.addEventListener('click',function(e){
   e.preventDefault();
   
@@ -30,5 +29,3 @@ formBtn.addEventListener('click',function(e){
 function scrolltoBottom(div){
     div.scrollTop = div.scrollHeight - div.clientHeight;
 }
-
-

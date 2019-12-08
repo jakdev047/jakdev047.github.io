@@ -58,7 +58,7 @@
      <div class="cheklist-section cheklist-section-item-details">
         <div class="cheklist-section-head">
           <div class="cheklist-section-head-arrow">
-            <span class="iconmoon icon-left-arrow"></span>
+            <a href="index.html"><span class="iconmoon icon-left-arrow"></span></a>
           </div>
           <div class="cheklist-section-head-img">
             <img src="assets/images/checklist-logo.png" alt="bgx logo">
@@ -67,8 +67,8 @@
             <span class="iconmoon icon-close"></span>
           </div>
         </div>
-        <div class="cheklist-section-body">
-          <div class="cheklist-item-details-title ">
+        <div class="cheklist-section-body checklist-order-scroll">
+          <div class="cheklist-item-details-title">
             <h2>BGX- 4008</h2>
             <div class="cheklist-order-time">
               <img src="assets/images/stopwatch.svg" alt="stopwatch">
@@ -76,11 +76,11 @@
             </div>
           </div>
           <p>items <span>3</span></p>
-          <div class="checklist-order checklist-order-scroll">
+          <div class="checklist-order" id="checklist-order">
             <div class="single-checklist-item-order">
               <form>
-                <div class="show-login-indicator">
-                  <input class="styled-checkbox" id="styled-checkbox1" type="checkbox" value="value" checked>
+                <div class="show-login-indicator ">
+                  <input class="styled-checkbox single-order-checklist" id="styled-checkbox1" type="checkbox" value="value" checked>
                   <label for="styled-checkbox1"></label>
                 </div>
                 <div class="single-checklist-item-order-content">
@@ -107,7 +107,7 @@
             <div class="single-checklist-item-order">
               <form>
                 <div class="show-login-indicator">
-                  <input class="styled-checkbox" id="styled-checkbox2" type="checkbox" value="value" checked>
+                  <input class="styled-checkbox single-order-checklist" id="styled-checkbox2" type="checkbox" value="value" checked>
                   <label for="styled-checkbox2"></label>
                 </div>
                 <div class="single-checklist-item-order-content">
@@ -134,7 +134,7 @@
             <div class="single-checklist-item-order">
               <form>
                 <div class="show-login-indicator">
-                  <input class="styled-checkbox" id="styled-checkbox" type="checkbox" value="value" checked>
+                  <input class="styled-checkbox single-order-checklist" id="styled-checkbox" type="checkbox" value="value" checked>
                   <label for="styled-checkbox"></label>
                 </div>
                 <div class="single-checklist-item-order-content">
@@ -165,8 +165,7 @@
             <p>total</p>
             <h3>550.00 aed</h3>
           </div>
-          <a  href="single-item-accept.html" class="btn-proceed">accept</a>
-
+          <a  href="checklist-accept.html" class="btn-proceed">accept</a>
         </div>
      </div>
    </section>
@@ -207,6 +206,27 @@
     <script src="assets/js/bootstrap.min.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
+    <script>
+      (function(){
+
+        let orderInput = document.querySelectorAll("#checklist-order input.single-order-checklist");
+
+        orderInput.forEach(element=>{
+          element.addEventListener('click', function(e){
+
+            if(this.checked){
+              this.closest(".single-checklist-item-order").classList.remove('cheklist-unchecked-item')
+            }
+            else{
+              this.closest(".single-checklist-item-order").classList.add('cheklist-unchecked-item')
+            } 
+
+          })
+        });
+
+      })();
+    </script>
 
   </body>
 </html>
