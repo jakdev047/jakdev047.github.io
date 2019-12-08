@@ -79,11 +79,11 @@
             <h4>Ms. Laurel Hayes</h4>
           </div>
           <p>items <span>3</span></p>
-          <div class="checklist-order">
+          <div class="checklist-order" id="checklist-order">
             <div class="single-checklist-item-order">
               <form>
-                <div class="show-login-indicator">
-                  <input class="styled-checkbox" id="styled-checkbox1" type="checkbox" value="value" checked>
+                <div class="show-login-indicator ">
+                  <input class="styled-checkbox single-order-checklist" id="styled-checkbox1" type="checkbox" value="value" checked>
                   <label for="styled-checkbox1"></label>
                 </div>
                 <div class="single-checklist-item-order-content">
@@ -110,7 +110,7 @@
             <div class="single-checklist-item-order">
               <form>
                 <div class="show-login-indicator">
-                  <input class="styled-checkbox" id="styled-checkbox2" type="checkbox" value="value" checked>
+                  <input class="styled-checkbox single-order-checklist" id="styled-checkbox2" type="checkbox" value="value" checked>
                   <label for="styled-checkbox2"></label>
                 </div>
                 <div class="single-checklist-item-order-content">
@@ -137,7 +137,7 @@
             <div class="single-checklist-item-order">
               <form>
                 <div class="show-login-indicator">
-                  <input class="styled-checkbox" id="styled-checkbox" type="checkbox" value="value" checked>
+                  <input class="styled-checkbox single-order-checklist" id="styled-checkbox" type="checkbox" value="value" checked>
                   <label for="styled-checkbox"></label>
                 </div>
                 <div class="single-checklist-item-order-content">
@@ -207,6 +207,27 @@
     <script src="assets/js/bootstrap.min.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
+    <script>
+      (function(){
+
+        let orderInput = document.querySelectorAll("#checklist-order input.single-order-checklist");
+
+        orderInput.forEach(element=>{
+          element.addEventListener('click', function(e){
+
+            if(this.checked){
+              this.closest(".single-checklist-item-order").classList.remove('cheklist-unchecked-item')
+            }
+            else{
+              this.closest(".single-checklist-item-order").classList.add('cheklist-unchecked-item')
+            } 
+
+          })
+        });
+
+      })();
+    </script>
 
   </body>
 </html>
