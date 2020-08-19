@@ -1,0 +1,163 @@
+<!-- service-tab X start -->
+    <section>
+      <div class="service-tab">
+        <div class="tab-service-area">
+
+          <div class="container tab-service-top">
+            
+            <ul class="nav nav-tabs tab-service"  role="tablist">
+                
+                <li class="nav-item">
+                    <a  id="tech-partners-tab" data-toggle="tab" href="#tech-partners" role="tab" aria-controls="tech-partners" aria-selected="false">
+                        <span class="iconmoon">
+                            <img class="manImg" src="assets/images/service-tab/icon/develop.svg">
+                        </span>
+                        Enterprise
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a  id="shop-tab" data-toggle="tab" href="#shop" role="tab" aria-controls="shop" aria-selected="false">
+                        <span class="iconmoon">
+                            <img class="manImg" src="assets/images/service-tab/icon/shop.svg">
+                        </span>
+                        Shop online
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a  id="salon-tab" data-toggle="tab" href="#salon" role="tab" aria-controls="salon" aria-selected="false">
+                    <span class="iconmoon">
+                        <img class="manImg" src="assets/images/service-tab/icon/salon.svg">
+                    </span>
+                    Become a partner salon
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a  id="store-tab" data-toggle="tab" href="#store" role="tab" aria-controls="store" aria-selected="false">
+                        <span class="iconmoon">
+                            <img class="manImg" src="assets/images/service-tab/icon/retail.svg">
+                        </span>
+                        Become a retail partner
+                    </a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a class="active" id="book-tab" data-toggle="tab" href="#services" role="tab" aria-controls="services" aria-selected="true">
+                    <span class="iconmoon icon-beauty-treatment"></span>
+                    Beauty services 
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a  id="brand-tab" data-toggle="tab" href="#brand" role="tab" aria-controls="brand" aria-selected="false">
+                    <span class="iconmoon icon-branding"></span>
+                    Brand
+                    </a>
+                </li> -->
+                
+            </ul>
+          </div>
+
+          <div class="tab-content tab-service-content">
+            <div class="tab-pane slide show active single-service-tab" id="services" role="tabpanel" aria-labelledby="services-tab">
+              <div class="service-single-tab-txt-content">
+                <div class="service-tab-sec-title">
+                  <h2>Your favourite salon comes to you.</h2>
+                  <p>
+                    Our app delivers a professional salon stylist and therapist to you in 30mins!
+                  </p>
+                  <div class="register-btn-card">
+                    <a href="#" class="register-btn">learn now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="single-service-content-img">
+                <img src="assets/images/service-tab/service-tab01.jpg" alt="service-tab">
+              </div>
+            </div>
+
+            <div class="tab-pane slide single-service-tab" id="shop" role="tabpanel" aria-labelledby="shop-tab">
+
+              <div class="service-single-tab-txt-content">
+                <div class="service-tab-sec-title">
+                  <h2>Beauty products delivered to your door in 30 minutes.</h2>
+                  <p>
+                    Must-have beauty products all available here!  From haircare to skincare, from make up to nails - don’t miss out!
+                  </p>
+                  <div class="register-btn-card">
+                    <a href="#" class="register-btn">learn now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="single-service-content-img">
+                <img src="assets/images/service-tab/new/Tab1-ShopOnline.jpg" alt="service-tab">
+              </div>
+            </div>
+
+            <div class="tab-pane slide single-service-tab" id="salon" role="tabpanel" aria-labelledby="salon-tab">
+
+              <div class="service-single-tab-txt-content">
+                <div class="service-tab-sec-title">
+                  <h2>Become A Partner Salon</h2>
+                  <p>Join the world’s fastest-growing beauty platform. Increase productivity, retail and open the door to potential new clients.</p>
+                  <div class="register-btn-card">
+                    <a href="#" class="register-btn">learn now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="single-service-content-img">
+                <img src="assets/images/service-tab/new/Tab3-PartnerSalon.jpg" alt="service-tab">
+              </div>
+            </div>
+
+            <div class="tab-pane slide single-service-tab" id="store" role="tabpanel" aria-labelledby="store-tab">
+
+              <div class="service-single-tab-txt-content">
+                <div class="service-tab-sec-title">
+                  <h2>Become A Retail Partner</h2>
+                  <p>We get your brands out there. You grow your business. Join the exclusive list of global beauty brands choosing bgX! </p>
+                  <div class="register-btn-card">
+                    <a href="#" class="register-btn">learn now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="single-service-content-img">
+                <img src="assets/images/service-tab/service-tab02.jpg" alt="service-tab">
+              </div>
+            </div>
+
+            <div class="tab-pane slide single-service-tab" id="brand" role="tabpanel" aria-labelledby="brand-tab">
+              
+              <div class="service-single-tab-txt-content">
+                <div class="service-tab-sec-title">
+                  <h2>We offer Great solutions for you. </h2>
+                  <p>
+                    Learn more about our great features including online ordering, saloons, technology and lots of others. 
+                  </p>
+                  <div class="register-btn-card">
+                    <a href="#" class="register-btn">learn now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="single-service-content-img">
+                <img src="assets/images/service-tab/service-tab05.jpg" alt="service-tab">
+              </div>
+            </div>
+
+            <div class="tab-pane slide single-service-tab" id="tech-partners" role="tabpanel" aria-labelledby="tech-partners-tab">
+              <div class="service-single-tab-txt-content">
+                <div class="service-tab-sec-title">
+                  <h2>Enable Omni-Channel Retail</h2>
+                  <p>Let us unify your inventory into a single view of stock, and leverage your existing retail network to fulfil your online orders.</p>
+                  <div class="register-btn-card">
+                    <a href="#" class="register-btn">learn now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="single-service-content-img">
+                <img src="assets/images/service-tab/new/Tab5-TechPartners.jpg" alt="service-tab">
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- service-tab end -->
