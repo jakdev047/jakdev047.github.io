@@ -125,7 +125,7 @@
 
   /* service-tab */
   .tab-service { min-width: 870px;position: relative;left: 0px;}
-  .tab-service li a, .tab-service li a.active { padding: 24px 12px; height: auto;margin-bottom: 20px;}
+  .tab-service li a, .tab-service li a.active {padding: 24px 0;height: auto;margin-bottom: 20px;width: 230px;}
   .tab-service li a:before{top: auto;bottom: 0;}
   .single-service-content-img{position: relative;height: 490px;overflow: hidden;margin-left: 25px;margin: 0 auto;}
   .service-tab-sec-title h2 {font-size: 26px;}
@@ -278,7 +278,9 @@
   .single-service-tab { padding-bottom: 80px; }
   .tab-service {background: #f7f8fa;}
   .tab-service li a.active, .tab-service li a:hover, .tab-service li a:focus {background: transparent;}
-  .container.tab-service-top { overflow-x: scroll;overflow-y: hidden; }
+  /* .container.tab-service-top { overflow-x: scroll;overflow-y: hidden; } */
+  .tab-service li a, .tab-service li a.active {padding: 20px;width: auto;}
+  .tab-service {max-width: 100%;min-width: auto;}
 
   /* single-left-right-section */
   .single-left-right-section-content-txt h2 { font-size: 20px; }
@@ -381,6 +383,8 @@
 
   /* .service-tab */
   .service-tab .service-tab-sec-title {max-width: 258px; padding: 0;}
+  .container.tab-service-top { overflow-x: scroll;overflow-y: hidden; }
+  .tab-service {max-width: 100%;min-width: 650px; }
 
   /* single-left-right-section */
   .single-left-right-section-content-img { height: 250px;}

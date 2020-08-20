@@ -1618,7 +1618,7 @@ ul.office-address-list li span.time-duration {
   background: rgba(255,255,255,.9);
   height: 130px;
   top: 40px;
-  margin-left: -30px;
+  /* margin-left: -30px; */
   z-index: 3;
 }
 
@@ -1664,6 +1664,7 @@ ul.office-address-list li span.time-duration {
   padding: 38px 44px 48px;
   position: relative;
   top: 170px;
+  left: 30px;
 }
 .service-tab-sec-title h2 {
   font-size: 50px;
@@ -1685,9 +1686,10 @@ ul.office-address-list li span.time-duration {
   margin: 0;
 }
 .tab-service li a,.tab-service li a.active  {
-  padding: 36px 40px;
+  padding: 36px 0px;
   background: transparent;
   height: 130px;
+  width: 285px;
   display: flex;
   align-items: center;
   justify-content: center;
