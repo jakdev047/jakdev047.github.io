@@ -104,7 +104,7 @@
 
   .customer-busisness-content {margin: 40px 0 0;}
   .customer-busisness {padding: 60px 0 30px; }
-  .single-customer-busisness-card { padding: 20px 16px;height: 274px;overflow: hidden;}
+  .single-customer-busisness-card { padding: 20px 16px;height: 300px;overflow: hidden;}
   .single-customer-busisness-img {margin-bottom: 18px; }
   .single-customer-busisness-card-txt h2 {font-size: 18px;margin-bottom: 3px;}
   .single-customer-busisness-card-txt p { font-size: 12px;line-height: 1.5;}
@@ -274,6 +274,8 @@
 
 @media screen and (max-width: 767px) {
   .section-title h2 {font-size: 24px;}
+
+  .single-customer-busisness-card { padding: 20px 16px;height: auto;overflow: hidden;}
 
   .map .map-today-section .buttons .btn:nth-child(2) {top: 35%;}
   .map .map-today-section .buttons .btn:nth-child(3) {right: 8%;}
