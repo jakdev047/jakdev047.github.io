@@ -432,7 +432,7 @@ a.register-btn:before {
   border-radius: 8px;
   box-shadow: 0 3px 20px 0 rgba(125, 196, 166, 0.18);
   background-color: #ffffff;
-  height: 470px;
+  height: 430px;
   overflow: hidden;
   margin-bottom: 30px;
 }
@@ -443,14 +443,14 @@ a.register-btn:before {
   width: 120px;
 }
 .single-customer-busisness-card-txt h2 {
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 600;
   line-height: 1.21;
   color: #313d38;
   margin-bottom: 20px;
 }
 .single-customer-busisness-card-txt p {
-  font-size: 14px;
+  font-size: 12px;
   line-height: 24px;
   color: #6e7673;
   font-weight: 400;
@@ -467,7 +467,7 @@ a.register-btn:before {
 }
 .process .process-content-img {
   position: absolute;
-  top: 440px;
+  top: 470px;
   z-index: -1;
 }
 .process .process-layout {
@@ -477,7 +477,7 @@ a.register-btn:before {
 }
 .process .process-layout .single-process-layout {
   padding: 30px 0px 25px;
-  height: 400px;
+  height: 420px;
   background: #ffffff;
   border: 1px solid transparent;
   border-radius: 4px;
@@ -498,6 +498,7 @@ a.register-btn:before {
   padding: 0 21px;
   line-height: 24px;
   font-weight: 400;
+  font-size: 12px;
 }
 .single-process-layout ul.single-process-brand-list {
   margin-top: 13px;
