@@ -441,6 +441,7 @@ a.register-btn:before {
 }
 .single-customer-busisness-img img{
   width: 120px;
+  height: 120px;
 }
 .single-customer-busisness-card-txt h2 {
   font-size: 18px;
