@@ -1375,7 +1375,7 @@
       <path id="Path_3197" data-name="Path 3197" d="M1288.122,467.008a13.035,13.035,0,0,0-8.314,2.93V457.265h-4.769v22.3c0,7.181,4.452,13.729,13,13.729a13.035,13.035,0,0,0,13.188-13.158v-.074a12.954,12.954,0,0,0-13.1-13.057Zm8.187,13.241a8.279,8.279,0,0,1-8.229,8.67,8.445,8.445,0,0,1-8.292-8.761v-.093a8.282,8.282,0,0,1,8.187-8.717,8.5,8.5,0,0,1,8.335,8.81v.091Zm34.182-.532a12.85,12.85,0,0,0-13.061-12.569,13,13,0,0,0-13.124,13.16v.093a12.909,12.909,0,0,0,13.04,13.066,13.072,13.072,0,0,0,8.335-2.927v2.188h0v.845a8.184,8.184,0,0,1-16.078,2.209l-.127-.423h-4.959l.148.718a13.112,13.112,0,0,0,25.848-2.072V479.734Zm-4.832.684a8.264,8.264,0,0,1-8.229,8.66,8.445,8.445,0,0,1-8.271-8.761v-.093a8.28,8.28,0,0,1,8.187-8.715,8.476,8.476,0,0,1,8.313,8.808v.093Z" transform="translate(-1275.04 -457.265)" fill="#fff" fill-rule="evenodd"/>
       <path id="Path_3198" data-name="Path 3198" d="M1317.238,475.23l7.24,12.606h-6.584l-4.106-8.37-4.106,8.38h-6.541l7.2-12.606-6.88-12.33h6.371l3.958,8.266,3.959-8.266h6.372Z" transform="translate(-1243.836 -450.959)" fill="#fff" fill-rule="evenodd"/>
     </g>
-    <text id="Title" transform="translate(291 160)" fill="#313d38" font-size="18" font-family="Poppins-SemiBold, Poppins" font-weight="600"><tspan x="0.368" y="19">Retail</tspan></text>
-    <text id="Title-2" data-name="Title" transform="translate(752 179)" fill="#313d38" font-size="18" font-family="Poppins-SemiBold, Poppins" font-weight="600"><tspan x="-61.335" y="0">E-Commerce</tspan></text>
+    <text id="Title" transform="translate(291 160)" fill="#313d38" font-size="26" font-family="Poppins-SemiBold, Poppins" font-weight="600"><tspan x="0.368" y="19">Retail</tspan></text>
+    <text id="Title-2" data-name="Title" transform="translate(752 179)" fill="#313d38" font-size="26" font-family="Poppins-SemiBold, Poppins" font-weight="600"><tspan x="-61.335" y="0">E-Commerce</tspan></text>
   </g>
 </svg>
