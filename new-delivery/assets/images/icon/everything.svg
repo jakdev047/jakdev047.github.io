@@ -6,11 +6,11 @@
   </defs>
   <g id="_01" data-name="01" transform="translate(-6.286 -31.828)">
     <g id="Floor">
-      <ellipse id="Floor-2" data-name="Floor" cx="243.714" cy="136.018" rx="243.714" ry="136.018" transform="translate(6.286 202.198)" fill="#f5f5f5"/>
+      <ellipse id="Floor-2" data-name="Floor" cx="243.714" cy="136.018" rx="243.714" ry="136.018" transform="translate(6.286 202.198)" fill="#e6efef"/>
     </g>
     <g id="Shadows">
       <path id="Shadow" d="M70.11,402.717,44.024,388.048c-2.288-1.321-2.288-3.463,0-4.784l131.009-75.9a9.153,9.153,0,0,1,8.284,0L209.4,322.032c2.287,1.321,2.287,3.463,0,4.783l-131.008,75.9A9.162,9.162,0,0,1,70.11,402.717Z" fill="#e0e0e0"/>
-      <ellipse id="Shadow-2" data-name="Shadow" cx="63.739" cy="39.369" rx="63.739" ry="39.369" transform="translate(169.968 364.676)" fill="#e0e0e0"/>
+      <ellipse id="Shadow-2" data-name="Shadow" cx="63.739" cy="39.369" rx="63.739" ry="39.369" transform="translate(169.968 364.676)" fill="#e6efef"/>
     </g>
     <g id="Plant">
       <g id="Plants">
