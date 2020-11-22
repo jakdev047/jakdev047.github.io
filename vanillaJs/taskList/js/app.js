@@ -47,6 +47,7 @@ function removeTask(e) {
         if (confirm('Are you sure?')) {
             let element = e.target.parentElement;
             element.remove();
+            removeFromLS(element);
         }
     }
 
@@ -115,4 +116,26 @@ function getTask(){
         // li inset in ul
         taskList.appendChild(li);
     });
+}
+
+function removeFromLS(taskItem){
+    let tasks;
+    // task variable check
+    if( localStorage.getItem('tasks') === null) {
+        tasks = [];
+    }else {
+        tasks = JSON.parse(localStorage.getItem('tasks'));
+    }
+
+    // remove item from LS
+    let li = taskItem;
+    li.removeChild(li.lastChild);  // <a href="#"></a>
+
+    tasks.forEach((task,index)=>{
+        if(li.textContent.trim() === task) {
+            task.splice(index,1);
+        }
+    });
+
+    localStorage.setItem('tasks',JSON.stringify(tasks));
 }
