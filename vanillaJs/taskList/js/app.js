@@ -60,6 +60,8 @@ function clearTask(e){
     while(taskList.firstChild) {
         taskList.removeChild(taskList.firstChild);
     }
+
+    localStorage.clear();
 }
 
 function filterTask(e){
@@ -133,7 +135,7 @@ function removeFromLS(taskItem){
 
     tasks.forEach((task,index)=>{
         if(li.textContent.trim() === task) {
-            task.splice(index,1);
+            tasks.splice(index,1);
         }
     });
 
