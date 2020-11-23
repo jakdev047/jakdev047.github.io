@@ -1,3 +1,7 @@
+// Get the UI element
+let form = document.querySelector('#book-form');
+let bookList = document.querySelector('#book-list');
+
 // Book Class
 class Book {
     constructor(title, author, isbn) {
@@ -29,7 +33,7 @@ class UI {
         document.querySelector('#isbn').value = "";
     }
 
-    showAlert(message,className){
+    static showAlert(message,className){
         let div = document.createElement('div');
         div.className = `alert ${className}`;
         div.appendChild(document.createTextNode(message));
@@ -42,13 +46,18 @@ class UI {
         },2000)
     }
 
-}
+    deleteFromBook(target){
+        if(target.hasAttribute('href')){
+            target.parentElement.parentElement.remove();
+            UI.showAlert('Book Removed!','success');
+        }
+    }
 
-// Get the UI element
-let form = document.querySelector('#book-form');
+}
 
 // add event listener
 form.addEventListener('submit', newBook);
+bookList.addEventListener('click', removeBook);
 
 // define function
 function newBook(e) {
@@ -62,14 +71,18 @@ function newBook(e) {
     let ui = new UI();
 
     if (title === '' || author === '' || isbn === '') {
-        ui.showAlert('Please all the fields!','error');
+        UI.showAlert('Please all the fields!','error');
     } else {
         let book = new Book(title, author, isbn);
 
         ui.addToBookList(book);
         ui.clearFields();
-        ui.showAlert('Book Added!','success');
+        UI.showAlert('Book Added!','success');
     }
+};
 
-
+function removeBook(e){
+    e.preventDefault();
+    let ui = new UI();
+    ui.deleteFromBook(e.target);
 }
