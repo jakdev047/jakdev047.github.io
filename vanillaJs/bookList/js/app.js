@@ -55,6 +55,27 @@ class UI {
 
 }
 
+// LocalStorage class
+
+class LocalStorage {
+    static getBooks(){
+        let books;
+        if(localStorage.getItem('books') === null) {
+            books = [];
+        }else {
+            books = JSON.parse(localStorage.getItem('books'));
+        }
+        return books;
+    }
+
+    static addBooks(book){
+        let books  = LocalStorage.getBooks();
+        books.push(book);
+        localStorage.setItem('books',JSON.stringify(books));
+    }
+}
+
+
 // add event listener
 form.addEventListener('submit', newBook);
 bookList.addEventListener('click', removeBook);
@@ -78,6 +99,7 @@ function newBook(e) {
         ui.addToBookList(book);
         ui.clearFields();
         UI.showAlert('Book Added!','success');
+        LocalStorage.addBooks(book);
     }
 };
 
