@@ -49,6 +49,7 @@ class UI {
     deleteFromBook(target){
         if(target.hasAttribute('href')){
             target.parentElement.parentElement.remove();
+            LocalStorage.removeBook(target.parentElement.previousElementSibling.textContent.trim());
             UI.showAlert('Book Removed!','success');
         }
     }
@@ -80,6 +81,16 @@ class LocalStorage {
         books.forEach(book=>{
             ui.addToBookList(book);
         })
+    }
+
+    static removeBook(isbn){
+        let books  = LocalStorage.getBooks();
+        books.forEach((book,index)=>{
+            if(book.isbn === isbn){
+                books.splice(index,1);
+            }
+        });
+        localStorage.setItem('books',JSON.stringify(books));
     }
 }
 
