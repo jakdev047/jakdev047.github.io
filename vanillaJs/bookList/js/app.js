@@ -73,12 +73,21 @@ class LocalStorage {
         books.push(book);
         localStorage.setItem('books',JSON.stringify(books));
     }
+
+    static displayBooks(){
+        let books  = LocalStorage.getBooks();
+        let ui = new UI();
+        books.forEach(book=>{
+            ui.addToBookList(book);
+        })
+    }
 }
 
 
 // add event listener
 form.addEventListener('submit', newBook);
 bookList.addEventListener('click', removeBook);
+document.addEventListener('DOMContentLoaded',LocalStorage.displayBooks());
 
 // define function
 function newBook(e) {
