@@ -1,6 +1,8 @@
 let searchBtn = document.querySelector('#searchBtn');
 let searchUser = document.querySelector('#searchUser');
 
+let ui = new UI();
+
 // event listener
 searchBtn.addEventListener('click', userSearch);
 
@@ -19,7 +21,7 @@ function userSearch(e) {
                     }
                     else {
                         // show profile
-
+                        ui.showProfile(data);
                     }
                 })
         }
