@@ -15,9 +15,11 @@ function userSearch(e) {
             fetch(`https://api.github.com/users/${userText}`)
                 .then(res => res.json())
                 .then(data => {
-                    console.log(data);
                     if( data.message == 'Not Found') {
                         // show alert
+                       setTimeout(()=>{
+                        ui.showAlert("User Not Found!","alert alert-danger")
+                       },1000)
                     }
                     else {
                         // show profile
@@ -29,5 +31,6 @@ function userSearch(e) {
     }
     else {
         // clear profile
+        ui.clearProfile();
     }
 }
