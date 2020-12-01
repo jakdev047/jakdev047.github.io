@@ -35,6 +35,7 @@ class Products {
 // UI Class
 class UI {
     constructor() { }
+
     displayProducts(products) {
         let result = "";
         products.forEach(product => {
@@ -58,6 +59,25 @@ class UI {
         });
         productsDOM.innerHTML = result;
     }
+
+    getBagButtons() {
+        const btns = [...document.querySelectorAll('.bag-btn')];
+        btns.forEach(btn => {
+            let id = btn.dataset.id;
+            let inCart = cart.find(item => item.id === id);
+            if (inCart) {
+                btn.innerText = "In Cart";
+                btn.disabled = true;
+            }
+            else {
+                btn.addEventListener('click', (e) => {
+                    e.target.innerText = "In Cart";
+                    e.target.disabled = true;
+                })
+            }
+        })
+    }
+
 }
 
 // localStorage
@@ -78,5 +98,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // local storage save
         Storage.saveProducts(products);
+    }).then(() => {
+        ui.getBagButtons();
     });
 });
