@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36" height="36" viewBox="0 0 36 36">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Path_4468" data-name="Path 4468" d="M1406,1277h36v36h-36Z" transform="translate(-1406 -1277)" stroke="#707070" stroke-width="0.2" clip-rule="evenodd"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <path id="Path_4467" data-name="Path 4467" d="M1406,1277h45.193v45.193H1406Z" transform="translate(-1406 -1277)" stroke="#707070" stroke-width="0.2" clip-rule="evenodd"/>
+    </clipPath>
+  </defs>
+  <g id="Inefficient_use_of_existing_" data-name="Inefficient use of existing " clip-path="url(#clip-path)">
+    <g id="Group_2058" data-name="Group 2058" transform="translate(-4.596 -4.596)" clip-path="url(#clip-path-2)">
+      <g id="Group_2057" data-name="Group 2057" clip-path="url(#clip-path-2)">
+        <path id="Path_4465" data-name="Path 4465" d="M1448.129,1305.123a1.883,1.883,0,1,1-3.766,0v-1.883l-.942-9.415h3.766l.942,9.415Zm-7.532,0a1.883,1.883,0,1,1-3.766,0v-1.883l-.471-9.415h3.766l.471,9.415Zm-7.532-1.883v1.883a1.883,1.883,0,1,1-3.766,0v-1.883l.471-9.415h3.766Zm-1.883,15.064h-7.532v-7.532h7.532Zm-9.415-13.181v-1.883l.942-9.415h3.766l-.942,9.415v1.883a1.883,1.883,0,1,1-3.766,0ZM1450.011,1291h-30.128L1418,1303.24v1.883a1.889,1.889,0,0,0,1.883,1.883v16.006h16.006v-12.24h10.357v12.24h3.766v-16.006a1.889,1.889,0,0,0,1.883-1.883v-1.883Z" transform="translate(-1412.351 -1284.409)" fill="#eb3131" stroke="#3d4642" stroke-width="0.2"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36" height="36" viewBox="0 0 36 36">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Path_4485" data-name="Path 4485" d="M1274,1247h36v36h-36Z" transform="translate(-1265.375 -1238.375)" clip-rule="evenodd"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <path id="Path_4484" data-name="Path 4484" d="M1274,1247h47.676v47.676H1274Z" transform="translate(-1274 -1247)" clip-rule="evenodd"/>
+    </clipPath>
+  </defs>
+  <g id="More_efficient_use_of_" data-name="More efficient use of " transform="translate(-8.625 -8.625)" clip-path="url(#clip-path)">
+    <g id="Group_2082" data-name="Group 2082" transform="translate(2.788 2.788)" clip-path="url(#clip-path-2)">
+      <g id="Group_2081" data-name="Group 2081" clip-path="url(#clip-path-2)">
+        <path id="Path_4482" data-name="Path 4482" d="M1317.784,1275.9a1.986,1.986,0,0,1-3.973,0v-1.987l-.994-9.932h3.973l.993,9.932Zm-7.946,0a1.986,1.986,0,0,1-3.973,0v-1.987l-.5-9.932h3.973l.5,9.932Zm-7.946-1.987v1.987a1.986,1.986,0,0,1-3.973,0v-1.987l.5-9.932h3.973Zm-1.987,15.892h-7.946v-7.946h7.946Zm-9.932-13.905v-1.987l.993-9.932h3.973l-.993,9.932v1.987a1.987,1.987,0,0,1-3.973,0Zm29.8-14.9h-31.784L1286,1273.912v1.987a1.992,1.992,0,0,0,1.986,1.986v16.885h16.885v-12.912H1315.8v12.912h3.973v-16.885a1.992,1.992,0,0,0,1.986-1.986v-1.987Z" transform="translate(-1280.041 -1254.047)" fill="#f7b0c4" stroke="#3d4642" stroke-width="0.2"/>
+      </g>
+    </g>
+  </g>
+</svg>

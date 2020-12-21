@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36.003" height="36.003" viewBox="0 0 36.003 36.003">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Path_4472" data-name="Path 4472" d="M1891,1277h36v36h-36Z" transform="translate(-1891 -1277)" stroke="#707070" stroke-width="0.2" clip-rule="evenodd"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <path id="Path_4471" data-name="Path 4471" d="M1891,1277h46.143v46.143H1891Z" transform="translate(-1891 -1277)" stroke="#707070" stroke-width="0.2" clip-rule="evenodd"/>
+    </clipPath>
+  </defs>
+  <g id="Not_environmentally_" data-name="Not environmentally " clip-path="url(#clip-path)">
+    <g id="Group_2061" data-name="Group 2061" transform="translate(-5.07 -5.07)" clip-path="url(#clip-path-2)">
+      <g id="Group_2060" data-name="Group 2060" clip-path="url(#clip-path-2)">
+        <path id="Path_4469" data-name="Path 4469" d="M1919.362,1293.884a13.437,13.437,0,0,0-11.776,19.947c1.009-1.057,2.115-2.115,3.317-3.269a96.663,96.663,0,0,1,9.565-7.835,1.011,1.011,0,0,1,.625-.24.964.964,0,0,1,.961.961.934.934,0,0,1-.384.769h0a92.328,92.328,0,0,0-13.795,12.161s-.529.577-.769.865h0c-2.163,2.547-3.6,4.854-3.6,6.489h2.884c0-1.057,1.682-3.365,4.23-6.1a13.47,13.47,0,0,0,15.429,1.442h0c10.286-5.72,11.584-16.246,11.584-28.07C1937.627,1291,1926.427,1294.076,1919.362,1293.884Z" transform="translate(-1897.492 -1284.271)" fill="#eb3131" stroke="#3d4642" stroke-width="0.2"/>
+      </g>
+    </g>
+  </g>
+</svg>

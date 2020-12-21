@@ -12,6 +12,9 @@ const productsDOM = document.querySelector(".products-center");
 // cart
 let cart = [];
 
+//buttons
+let buttonsDOM = [];
+
 // getting products
 class Products {
     async getProducts() {
@@ -62,6 +65,7 @@ class UI {
 
     getBagButtons() {
         const btns = [...document.querySelectorAll('.bag-btn')];
+        buttonsDOM = btns;
         btns.forEach(btn => {
             let id = btn.dataset.id;
             let inCart = cart.find(item => item.id === id);
@@ -73,6 +77,16 @@ class UI {
                 btn.addEventListener('click', (e) => {
                     e.target.innerText = "In Cart";
                     e.target.disabled = true;
+
+                    // get product from products
+
+                    // add product to cart
+
+                    //save cart in local storage
+
+                    // set cart values
+
+                    // show the cart
                 })
             }
         })
