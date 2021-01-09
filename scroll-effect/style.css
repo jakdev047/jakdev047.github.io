@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    max-width: 1920px;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+
+.img{
+    width:900px;
+    margin: 30px auto;
+}
