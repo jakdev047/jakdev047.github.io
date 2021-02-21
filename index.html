@@ -26,9 +26,15 @@
             margin-bottom: 30px;
         }
 
-        @media print {
+        @media print and (orientation: landscape) {
             a[href]::after {
                 content: ' (' attr(href) ') ';
+            }
+            a,
+            a:hover,
+            a:visited {
+                border: 1px solid #000;
+                color: #000;
             }
         }
     </style>
