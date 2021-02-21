@@ -25,6 +25,12 @@
             margin-right: 15px;
             margin-bottom: 30px;
         }
+
+        @media print {
+            a[href]::after {
+                content: ' (' attr(href) ') ';
+            }
+        }
     </style>
 </head>
 
