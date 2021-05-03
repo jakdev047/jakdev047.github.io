@@ -30,10 +30,11 @@
         <div class="box-item-section">
             <div class="container">
                 <div class="box-item-group-div">
-                    <form>
-                        <div class="box-item-group">
+                    <form id="search_item_form">
+
+                        <ul class="box-item-group" id="box-item-group">
                             <!-- 1st -->
-                            <div class="single-box-item">
+                            <li class="single-box-item">
                                 <div class="box-dot"></div>
                                 <div class="box-item-txt">
                                     <h3>Best Bike</h3>
@@ -42,9 +43,9 @@
                                 <div class="box-item-icon">
                                     <i class="fa fa-close"></i>
                                 </div>
-                            </div>
-                            <!-- 2nd -->
-                            <div class="single-box-item">
+                            <li>
+                                <!-- 2nd -->
+                            <li class="single-box-item">
                                 <div class="box-dot"></div>
                                 <div class="box-item-txt">
                                     <h3>Best Bike</h3>
@@ -53,9 +54,9 @@
                                 <div class="box-item-icon">
                                     <i class="fa fa-close"></i>
                                 </div>
-                            </div>
+                            </li>
                             <!-- 3rd -->
-                            <div class="single-box-item">
+                            <li class="single-box-item">
                                 <div class="box-dot"></div>
                                 <div class="box-item-txt">
                                     <h3>Best Bike</h3>
@@ -64,9 +65,9 @@
                                 <div class="box-item-icon">
                                     <i class="fa fa-close"></i>
                                 </div>
-                            </div>
+                            </li>
                             <!-- 4th -->
-                            <div class="single-box-item">
+                            <li class="single-box-item">
                                 <div class="box-dot"></div>
                                 <div class="box-item-txt">
                                     <h3>Best Bike</h3>
@@ -75,9 +76,9 @@
                                 <div class="box-item-icon">
                                     <i class="fa fa-close"></i>
                                 </div>
-                            </div>
+                            </li>
                             <!-- 5th -->
-                            <div class="single-box-item">
+                            <li class="single-box-item">
                                 <div class="box-dot"></div>
                                 <div class="box-item-txt">
                                     <h3>Best Bike</h3>
@@ -86,13 +87,15 @@
                                 <div class="box-item-icon">
                                     <i class="fa fa-close"></i>
                                 </div>
-                            </div>
-                        </div>
+                            </li>
+                        </ul>
+
                         <div class="row">
                             <div class="col-lg-4">
                                 <div class="box-item-search-section">
                                     <div class="box-item-search-card">
-                                        <input type="text" class="form-control" placeholder="Search..." />
+                                        <input type="text" class="form-control" placeholder="Search..."
+                                            id="search_item" />
                                     </div>
                                     <div class="box-item-search-card">
                                         <input type="submit" value="Add New" class="btn itm-btn" />
