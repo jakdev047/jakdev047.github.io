@@ -5,7 +5,7 @@ const searchList = document.querySelector("ul#box-item-group");
 
 // define event listener
 form.addEventListener("submit", addSearch);
-// taskList.addEventListener("click", removeSearch);
+searchList.addEventListener("click", removeSearch);
 // document.addEventListener("DOMContentLoaded", getSearch);
 
 // define functions
@@ -16,21 +16,31 @@ function addSearch(e) {
   if (searchInput?.value === "") {
     alert("Add a search item!");
   } else {
+    // collect form data
+    const searchInputValue = searchInput?.value;
+
     // create li element
     let li = `<li class="single-box-item">
                     <div class="box-dot"></div>
                     <div class="box-item-txt">
-                        <h3>Best Bike</h3>
+                        <h3>${searchInputValue}</h3>
                         <p>Search Item</p>
                     </div>
                     <div class="box-item-icon">
-                        <i class="fa fa-close"></i>
+                        <a href="#">X</a>
                     </div>
                 <li>`;
 
     // li inset in ul
     searchList.innerHTML += li;
+  }
+}
 
-    console.log("searchInput?.value", searchInput?.value);
+function removeSearch(e) {
+  if (e.target.hasAttribute("href")) {
+    if (confirm("Are you sure?")) {
+      let element = e.target.parentElement.parentElement;
+      element.remove();
+    }
   }
 }
