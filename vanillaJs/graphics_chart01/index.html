@@ -16,6 +16,9 @@
     <!--bootstrap.min.css-->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
 
+    <!--chartist.min.css-->
+    <link rel="stylesheet" href="assets/chartist/css/chartist.min.css">
+
     <!--style.css-->
     <link rel="stylesheet" href="assets/css/style.css" />
 
@@ -30,7 +33,7 @@
         <div class="box-item-section">
             <div class="container">
                 <div class="box-item-group-div">
-                    <form id="search_item_form">
+                    <form id="search_item_form" class="search_item_form">
 
                         <ul class="box-item-group" id="box-item-group"></ul>
 
@@ -48,6 +51,27 @@
                             </div>
                         </div>
                     </form>
+                    <div class="search-item-graphics-box">
+                        <div class="search-item-graphics-box-title">
+                            <h3>Intrest Over Time</h3>
+                        </div>
+                        <div class="search-item-graphics-box-content">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="single-barchart">
+                                        <div id="item_barchart" class="ct-chart"></div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8">
+                                    <div class="single-curve-chart">
+                                        <div class="item">
+                                            <div id="statistics_data" class="ct-chart"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -59,6 +83,11 @@
 
     <!-- popper js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+    <!--chartist.min.js-->
+    <script src="assets/chartist/js/chartist.min.js"></script>
+    <script src="assets/chartist/js/chartist-tooltip-plugin.js"></script>
+    <script src="assets/chartist/js/chartist-custom.js"></script>
 
     <!--bootstrap.min.js-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>

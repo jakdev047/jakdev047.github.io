@@ -130,14 +130,20 @@ body {
 /*-------------------------------------
 		1.Box Item Section
 --------------------------------------*/
-.box-item-section {
-  padding: 20px 0;
-}
 .box-item-group-div {
   padding: 10px;
   border: 5px solid #c8cfec;
+  background: #f7f7f7;
 }
-
+.search_item_form {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  background: #fff;
+  margin-bottom: 30px;
+}
+.box-item-section {
+  padding: 20px 0;
+}
 .box-item-group {
   display: flex;
   flex-wrap: wrap;
@@ -213,4 +219,170 @@ input.btn.itm-btn:active {
   color: #6675b5;
   outline: none;
   box-shadow: none;
+}
+
+/*-------------------------------------
+		3. Chart Section
+--------------------------------------*/
+.search-item-graphics-box {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  background: #fff;
+  margin-bottom: 30px;
+}
+.search-item-graphics-box-title {
+  padding: 0 0 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+}
+.search-item-graphics-box-title h3 {
+  font-size: 16px;
+}
+
+/*statistics_data*/
+.ct-series-a .ct-line,
+.ct-series-b .ct-line {
+  stroke: transparent;
+}
+.ct-point {
+  stroke-width: 10px;
+}
+.ct-series-a .ct-point {
+  stroke: #55a8fd;
+}
+.ct-series-b .ct-point {
+  stroke: #cadefb;
+}
+.ct-area {
+  stroke: none;
+  fill-opacity: 1;
+}
+.ct-series-a .ct-area {
+  fill: #cadefb;
+}
+.ct-series-b .ct-area {
+  fill: #55a8fd;
+}
+/*statistics_data*/
+
+/*product_status*/
+.ct-series-a .ct-slice-pie {
+  fill: #b077f4;
+}
+.ct-series-b .ct-slice-pie {
+  fill: #55a9fd;
+}
+.ct-series-c .ct-slice-pie {
+  fill: #5dd0c8;
+}
+.ct-series-d .ct-slice-pie {
+  fill: #fb6195;
+}
+.income-dot.ps-dot1,
+.map-dot.ps-dot1 {
+  background: #b077f4;
+}
+.income-dot.ps-dot2,
+.map-dot.ps-dot2 {
+  background: #55a9fd;
+}
+.income-dot.ps-dot3,
+.map-dot.ps-dot3 {
+  background: #5dd0c8;
+}
+.income-dot.ps-dot4,
+.map-dot.ps-dot4 {
+  background: #fb6195;
+}
+.stat-income.pl0 p:nth-child(1) {
+  padding-left: 0;
+}
+.stat-income.pl0 {
+  margin-top: 22px;
+}
+/*product_status*/
+
+.ct-label.ct-vertical.ct-start,
+.ct-label.ct-horizontal.ct-end {
+  font-family: "CircularStd", sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  color: #bbc0d5;
+  margin-left: -7px;
+}
+.ct-chart-bar .ct-label.ct-horizontal.ct-end {
+  line-height: 1.8;
+}
+.ct-series-a .ct-bar {
+  stroke: #55a8fd;
+}
+.ct-series-b .ct-bar {
+  stroke: #5dcfc7;
+}
+.ct-series-c .ct-bar {
+  stroke: #af76f4;
+}
+.ct-label {
+  fill: rgba(0, 0, 0, 1);
+  color: rgba(0, 0, 0, 1);
+  font-size: 12px;
+  line-height: 1;
+}
+.ct-chart-pie .ct-label {
+  fill: rgba(255, 255, 255, 1);
+  color: rgba(255, 255, 255, 1);
+  font-size: 12px;
+  line-height: 1;
+}
+
+.chartist-tooltip {
+  position: absolute;
+  display: inline-block;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 1.33;
+  color: #79829a;
+  opacity: 0;
+  width: 87px;
+  height: 56px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+  text-align: center;
+  pointer-events: none;
+  z-index: 1;
+  -webkit-transition: opacity 0.2s linear;
+  -moz-transition: opacity 0.2s linear;
+  -o-transition: opacity 0.2s linear;
+  transition: opacity 0.2s linear;
+}
+.chartist-tooltip:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  margin-left: -15px;
+  border: 15px solid transparent;
+  border-top-color: #fff;
+}
+.chartist-tooltip.tooltip-show {
+  opacity: 1;
+}
+
+.ct-area,
+.ct-line {
+  pointer-events: none;
+}
+
+/*# sourceMappingURL=chartist-plugin-tooltip.css.map */
+
+/*chart.js(for toolTip) */
+.chart-container {
+  width: 500px;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 40px;
 }
