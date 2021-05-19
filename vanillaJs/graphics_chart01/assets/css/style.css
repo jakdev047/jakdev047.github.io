@@ -240,9 +240,20 @@ input.btn.itm-btn:active {
 }
 
 /*statistics_data*/
-.ct-series-a .ct-line,
+.ct-series-a .ct-line {
+  stroke: #cadefb;
+}
 .ct-series-b .ct-line {
-  stroke: transparent;
+  stroke: #55a8fd;
+}
+.ct-series-c .ct-line {
+  stroke: #5dcfc7;
+}
+.ct-series-d .ct-line {
+  stroke: #af76f4;
+}
+.ct-series-e .ct-line {
+  stroke: #eb1b;
 }
 .ct-point {
   stroke-width: 10px;
@@ -258,50 +269,21 @@ input.btn.itm-btn:active {
   fill-opacity: 1;
 }
 .ct-series-a .ct-area {
-  fill: #cadefb;
+  fill: transparent;
 }
 .ct-series-b .ct-area {
-  fill: #55a8fd;
+  fill: transparent;
+}
+.ct-series-c .ct-area {
+  fill: transparent;
+}
+.ct-series-d .ct-area {
+  fill: transparent;
+}
+.ct-series-e .ct-area {
+  fill: transparent;
 }
 /*statistics_data*/
-
-/*product_status*/
-.ct-series-a .ct-slice-pie {
-  fill: #b077f4;
-}
-.ct-series-b .ct-slice-pie {
-  fill: #55a9fd;
-}
-.ct-series-c .ct-slice-pie {
-  fill: #5dd0c8;
-}
-.ct-series-d .ct-slice-pie {
-  fill: #fb6195;
-}
-.income-dot.ps-dot1,
-.map-dot.ps-dot1 {
-  background: #b077f4;
-}
-.income-dot.ps-dot2,
-.map-dot.ps-dot2 {
-  background: #55a9fd;
-}
-.income-dot.ps-dot3,
-.map-dot.ps-dot3 {
-  background: #5dd0c8;
-}
-.income-dot.ps-dot4,
-.map-dot.ps-dot4 {
-  background: #fb6195;
-}
-.stat-income.pl0 p:nth-child(1) {
-  padding-left: 0;
-}
-.stat-income.pl0 {
-  margin-top: 22px;
-}
-/*product_status*/
-
 .ct-label.ct-vertical.ct-start,
 .ct-label.ct-horizontal.ct-end {
   font-family: "CircularStd", sans-serif;
@@ -325,12 +307,6 @@ input.btn.itm-btn:active {
 .ct-label {
   fill: rgba(0, 0, 0, 1);
   color: rgba(0, 0, 0, 1);
-  font-size: 12px;
-  line-height: 1;
-}
-.ct-chart-pie .ct-label {
-  fill: rgba(255, 255, 255, 1);
-  color: rgba(255, 255, 255, 1);
   font-size: 12px;
   line-height: 1;
 }
@@ -376,8 +352,6 @@ input.btn.itm-btn:active {
 .ct-line {
   pointer-events: none;
 }
-
-/*# sourceMappingURL=chartist-plugin-tooltip.css.map */
 
 /*chart.js(for toolTip) */
 .chart-container {
