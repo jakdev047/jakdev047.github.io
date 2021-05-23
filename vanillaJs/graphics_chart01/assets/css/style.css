@@ -240,6 +240,8 @@ input.btn.itm-btn:active {
 }
 
 /*statistics_data*/
+
+/* line */
 .ct-series-a .ct-line {
   stroke: #cadefb;
 }
@@ -255,15 +257,38 @@ input.btn.itm-btn:active {
 .ct-series-e .ct-line {
   stroke: #eb1b;
 }
+
+/* point */
 .ct-point {
   stroke-width: 10px;
 }
-.ct-series-a .ct-point {
+.ct-series-a .ct-point,
+.ct-series-b .ct-point,
+.ct-series-c .ct-point,
+.ct-series-d .ct-point,
+.ct-series-e .ct-point {
+  stroke: transparent;
+}
+.ct-series-a .ct-point:hover {
   stroke: #55a8fd;
 }
-.ct-series-b .ct-point {
+.ct-series-b .ct-point:hover {
   stroke: #cadefb;
 }
+.ct-series-c .ct-point:hover {
+  stroke: #5dcfc7;
+}
+.ct-series-d .ct-point:hover {
+  stroke: #af76f4;
+}
+.ct-series-e .ct-point:hover {
+  stroke: #eb1b;
+}
+.ct-series-e .ct-point:hover {
+  stroke: #eb1b;
+}
+
+/* area */
 .ct-area {
   stroke: none;
   fill-opacity: 1;

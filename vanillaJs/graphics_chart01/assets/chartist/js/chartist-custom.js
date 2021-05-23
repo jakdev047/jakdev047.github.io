@@ -23,7 +23,7 @@ $(document).ready(function () {
       height: "190px",
       low: 0,
       showArea: true,
-      showPoint: false,
+      showPoint: true,
       fullWidth: true,
       axisY: {
         labelInterpolationFnc: function (value) {
