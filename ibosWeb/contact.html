@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- All meta tag -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- title -->
+    <title>iBOS</title>
+
+    <!-- all css link -->
+    <link rel="shortcut icon" type="image/icon" href="assets/images/logo/ibos favicon.svg" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.css" />
+    <link rel="stylesheet" href="assets/css/step-slider.css" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+</head>
+
+<body>
+
+    <!-- header section start -->
+    <header id="header" class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="logo">
+                            <h1>
+                                <a href="index.html">
+                                    <img src="assets/images/logo/logo.svg" alt="iBOS">
+                                </a>
+                            </h1>
+                        </div>
+                    </div>
+                    <div class="col-lg-10">
+                        <nav class="nav-menu nav-menu-content">
+                            <ul>
+                                <li><a href="#">Products</a></li>
+                                <li><a href="#">Free For SME</a></li>
+                                <li class="drop-down">
+                                    <a href="#">Services</a>
+                                    <ul>
+                                        <li><a href="#">Website Development</a></li>
+                                        <li><a href="#">E-commerce Development</a></li>
+                                        <li><a href="#">Mobile App Development</a></li>
+                                        <li><a href="#">Custom Software Development</a></li>
+                                        <li><a href="#">Enterprise Privacy & Security</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="about.html">About us</a></li>
+                                <li class="active"><a href="contact.html">Contact</a></li>
+                            </ul>
+                            <div class="header-menu-call">
+                                <p class="header-para">
+                                    <a href="#" class="header-para-mobile-link"></a>
+                                    <img src="assets/images/logo/header-call.svg" alt="iBOS">
+                                    01703-596292
+                                </p>
+                            </div>
+                        </nav><!-- .nav-menu -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Welcome banner section -->
+    <section>
+        <div class="welcome-banner bg-blue">
+            <div class="container">
+                <div class="welcome-section-title contact-section-title">
+                    <h2 class="welcome-heading">
+                        Get in Touch to Get 30 Days Free Trial on Any of Our Software
+                    </h2>
+                    <div class="welcome-btn-section">
+                        <a href="#appointment" class="btn btn-footer appointment-smooth">Book an Appointment</a>
+                        <a href="#" class="btn btn-footer btn-footer-reverse">
+                            Click Here to Start Chat
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact-address section -->
+    <section>
+        <div class="contact-address-section upper-move">
+            <div class="container">
+                <div class="contact-address-section-content">
+                    <div class="contact-call-circle">
+                        <img src="assets/images/others/contact-call.svg" alt="iBOS">
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-lg-5">
+                            <div class="single-contact-address">
+                                <div class="single-contact-address-txt">
+                                    <div class="single-contact-address-txt-wrapper">
+                                        <h3>Talk to Sales </h3>
+                                        <p>
+                                            Interested in learning about iBOS’ software? Just pick up the phone to chat
+                                            with
+                                            a member of our team.
+                                        </p>
+                                    </div>
+
+                                    <ul class="single-contact-address-list">
+                                        <li>
+                                            <span class="icon">
+                                                <img src="assets/images/contact/call.svg" alt="iBOS">
+                                            </span>
+                                            <span>01703-596292 </span>
+                                            <a href="#" class="contact-address-link"></a>
+                                        </li>
+                                        <li>
+                                            <span class="icon">
+                                                <img src="assets/images/contact/mail.svg" alt="iBOS">
+                                            </span>
+                                            <span>info@ibos.io</span>
+                                            <a href="#" class="contact-address-link"></a>
+                                        </li>
+                                        <li>
+                                            <span class="icon">
+                                                <img src="assets/images/contact/map-icon.svg" alt="iBOS">
+                                            </span>
+                                            <span>
+                                                House no 6/2, Kazi Nazrul Islam RD, Lalmatia, Dhaka - 1207
+                                            </span>
+                                            <a href="#" class="contact-address-link"></a>
+                                        </li>
+                                        <li>
+                                            <span class="icon">
+                                                <img src="assets/images/contact/direction.svg" alt="iBOS">
+                                            </span>
+                                            <span>Get Direction</span>
+                                            <a href="https://goo.gl/maps/wbnpwUhkDHhewPZZ9" class="contact-address-link"
+                                                target="_blank"></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="single-contact-address">
+                                <div id="mapid"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact-form section -->
+    <section>
+        <div class="conatact-form-section" id="appointment">
+            <div class="container">
+                <div class="section-title section-title362">
+                    <h2 class="section-title">How Can we Help?</h2>
+                </div>
+                <div class="contact-form-content">
+                    <h3>Send us a Message! </h3>
+                    <form action="#" class="contact-form">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control contact-input-form" placeholder="Name">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control contact-input-form" placeholder="Phone">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <input type="email" class="form-control contact-input-form" placeholder="Email">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control contact-input-form"
+                                        placeholder="Company Website">
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <textarea class="form-control contact-textarea-form"
+                                        placeholder="Message"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact-button-section">
+                            <div class="contact-submit-btn">
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-footer">
+                                        Send Message
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <ul class="contact-form-icon-list">
+                        <li>
+                            <a href="#" class="single-contact-link">
+                                <img src="assets/images/contact/facebook.svg" alt="iBOS">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="single-contact-link">
+                                <img src="assets/images/contact/linkedin.svg" alt="iBOS">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer section -->
+    <footer>
+        <div class="footer-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="single-footer-item">
+                            <div class="footer-logo">
+                                <img src="assets/images/logo/logo.svg" alt="iBOS">
+                            </div>
+                            <div class="footer-logo-txt">
+                                <p>
+                                    The Fastest Growing Software Company in Bangladesh
+                                </p>
+                                <ul class="footer-list">
+                                    <li>
+                                        <a href="#">
+                                            <img src="assets/images/footer/icon/facebook.svg" alt="iBOS">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="assets/images/footer/icon/twitter.svg" alt="iBOS">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="assets/images/footer/icon/linked.svg" alt="iBOS">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="assets/images/footer/icon/instagram.svg" alt="iBOS">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="row">
+                            <div class="col-lg-4 col-6 order-lg-1 order-1">
+                                <div class="single-footer-item">
+                                    <h4 class="footer-title">Company</h4>
+                                    <ul class="footer-menu-list">
+                                        <li>
+                                            <a href="index.html">Home</a>
+                                        </li>
+                                        <li>
+                                            <a href="about.html">About</a>
+                                        </li>
+                                        <li>
+                                            <a href="contact.html">Contact</a>
+                                        </li>
+                                        <li>
+                                            <a href="blog.html">Blog</a>
+                                        </li>
+                                        <li>
+                                            <a href="book-demo.html">Book a demo</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Careers</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 order-lg-2 order-3"></div>
+                            <div class="col-lg-5 col-6 order-lg-3 order-2">
+                                <div class="single-footer-item custom-margin-left">
+                                    <h4 class="footer-title">Free for SME</h4>
+                                    <ul class="footer-menu-list">
+                                        <li>
+                                            <a href="#">Cloud ERP</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Accounting</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">HR + Payroll</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Time Tracking</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">CRM</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-footer-row">
+                            <div class="single-footer-item">
+                                <h4 class="footer-title">Products</h4>
+                                <ul class="footer-menu-list">
+                                    <li>
+                                        <a href="#">Enterprise ERP</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Accounting</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">HR Software</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">VAT Software</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">VAT Software</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Ecommerce & Inventory</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Ratail ERP with POS</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Toute To Market (RTM)</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Performance Management System</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Email Marketing Software</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">CRM With Sales Software</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="single-footer-item fotter-custom-left">
+                                <h4 class="footer-title">Services</h4>
+                                <ul class="footer-menu-list">
+                                    <li>
+                                        <a href="#">Website Development</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Ecommerce Development</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Mobile App Development</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Custom Software Development</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Enterprise Privacy & Security</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="single-footer-item footer-contact-btn-section">
+                            <h4 class="footer-title">Community</h4>
+                            <p class="footer-contact-para">
+                                Join Our Linkedin Page With Over 5,000 entrepreneurs
+                            </p>
+                            <div> <a href="#" class="btn btn-footer">Go to Linkedin Group</a></div>
+                            <div class="footer-user-section">
+                                <ul class="footer-user-list">
+                                    <li>
+                                        <img src="assets/images/footer/user/1.png" alt="iBOS">
+                                    </li>
+                                    <li>
+                                        <img src="assets/images/footer/user/2.png" alt="iBOS">
+                                    </li>
+                                    <li>
+                                        <img src="assets/images/footer/user/3.png" alt="iBOS">
+                                    </li>
+                                    <li>
+                                        <img src="assets/images/footer/user/4.png" alt="iBOS">
+                                    </li>
+                                    <li>
+                                        <img src="assets/images/footer/user/5.png" alt="iBOS">
+                                    </li>
+                                    <li>
+                                        <img src="assets/images/footer/user/6.png" alt="iBOS">
+                                    </li>
+                                </ul>
+                                <div class="footer-user-para">
+                                    <p>
+                                        <span>600+people </span> Joined in the last 30 days
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <div></div>
+                    <ul class="footer-bottom-list">
+                        <li>
+                            <a href="#"> Privacy</a>
+                        </li>
+                        <li>
+                            <a href="#"> Terms</a>
+                        </li>
+                        <li>
+                            <a href="#">&commat; iBOS - An Akij Company</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="scroll-Top">
+            <div class="return-to-top">
+                <i class="fa fa-angle-up " id="scroll-top" data-toggle="tooltip" data-placement="top" title=""
+                    data-original-title="Back to Top" aria-hidden="true"></i>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Include all js compiled plugins (below), or include individual files as needed -->
+
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.sticky.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="assets/js/slider-script.js"></script>
+    <script src="assets/js/custom-menu.js"></script>
+    <script src="assets/js/custom.js"></script>
+</body>
+
+</html>

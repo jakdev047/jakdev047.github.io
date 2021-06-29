@@ -1,0 +1,180 @@
+/* Slider Text */
+
+.mobile-app-step-section .slider-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 75px;
+}
+
+.mobile-app-step-section .slider-text div {
+  margin-left: -22rem;
+  padding: 90px 0;
+}
+.mobile-app-step-section .slider-text div:last-child {
+  /* padding-bottom: 25rem; */
+  padding-bottom: 10rem;
+}
+
+.mobile-app-step-section .slider-text div > h4 {
+  max-width: 402px;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.18;
+  color: var(--ice-blue);
+  margin-bottom: 25px;
+}
+
+.mobile-app-step-section .slider-text div > p {
+  max-width: 403px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--cloudy-blue);
+}
+
+.mobile-app-step-section .slider-itms {
+  position: absolute;
+  top: 165px;
+  /* left: 10%; */
+}
+
+.mobile-app-step-section .slider-itms ul {
+  display: flex;
+  flex-direction: column;
+}
+
+#slider-area {
+  background: #00024e;
+}
+
+.mobile-app-slider-image {
+  right: -5px;
+  top: 105px;
+}
+
+.slider-itms.mobile-app-slider-image.fixed-item {
+  right: unset;
+  margin-left: 49.5rem;
+  /* top: 15rem; */
+  top: 10rem;
+}
+
+.mobile-app-slider-image ul li {
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.7s;
+  height: 0;
+  width: 0;
+}
+
+.mobile-app-slider-image ul li.active {
+  visibility: visible;
+  opacity: 1;
+  height: auto;
+  width: auto;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.mobile-app-step-section .secound-image-slide {
+  position: unset;
+  margin-top: -330px;
+  padding-bottom: 290px;
+  margin-left: 49.8rem;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.mobile-app-step-section .secound-item {
+  position: unset;
+  margin-top: -320px;
+  padding-bottom: 0px;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s linear;
+}
+
+.mobile-app-step-section .visible {
+  visibility: visible;
+  opacity: 1;
+}
+.mobile-app-step-section .slider-itms ul li a {
+  color: #3d4571;
+  font-size: 16px;
+  padding-bottom: 10px;
+  transition: 0.3s ease-in-out;
+}
+.mobile-app-step-section .fixed-item {
+  position: fixed;
+  /* top: 290px; */
+  top: 280px;
+  z-index: 1;
+}
+
+/* Alwys active 1st section */
+.mobile-app-step-section .activeawl a {
+  color: #02d8fb !important;
+}
+.mobile-app-slider-image ul li.activeawl {
+  visibility: visible;
+  opacity: 1;
+  height: auto;
+  width: auto;
+  background-color: transparent;
+  border-color: transparent;
+}
+/* End Alws active */
+
+.mobile-app-step-section .active a {
+  color: #02d8fb !important;
+}
+
+@media screen and (min-width: 1199px) {
+  .mobile-app-step-section .slider-section-image {
+    display: none;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .mobile-app-step-section .slider-itms {
+    display: none;
+  }
+
+  .mobile-app-step-section .slider-text div {
+    margin: 0 auto;
+    padding: 0;
+    padding-bottom: 8rem;
+    text-align: center;
+  }
+  .mobile-app-step-section .slider-text div > h4 {
+    max-width: 80%;
+    text-align: center;
+    margin: 25px auto;
+  }
+  .mobile-app-step-section .slider-text div > p {
+    max-width: 80%;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .mobile-app-step-section .slider-section img {
+    max-width: 250px;
+    margin: 0 auto 20px;
+  }
+
+  .mobile-app-step-section .slider-text div > h4 {
+    max-width: 402px;
+    font-size: 21px;
+  }
+  .mobile-app-step-section .slider-text div > p {
+    max-width: 100%;
+  }
+  .mobile-app-step-section .slider-text div {
+    padding-bottom: 2rem;
+  }
+  .mobile-app-step-section .slider-text div:last-child {
+    padding-bottom: 0rem;
+  }
+}

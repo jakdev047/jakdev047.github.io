@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="88px" height="81px" viewBox="0 0 88 81" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60 (88103) - https://sketch.com -->
+    <title>Ui/Bg-shape/Oval1</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1.-Home" transform="translate(-238.000000, -421.000000)" fill="#F7F8FB">
+            <g id="Group-31" transform="translate(135.000000, 347.000000)">
+                <g id="Group-5" transform="translate(41.000000, 41.000000)">
+                    <g id="Group-15" transform="translate(37.500000, 33.000000)">
+                        <g id="Ui/Bg-shape/Oval1" transform="translate(25.000000, 0.000000)">
+                            <path d="M40.3384103,81 C61.7089332,81 81.8326505,67.2229636 85.7228185,47.944222 C89.7359764,28.0559715 83.9418513,11.8180744 73.2382769,4.51404656 C64.9429318,-1.14662612 53.3375503,-0.16971646 43.3532926,0.571916907 C23.0000773,2.40163047 1.11107234,16.898773 0.0112135966,35.1754913 C-0.535162749,61.6662884 18.9678874,81 40.3384103,81 Z" id="Oval"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
