@@ -240,68 +240,75 @@ input.btn.itm-btn:active {
 }
 
 /*statistics_data*/
-.ct-series-a .ct-line,
-.ct-series-b .ct-line {
-  stroke: transparent;
+
+/* line */
+.ct-series-a .ct-line {
+  stroke: #cadefb;
 }
+.ct-series-b .ct-line {
+  stroke: #55a8fd;
+}
+.ct-series-c .ct-line {
+  stroke: #5dcfc7;
+}
+.ct-series-d .ct-line {
+  stroke: #af76f4;
+}
+.ct-series-e .ct-line {
+  stroke: #eb1b;
+}
+
+/* point */
 .ct-point {
   stroke-width: 10px;
 }
-.ct-series-a .ct-point {
+.ct-series-a .ct-point,
+.ct-series-b .ct-point,
+.ct-series-c .ct-point,
+.ct-series-d .ct-point,
+.ct-series-e .ct-point {
+  stroke: transparent;
+}
+.ct-series-a .ct-point:hover {
   stroke: #55a8fd;
 }
-.ct-series-b .ct-point {
+.ct-series-b .ct-point:hover {
   stroke: #cadefb;
 }
+.ct-series-c .ct-point:hover {
+  stroke: #5dcfc7;
+}
+.ct-series-d .ct-point:hover {
+  stroke: #af76f4;
+}
+.ct-series-e .ct-point:hover {
+  stroke: #eb1b;
+}
+.ct-series-e .ct-point:hover {
+  stroke: #eb1b;
+}
+
+/* area */
 .ct-area {
   stroke: none;
   fill-opacity: 1;
 }
 .ct-series-a .ct-area {
-  fill: #cadefb;
+  fill: transparent;
 }
 .ct-series-b .ct-area {
-  fill: #55a8fd;
+  fill: transparent;
+}
+.ct-series-c .ct-area {
+  fill: transparent;
+}
+.ct-series-d .ct-area {
+  fill: transparent;
+}
+.ct-series-e .ct-area {
+  fill: transparent;
 }
 /*statistics_data*/
-
-/*product_status*/
-.ct-series-a .ct-slice-pie {
-  fill: #b077f4;
-}
-.ct-series-b .ct-slice-pie {
-  fill: #55a9fd;
-}
-.ct-series-c .ct-slice-pie {
-  fill: #5dd0c8;
-}
-.ct-series-d .ct-slice-pie {
-  fill: #fb6195;
-}
-.income-dot.ps-dot1,
-.map-dot.ps-dot1 {
-  background: #b077f4;
-}
-.income-dot.ps-dot2,
-.map-dot.ps-dot2 {
-  background: #55a9fd;
-}
-.income-dot.ps-dot3,
-.map-dot.ps-dot3 {
-  background: #5dd0c8;
-}
-.income-dot.ps-dot4,
-.map-dot.ps-dot4 {
-  background: #fb6195;
-}
-.stat-income.pl0 p:nth-child(1) {
-  padding-left: 0;
-}
-.stat-income.pl0 {
-  margin-top: 22px;
-}
-/*product_status*/
-
 .ct-label.ct-vertical.ct-start,
 .ct-label.ct-horizontal.ct-end {
   font-family: "CircularStd", sans-serif;
@@ -325,12 +332,6 @@ input.btn.itm-btn:active {
 .ct-label {
   fill: rgba(0, 0, 0, 1);
   color: rgba(0, 0, 0, 1);
-  font-size: 12px;
-  line-height: 1;
-}
-.ct-chart-pie .ct-label {
-  fill: rgba(255, 255, 255, 1);
-  color: rgba(255, 255, 255, 1);
   font-size: 12px;
   line-height: 1;
 }
@@ -377,12 +378,199 @@ input.btn.itm-btn:active {
   pointer-events: none;
 }
 
-/*# sourceMappingURL=chartist-plugin-tooltip.css.map */
-
 /*chart.js(for toolTip) */
 .chart-container {
   width: 500px;
   margin-left: 40px;
   margin-right: 40px;
   margin-bottom: 40px;
+}
+
+
+/*-------------------------------------
+	Signin
+--------------------------------------*/
+.signin{
+  background: #fff;
+  padding: 216px 0;
+}
+.signin.signup {padding: 123px 0px;}
+
+.sign-content {
+  max-width: 620px;
+  margin: 0 auto;
+}
+.sign-content h2{
+  color: #464d5f;
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 65px;
+}
+
+/*.signin-form  .form-control*/
+.signin-form  .form-control {
+  background: transparent;
+  border: transparent;
+  border: 1px solid #c3c6cf;
+  border-radius: 3px;
+  outline: 0!important;
+  box-shadow: none;
+  padding: 0px 0;
+  height: 46px;
+  -webkit-transition: linear .5s;
+  -moz-transition: linear .5s;
+  -ms-transition: linear .5s;
+  -o-transition: linear .5s;
+  transition: linear .5s;
+}
+.signin-form  .form-control:hover,.signin-form  .form-control:focus{
+  border: 1px solid #474d5b;
+  color:#464e60;
+  box-shadow: 0px 5px 10px rgba(45,50,64,.2);
+}
+
+.signin-form label{
+  color: #7c8089;
+  font-size:16px;
+  font-weight: 500;
+  text-transform: capitalize;
+  margin-bottom: 15px;
+}
+.signin-form input[type="text"],.signin-form input[type="email"],.signin-form input[type="password"]{
+  color: #464e60;
+  font-size:16px;
+  font-weight: 400;
+  text-transform: capitalize;
+  padding: 0 18px;
+}
+.signin-form .form-col{
+  width: 48.5%;
+  float: left;
+  
+}
+.signin-form .form-col1{
+  width: 48%;
+  float: right;
+}
+/*.signin-form  .form-control*/
+
+/*.password-circle*/
+.styled-checkbox {
+position: absolute;
+opacity: 0;
+-webkit-transition: ease-in-out .3s;
+-moz-transition: ease-in-out .3s;
+-ms-transition: ease-in-out .3s;
+-o-transition: ease-in-out .3s;
+transition: ease-in-out .3s;
+}
+
+.styled-checkbox  + label,.awesome-checkbox-list  a {
+  position: relative;
+  cursor: pointer;
+  padding: 0;
+  color: #91949c;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+/* Box.*/
+.styled-checkbox + label:before {
+  position: relative;
+  top: -3px;
+  content: '';
+  margin-right: 16px;
+  display: inline-block;
+  vertical-align: text-top;
+  width: 25px;
+  height: 25px;
+  background: transparent;
+  border: 1px solid #ebebeb;
+}
+
+/* Box hover*/
+.styled-checkbox:hover + label:before {
+  background: #fff;
+  box-shadow:2px 3px 15px rgba(45,50,64,.25);
+}
+/*Box checked*/
+.styled-checkbox:checked + label:before {
+  background: #fff;
+  box-shadow:none;
+}
+
+/*Checkmark. Could be replaced with an image*/
+.styled-checkbox:checked + label:after {
+  content: '';
+  position: absolute;
+  left: 8px;
+  top: 9px;
+  background: #5a84fd;
+  width: 2px;
+  height: 2px;
+  box-shadow: 
+    2px 0 0 #5a84fd,
+    4px 0 0 #5a84fd,
+    4px -2px 0 #5a84fd,
+    4px -4px 0 #5a84fd,
+    4px -6px 0 #5a84fd,
+    4px -8px 0 #5a84fd;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+.unstyled li {
+  display: inline-block;
+  margin:10px 10px 10px 0;
+  /* float: left; */
+}
+
+.centered {
+max-width: 620px;
+margin: auto;
+}
+
+.title {
+text-align: center;
+color: rgb(69, 113, 236);
+}
+
+.unstyled li:last-child {
+  float: right;
+}
+/*.password-circle*/
+
+/*.btn.signin_btn*/
+.btn.signin_btn,.btn.signin_btn:focus {
+  width: 620px;
+  padding: 0;
+  height: 60px;
+  background: #5a84fd;
+  color: #fff;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 3px;
+  box-shadow: 0 5px 30px rgba(0,66,255,.3);
+  margin-top: 23px;
+}
+/*.btn.signin_btn*/
+
+.signin-footer p{
+  color: #91949c;
+  font-size:16px;
+  max-width: 265px;
+  margin: 35px auto;
+
+}
+.signin-footer p>a{
+  color: #7c8089;
+  font-size:16px;
+  font-weight: 500;
+  text-transform: capitalize;
+
 }

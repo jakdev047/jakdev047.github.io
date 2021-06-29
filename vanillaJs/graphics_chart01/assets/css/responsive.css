@@ -4,7 +4,15 @@
     flex: 0 0 50%;
     max-width: 50%;
   }
+  .signin-footer {text-align: center;}
+  .btn.signin_btn,.btn.signin_btn:focus {max-width: 200px;margin: 0 auto;}
 } /*max-width:767px*/
+
+@media screen and (max-width: 480px){
+	.signin-form .form-col {width: 100%;float: none;}
+  .signin-footer {text-align: left;}
+}/*max-width:480px*/
+
 
 @media screen and (max-width: 399px) {
   .single-box-item {
@@ -14,4 +22,8 @@
   .box-item-search-section {
     flex-wrap: wrap;
   }
+  .single-forgot-password-circle{float: left;}
+	.modal-content .sign-content {max-width: 200px;margin: 0 auto;}
+	.signin {padding: 60px 0;}
+  .unstyled li:last-child {float: none;}
 } /*max-width: 399px*/
