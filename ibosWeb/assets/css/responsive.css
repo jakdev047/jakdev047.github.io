@@ -151,6 +151,75 @@
   .erp-feature-card-list li.single-erp-feature-card {
     border-right: 2px solid transparent;
   }
+
+  /* custom-softwear-development */
+  .single-custom-softwear-about {
+    margin: 0 auto;
+  }
+  .softwear-development-section .app-development-img {
+    max-width: 632px;
+    margin: 0 auto 25px;
+  }
+  .single-custom-softwear-about-img {
+    text-align: center;
+  }
+  .app-development-content {
+    margin-left: 0;
+    margin: 0 auto;
+  }
+  .developmet-card-content {
+    margin: 0 auto;
+  }
+  .development-card-image {
+    text-align: center;
+  }
+  .about-hm-article.softwear-work-env .single-hm-article-img {
+    right: auto;
+    padding-bottom: 55px;
+  }
+
+  /* softwear-work-env */
+  .about-mobile-app-section.about-hm-article.softwear-work-env
+    .single-hm-article-txt {
+    padding-top: 25px;
+  }
+  .softwear-work-env .single-custom-softwear-about-img {
+    text-align: left;
+  }
+  .softwear-work-env .single-custom-softwear-about {
+    margin: 25px auto 0;
+  }
+  .softwear-book-demo-content .single-book-demo-img img {
+    height: 100%;
+  }
+  .softwear-book-demo-content .single-book-demo-wrapper {
+    padding: 45px 57px 45px 58px;
+  }
+
+  /* procedure */
+  .procedure-section .section-content .col-lg-3 {
+    max-width: 100% !important;
+    flex: none;
+  }
+  .procedure-section .section-content .col-lg-9 {
+    max-width: 100% !important;
+    flex: none;
+  }
+  .procedure-section .section-content .procedure-items {
+    max-width: 100%;
+    padding-top: 75px;
+    display: flex;
+  }
+  .procedure-section p.section-para {
+    padding-bottom: 0;
+  }
+  .procedure-section .section-content .procedure-content {
+    margin: 0 auto;
+    padding-top: 80px;
+  }
+  .procedure-items .slick-slide {
+    padding-right: 40px;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -202,6 +271,7 @@
     max-width: 550px;
     margin: 0 auto;
   }
+  .single-hm-article-title,
   a.single-hm-article-title,
   a.single-hm-article-title:hover,
   a.single-hm-article-title:focus {
@@ -319,6 +389,27 @@
   .erp-module-department-mobile-content {
     display: block;
   }
+
+  /* custom-software */
+  .softwear-book-demo-content.book-demo-section-content.mobile-app-book-demo-content {
+    margin: 25px auto 0;
+  }
+  .softwear-book-demo-content .single-book-meeting-form.mobile-book-form {
+    display: block;
+  }
+  .softwear-book-demo-content .single-book-demo-wrapper {
+    border-radius: 10px !important;
+    margin: 25px 0 0;
+  }
+  .softwear-book-demo-content .single-book-demo-img img {
+    height: auto;
+  }
+
+  /* procedure */
+  .procedure-content .procedure-text .content-image {
+    max-width: 320px;
+    margin-left: 0;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -428,6 +519,19 @@
     background-color: transparent !important;
     color: #3d4571 !important;
   }
+
+  /* procedur */
+  .procedure-content .procedure-text {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .procedure-content .procedure-text .content-text {
+    padding-top: 30px;
+    text-align: center;
+  }
+  .procedure-section .section-content .procedure-content {
+    padding-top: 20px;
+  }
 }
 
 @media screen and (max-width: 575px) {
@@ -465,6 +569,7 @@
   }
   .single-hm-article {
     max-width: 375px;
+    margin: 0 0;
   }
   .hm-article-section-reverse .single-hm-article {
     max-width: 400px !important;
@@ -494,6 +599,12 @@
     position: relative;
     top: 0;
     padding-top: 360px;
+  }
+  .single-hm-article-title,
+  a.single-hm-article-title,
+  a.single-hm-article-title:hover,
+  a.single-hm-article-title:focus {
+    font-size: 21px;
   }
 
   /* book-demo */
@@ -767,6 +878,18 @@
   .mobile-app-step-section h2.section-title {
     font-size: 21px;
   }
+  .about-mobile-app-section {
+    padding: 60px 0 50px;
+  }
+  .about-mobile-app-section.about-hm-article .single-hm-article-txt {
+    padding-top: 260px;
+  }
+  .app-development-img img {
+    max-width: 400px;
+  }
+  .developmet-card-content p {
+    padding-bottom: 20px;
+  }
 
   /* enterprise ERP */
   .erp-users-section {
@@ -822,6 +945,44 @@
   .erp-module-department-mobile-content {
     margin: 50px 0 0;
   }
+
+  /* custom-sotwear-development */
+  .custom-softwear-about {
+    padding: 60px 0 50px;
+  }
+  .single-custom-softwear-about {
+    margin: 25px 0 0;
+  }
+  .single-custom-softwear-about h2 {
+    font-size: 21px;
+    max-width: 410px;
+  }
+  .single-custom-softwear-about-img {
+    text-align: left;
+  }
+  .development-card-image {
+    text-align: left;
+  }
+  .softwear-book-demo-content .single-book-demo-wrapper {
+    padding: 25px 35px;
+  }
+  .softwear-work-env .single-custom-softwear-about h2 {
+    font-size: 21px;
+  }
+
+  /* procedure */
+  .procedure-section {
+    padding: 50px 0 0px;
+  }
+  .content-text h2 {
+    font-size: 21px;
+  }
+  .procedure-section .section-content {
+    padding-bottom: 0;
+  }
+  .procedure-items .slick-slide {
+    padding-right: 0;
+  }
 }
 
 @media screen and (max-width: 445px) {
@@ -864,6 +1025,7 @@
   .single-hm-article-img img {
     max-width: 300px;
   }
+  .single-hm-article-title,
   a.single-hm-article-title,
   a.single-hm-article-title:hover,
   a.single-hm-article-title:focus {
@@ -1091,7 +1253,7 @@
     padding: 20px 15px;
   }
   .app-development-img img {
-    max-width: 300px;
+    max-width: 240px;
     margin: 0 auto;
   }
   .app-development-card {
@@ -1114,6 +1276,7 @@
   .enterprise-erp-about .single-hm-article-row {
     background: var(--color-less);
   }
+  .enterprise-erp-about .single-hm-article-title,
   .enterprise-erp-about a.single-hm-article-title,
   .enterprise-erp-about a.single-hm-article-title:hover,
   .enterprise-erp-about a.single-hm-article-title:focus {
@@ -1138,6 +1301,12 @@
   }
   .erp-mobile-content ul.erp-double-slider-categories li {
     font-size: 12px;
+  }
+
+  /* custom-software */
+  .softwear-book-demo-content .single-book-demo-wrapper {
+    padding: 0px 0px;
+    background: transparent;
   }
 }
 

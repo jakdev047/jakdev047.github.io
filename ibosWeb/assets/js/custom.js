@@ -344,6 +344,54 @@ $(document).ready(function () {
     focusOnSelect: true,
   });
 
+  // softwear procudure slider
+  $(".procedure-content").slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: ".procedure-items",
+  });
+
+  $(".procedure-items").slick({
+    infinite: false,
+    slidesToShow: 6,
+    slidesToScroll: 6,
+    vertical: true,
+    asNavFor: ".procedure-content",
+    dots: false,
+    arrows: false,
+    centerMode: false,
+    focusOnSelect: true,
+
+    responsive: [
+      {
+        breakpoint: 575,
+        settings: {
+          autoplay: true,
+          infinite: true,
+          vertical: false,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          focusOnSelect: true,
+          variableWidth: true,
+          centerMode: true,
+        },
+      },
+      {
+        breakpoint: 1199,
+        settings: {
+          infinite: true,
+          vertical: false,
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          focusOnSelect: true,
+          variableWidth: true,
+        },
+      },
+    ],
+  });
+
   /*----------------------------
         Map
   ------------------------------ */

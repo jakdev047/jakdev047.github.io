@@ -31,6 +31,7 @@ font-family: 'Inter', sans-serif;
   --white: #fff !important;
   --ice-blue: #f2f7ff !important;
   --neon-blue: #02d8fb !important;
+  --aqua-blue: #02c5e5 !important;
   --dusk: #3d4571 !important;
   --dark-blue-grey: #102640 !important;
   --light-blue-grey: #b0b7e0 !important;
@@ -924,7 +925,10 @@ a.product-topics:hover {
 .hm-article-section.hm-article-section-reverse {
   padding: 130px 0 95px;
 }
-a.single-hm-article-title,a.single-hm-article-title:hover,a.single-hm-article-title:focus {
+.single-hm-article-title,
+a.single-hm-article-title,
+a.single-hm-article-title:hover,
+a.single-hm-article-title:focus {
   font-size: 36px;
   font-weight: 600;
   line-height: 1.19;
@@ -1158,6 +1162,9 @@ ul.serve-list li.single-serve-item:first-child {
   align-items: center;
   justify-content: center;
   border-radius: 5px;
+}
+.owl-carousel .owl-item .single-technologies-list-img img {
+  max-width: 80px;
 }
 
 /*-------------------------------------
@@ -2730,7 +2737,7 @@ a.single-portfolio-item-link:hover {
 .hm-article-section.hm-article-section-reverse.enterprise-erp-about {
   padding: 195px 0 94px;
 }
-.enterprise-erp-about .single-hm-article-txt a {
+.enterprise-erp-about .single-hm-article-txt h2 {
   margin-bottom: 18px;
 }
 ul.single-hm-article-list {
@@ -3092,8 +3099,203 @@ ul.single-hm-article-list li {
   margin: 0 auto;
 }
 
+/*-------------------------------------
+	Custom Softwear Welcome Banner
+--------------------------------------*/
+.custom-softwear-welcome .welcome-section-title {
+  max-width: 715px;
+}
+
+/*-------------------------------------
+	Custom Softwear About
+--------------------------------------*/
+.custom-softwear-about {
+  padding: 150px 0 212px;
+}
+.single-custom-softwear-about {
+  max-width: 624px;
+}
+.single-custom-softwear-about h2 {
+  font-size: 37px;
+  font-weight: 600;
+  line-height: 1.19;
+  color: var(--dark-blue);
+  max-width: 615px;
+  margin-bottom: 20px;
+}
+.single-custom-softwear-about p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--dusk);
+}
+.single-custom-softwear-about-img img {
+  border-radius: 9px;
+}
+/*-------------------------------------
+	Custom Softwear Development
+--------------------------------------*/
+.softwear-development-section .app-development-img{
+  padding: 21px 33px 20px;
+  border-radius: 10px;
+  box-shadow: 0 12px 34px 0 rgba(221, 226, 232, 0.5);
+  background: var(--white);
+}
+.softwear-development-section .developmet-card-content h4 {
+  color: var(--aqua-blue);
+}
+/*-------------------------------------
+	Custom Softwear Environment
+--------------------------------------*/
+.about-hm-article.softwear-work-env .single-hm-article-img {
+  right: 89%;
+}
+.softwear-work-env  h2.single-hm-article-title {
+  margin-bottom: 18px;
+}
+.softwear-work-env p.single-hm-article-post {
+  margin-bottom: 20px;
+}
+.softwear-work-env .single-custom-softwear-about p {
+  margin-bottom: 20px;
+}
+.softwear-work-env .single-custom-softwear-about h2 {
+  font-size: 35px;
+}
+
+/*-------------------------------------
+	Custom Softwear Procedure
+--------------------------------------*/
+.procedure-section {
+  padding: 150px 0 0px;
+  background: var(--dark-blue);
+  overflow: hidden;
+}
+.procedure-section .section-title {
+  max-width: 590px;
+  margin: 0 auto;
+}
+.procedure-section p.section-para {
+  padding-bottom: 116px;
+  color: var(--cloudy-blue);
+}
+.procedure-section h2.section-title {
+  color: var(--white);
+  max-width: 500px;
+}
+.procedure-section .section-content {
+  padding-bottom: 130px;
+}
+.procedure-items > div {
+  color: var(--dusk);
+  font-size: 16px;
+  padding-bottom: 12px;
+  cursor: pointer;
+}
+.procedure-section .section-content .procedure-items{
+  max-width: 250px;
+  padding-top: 75px;
+}
+.procedure-section .section-content .procedure-content{
+  max-width: 850px;
+}
+.procedure-content .procedure-text{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.procedure-content .procedure-text .content-text {
+  max-width: 360px;
+  padding-top: 108px;
+}
+.procedure-content .procedure-text .content-image {
+  max-width: 380px;
+  margin-left: 100px;
+}
+.content-text h2 {
+  font-size: 28px;
+  color: var(--ice-blue);
+  font-weight: 600;
+  cursor: pointer;
+}
+.procedure-section .section-content .procedure-image > div{
+  text-align: end;
+}
+.procedure-items .slick-current{
+  color: var(--neon-blue);
+}
+.procedure-items .slick-slide {
+  padding-bottom: 12px;
+}
 
 
+/*-------------------------------------
+	Custom Softwear Testimonial
+--------------------------------------*/
+.software-app-testimonial p.section-para {
+  max-width: 522px;
+}
+/*-------------------------------------
+	Custom Softwear Portfolio
+--------------------------------------*/
+.softwear-portfolio-app-section.portfolio-mobile-app-section .section-title {
+  max-width: 520px;
+}
+/*-------------------------------------
+	Custom Softwear Book
+--------------------------------------*/
+.softwear-book-demo .section-title {
+  max-width: 598px;
+  margin: 0 auto;
+  text-align: center;
+}
+.softwear-book-demo p.section-para {
+  max-width: 522px;
+  margin: 0 auto;
+}
+.softwear-book-demo h2.section-title {
+  font-weight: 700;
+}
+.softwear-book-demo-content {
+  margin: 100px 0 0;
+  background: var(--color-less);
+}
+.softwear-book-demo-content .single-book-meeting-form {
+  background: var(--color-less);
+}
+.softwear-book-demo-content .single-book-demo-wrapper {
+  padding: 51px 57px 51px 58px;
+  border-radius: 10px;
+  background: var(--dark-blue);
+  border-top-left-radius: 0px!important;
+  border-bottom-left-radius: 0px!important;
+}
+.softwear-book-demo-content .single-book-meeting-item{
+  border-radius: 10px;
+  box-shadow: 6px 15px 25px 10px rgba(207, 212, 221, 0.1);
+  background: var(--white);
+}
+.softwear-book-demo-content .form-group {
+  margin-bottom: 0;
+}
+.softwear-book-demo-content .single-book-meeting-form {
+  padding: 40px 28px 24px;
+}
+.softwear-book-demo-content input.contact-input-form {
+  margin: 0px 0 28px;
+}
+
+/*-------------------------------------
+	Website Development Welcome Banner
+--------------------------------------*/
+.website-development-welcome .welcome-section-title {
+  max-width: 875px;
+}
+/*-------------------------------------
+	Website Development About
+--------------------------------------*/
+.web-development-about .single-custom-softwear-about {
+  max-width: 635px;
+}
 
 /*-------------------------------------
 	Scroll TO Top
