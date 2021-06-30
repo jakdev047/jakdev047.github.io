@@ -2700,7 +2700,7 @@ a.single-portfolio-item-link:hover {
 --------------------------------------*/
 .erp-users-section {
   background: var(--pale-grey);
-  padding: 150px 0 120px;
+  padding: 150px 0 0px;
 }
 .erp-users-section-content {
   position: relative;
@@ -2889,6 +2889,9 @@ ul.single-hm-article-list li {
   padding: 150px 0 150px;
   background: var(--pale-grey);
 }
+.erp-module-content {
+  margin: 100px 0 0;
+}
 
 .erp-module-section > .container > .table {
   margin-bottom: 0px !important;
@@ -3038,7 +3041,7 @@ ul.single-hm-article-list li {
   color: var(--cloudy-blue);
   font-size: 16px;
   background: rgba(255, 255, 255, 0.12);
-  padding: 18px;
+  padding: 18px 40px;
   border-radius: 32px;
   margin-right: 17px;
   margin-bottom: 17px;
@@ -3056,14 +3059,25 @@ ul.single-hm-article-list li {
 .erp-content .slider .slide {
   text-align: center;
   transition: opacity 1s ease-in-out;
-  opacity: 0;
+  /* opacity: 0;
   height: 0;
-  overflow: hidden;
+  overflow: hidden; */
 }
 .erp-content .slider .slide.active{
   opacity: 100;
   transition: opacity 1s ease-in-out;
   height: auto;
+}
+
+.erp-content .dot.slick-slide {
+  width: 255px!important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.erp-content .dot.slick-slide.slick-current {
+  color: var(--dark-blue);
+  background: var(--neon-blue);
 }
 
 /* erp-mobile-content */

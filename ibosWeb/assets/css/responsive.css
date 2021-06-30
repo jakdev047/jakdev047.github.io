@@ -893,7 +893,10 @@
 
   /* enterprise ERP */
   .erp-users-section {
-    padding: 60px 0 50px;
+    padding: 60px 0 0px;
+  }
+  .erp-module-content {
+    margin: 25px 0 0;
   }
   .single-erp-users-item-txt h2 {
     font-size: 28px;
