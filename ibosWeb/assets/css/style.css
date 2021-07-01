@@ -2576,7 +2576,7 @@ a.single-portfolio-item-link:hover {
   color: var(--dusk);
 }
 .development-card-image img {
-  max-width: 386px;
+  max-width: 450px;
 }
 
 /*-------------------------------------
@@ -3220,6 +3220,7 @@ ul.single-hm-article-list li {
 .procedure-content .procedure-text .content-text {
   max-width: 360px;
   padding-top: 108px;
+  overflow: hidden;
 }
 .procedure-content .procedure-text .content-image {
   max-width: 380px;
@@ -3240,7 +3241,6 @@ ul.single-hm-article-list li {
 .procedure-items .slick-slide {
   padding-bottom: 12px;
 }
-
 
 /*-------------------------------------
 	Custom Softwear Testimonial
@@ -3309,6 +3309,34 @@ ul.single-hm-article-list li {
 --------------------------------------*/
 .web-development-about .single-custom-softwear-about {
   max-width: 635px;
+}
+
+/*-------------------------------------
+	Website Development Work Env
+--------------------------------------*/
+.website-work-env {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/*-------------------------------------
+	Website Development Book Demo
+--------------------------------------*/
+.website-book-demo.softwear-book-demo .section-title {
+  max-width: 520px;
+}
+
+/*-------------------------------------
+	Website Development Procedure
+--------------------------------------*/
+.procedure-section.website-procedure-section h2.section-title {
+  max-width: 510px;
+}
+.website-procedure-section .procedure-content .procedure-text .content-text {
+  padding-top: 80px;
+}
+.website-procedure-section  .procedure-section p.section-para {
+  padding-bottom: 70px;
 }
 
 /*-------------------------------------

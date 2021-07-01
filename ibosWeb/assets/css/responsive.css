@@ -220,6 +220,14 @@
   .procedure-items .slick-slide {
     padding-right: 40px;
   }
+  .website-procedure-section .procedure-content .procedure-text .content-text {
+    padding-top: 0px !important;
+  }
+  .procedure-section.website-procedure-section
+    .section-content
+    .procedure-content {
+    padding-top: 25px;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -531,6 +539,15 @@
   }
   .procedure-section .section-content .procedure-content {
     padding-top: 20px;
+  }
+  .content-text h2 {
+    font-size: 21px;
+  }
+  .procedure-content .procedure-text .content-image {
+    margin-bottom: 25px;
+  }
+  .procedure-content .procedure-text .content-text {
+    max-width: 500px;
   }
 }
 
