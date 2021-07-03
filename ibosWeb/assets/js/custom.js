@@ -76,6 +76,35 @@ if (bookDemoTimeLine) {
   })();
 }
 
+/*----------------------------
+        AOS Effect
+  ------------------------------ */
+AOS.init({
+  easing: "ease-out-back",
+  duration: 2000,
+});
+
+/*----------------------------
+        Scroll To Top
+  ------------------------------ */
+$(window).on("scroll", function () {
+  if ($(this).scrollTop() > 300) {
+    $(".return-to-top").fadeIn();
+  } else {
+    $(".return-to-top").fadeOut();
+  }
+});
+
+$(".return-to-top").on("click", function () {
+  $("html, body").animate(
+    {
+      scrollTop: 0,
+    },
+    1500
+  );
+  return false;
+});
+
 $(document).ready(function () {
   "use strict";
 
@@ -113,27 +142,6 @@ $(document).ready(function () {
   $("body").scrollspy({
     target: ".welcome-btn-section",
     offset: 0,
-  });
-
-  /*----------------------------
-        Scroll To Top
-  ------------------------------ */
-  $(window).on("scroll", function () {
-    if ($(this).scrollTop() > 300) {
-      $(".return-to-top").fadeIn();
-    } else {
-      $(".return-to-top").fadeOut();
-    }
-  });
-
-  $(".return-to-top").on("click", function () {
-    $("html, body").animate(
-      {
-        scrollTop: 0,
-      },
-      1500
-    );
-    return false;
   });
 
   /*----------------------------

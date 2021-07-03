@@ -2809,7 +2809,7 @@ ul.single-hm-article-list li {
 
 .book-demo-process-timeline-content ul {
   display: flex;
-  cursor: all-scroll;
+  cursor: grab;
   user-select: none;
 }
 
@@ -3032,16 +3032,20 @@ ul.single-hm-article-list li {
 .erp-module-department-mobile-content {
   display: none;
 }
-.erp-content .dots{
+.erp-content .slick-track {
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
+}
+.erp-content .dots{
   padding-bottom: 90px;
 }
 .erp-content .dots .dot{
   color: var(--cloudy-blue);
   font-size: 16px;
   background: rgba(255, 255, 255, 0.12);
-  padding: 18px 40px;
+  padding: 18px 20px;
   border-radius: 32px;
   margin-right: 17px;
   margin-bottom: 17px;
@@ -3070,7 +3074,7 @@ ul.single-hm-article-list li {
 }
 
 .erp-content .dot.slick-slide {
-  width: 255px!important;
+  width: 215px!important;
   display: flex;
   align-items: center;
   justify-content: center;
