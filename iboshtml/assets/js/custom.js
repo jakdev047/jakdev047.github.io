@@ -14,6 +14,7 @@ $(document).ready(function () {
   /*----------------------------
 		Slider
 	------------------------------ */
+
   // product-card
   $(".product-card").owlCarousel({
     loop: false,
@@ -23,6 +24,7 @@ $(document).ready(function () {
     autoplay: true,
     smartSpeed: 1000,
     autoplayHoverPause: true,
+    center: false,
     responsive: {
       0: {
         items: 1,
@@ -47,6 +49,9 @@ $(document).ready(function () {
     },
   });
   $(".owl-next").html(
+    '<img src="assets/images/product/right-arrow.png" alt="iBOS">'
+  );
+  $(".owl-prev").html(
     '<img src="assets/images/product/right-arrow.png" alt="iBOS">'
   );
 
@@ -103,6 +108,71 @@ $(document).ready(function () {
           variableWidth: true,
         },
       },
+    ],
+  });
+
+  // const serveItems = document.getElementById("serve-items");
+  // if (serveItems) {
+  //   $(".slick-track")
+  //     .children()
+  //     .each(function (index) {
+  //       $(this).click(function () {
+  //         $(".serve-wrapper").css(
+  //           "background-image",
+  //           `url("assets/images/serve/background-${index}.jpg")`
+  //         );
+  //       });
+  //     });
+  // }
+
+  // Partner script
+  $(".partner-content").slick({
+    dots: false,
+    arrows: false,
+    infinite: true,
+    slidesToShow: 6,
+    slidesToScroll: 6,
+    autoplay: true,
+    speed: 1000,
+    responsive: [
+      {
+        breakpoint: 1199,
+        settings: {
+          slidesToShow: 5,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 575,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 399,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      // You can unslick at a given breakpoint now by adding:
+      // settings: "unslick"
+      // instead of a settings object
     ],
   });
 
