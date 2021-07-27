@@ -1,3 +1,6 @@
+$(".toggle-blog").hide("fast");
+$(".btn-seeless").hide();
+
 $(document).ready(function () {
   "use strict";
 
@@ -14,6 +17,57 @@ $(document).ready(function () {
   /*----------------------------
 		Slider
 	------------------------------ */
+
+  // Partner script
+  $(".partner-content").slick({
+    dots: false,
+    arrows: false,
+    infinite: true,
+    slidesToShow: 6,
+    slidesToScroll: 6,
+    autoplay: true,
+    speed: 1000,
+    responsive: [
+      {
+        breakpoint: 1199,
+        settings: {
+          slidesToShow: 5,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 575,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 399,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      // You can unslick at a given breakpoint now by adding:
+      // settings: "unslick"
+      // instead of a settings object
+    ],
+  });
 
   // product-card
   $(".product-card").owlCarousel({
@@ -98,7 +152,7 @@ $(document).ready(function () {
         },
       },
       {
-        breakpoint: 991,
+        breakpoint: 1199,
         settings: {
           infinite: true,
           vertical: false,
@@ -125,55 +179,24 @@ $(document).ready(function () {
   //     });
   // }
 
-  // Partner script
-  $(".partner-content").slick({
-    dots: false,
-    arrows: false,
-    infinite: true,
-    slidesToShow: 6,
-    slidesToScroll: 6,
-    autoplay: true,
-    speed: 1000,
-    responsive: [
-      {
-        breakpoint: 1199,
-        settings: {
-          slidesToShow: 5,
-          slidesToScroll: 1,
-        },
-      },
-      {
-        breakpoint: 991,
-        settings: {
-          slidesToShow: 4,
-          slidesToScroll: 1,
-        },
-      },
-      {
-        breakpoint: 767,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-        },
-      },
-      {
-        breakpoint: 575,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-        },
-      },
-      {
-        breakpoint: 399,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-        },
-      },
-      // You can unslick at a given breakpoint now by adding:
-      // settings: "unslick"
-      // instead of a settings object
-    ],
+  // blog-feature-slider
+  $(".blog-feature-slider").slick({
+    infinite: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    dots: true,
+    centerMode: true,
+    focusOnSelect: false,
+    variableWidth: true,
+    prevArrow: $(".prev"),
+    nextArrow: $(".next"),
+  });
+
+  // .single-blog-image-slider
+  $(".single-blog-image-slider").slick({
+    dots: true,
+    dragable: true,
   });
 
   /*----------------------------
@@ -216,6 +239,21 @@ $(document).ready(function () {
       1000
     );
     return false;
+  });
+
+  /*----------------------------
+        Blog Toggle
+  ------------------------------ */
+
+  $(".btn-seemore").click(function () {
+    $(".toggle-blog").slideDown("1000");
+    $(this).hide();
+    $(".btn-seeless").show();
+  });
+  $(".btn-seeless").click(function () {
+    $(".toggle-blog").slideUp("fast");
+    $(".btn-seemore").show();
+    $(".btn-seeless").hide();
   });
 
   /*----------------------------
