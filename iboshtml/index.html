@@ -142,7 +142,11 @@
                                         <li><a href="blog.html">blog</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="#" class="btn btn-contact">CONTACT US</a></li>
+                                <li>
+                                    <a href="contact.html" class="btn btn-contact">
+                                        CONTACT US
+                                    </a>
+                                </li>
                             </ul>
                         </nav><!-- .nav-menu -->
                     </div>
@@ -162,7 +166,7 @@
                         value to your business Contact us today and transform your ideas
                         into solutions!
                     </p>
-                    <a href="#" class="btn hero-button">
+                    <a href="contact.html" class="btn hero-button">
                         <span>get started</span>
                         <i class="fa fa-arrow-right" aria-hidden="true"></i>
                     </a>
@@ -263,7 +267,7 @@
                             <a href="#"></a>
                         </div>
                         <div class="card-image">
-                            <img src="assets/images/product/card-1.png" alt="iBOS" />
+                            <img src="assets/images/product/product-icon.svg" alt="iBOS" />
                         </div>
                         <div class="card-content">
                             <h4>
@@ -287,7 +291,7 @@
                             <a href="#"></a>
                         </div>
                         <div class="card-image">
-                            <img src="assets/images/product/card-2.png" alt="iBOS" />
+                            <img src="assets/images/product/product-icon.svg" alt="iBOS" />
                         </div>
                         <div class="card-content">
                             <h4>
@@ -311,7 +315,7 @@
                             <a href="#"></a>
                         </div>
                         <div class="card-image">
-                            <img src="assets/images/product/card-3.png" alt="iBOS" />
+                            <img src="assets/images/product/product-icon.svg" alt="iBOS" />
                         </div>
                         <div class="card-content">
                             <h4>
@@ -335,7 +339,7 @@
                             <a href="#"></a>
                         </div>
                         <div class="card-image">
-                            <img src="assets/images/product/card-1.png" alt="iBOS" />
+                            <img src="assets/images/product/product-icon.svg" alt="iBOS" />
                         </div>
                         <div class="card-content">
                             <h4>
@@ -359,7 +363,7 @@
                             <a href="#"></a>
                         </div>
                         <div class="card-image">
-                            <img src="assets/images/product/card-2.png" alt="iBOS" />
+                            <img src="assets/images/product/product-icon.svg" alt="iBOS" />
                         </div>
                         <div class="card-content">
                             <h4>
@@ -383,7 +387,7 @@
                             <a href="#"></a>
                         </div>
                         <div class="card-image">
-                            <img src="assets/images/product/card-3.png" alt="iBOS" />
+                            <img src="assets/images/product/product-icon.svg" alt="iBOS" />
                         </div>
                         <div class="card-content">
                             <h4>
@@ -1304,16 +1308,16 @@
     <script>
         const serveItems = document.getElementById("serve-items");
         if (serveItems) {
-            $(".serve-items")
-                .children()
-                .each(function (index) {
-                    $(this).click(function () {
-                        $(".serve-wrapper").css(
-                            "background-image",
-                            `url("assets/images/serve/background-${index}.jpg")`
-                        );
-                    });
-                });
+            $(".serve-items").on('afterChange', function (event, slick, currentSlide) {
+                console.log('autoplay timer', slick.autoPlayTimer)
+                if (slick.autoPlayTimer !== null) {
+                    $('.serve-wrapper').css('background-image', `url("assets/images/serve/background-${currentSlide}.jpg")`);
+                } else {
+                    let index = $(".slick-track .slick-current").index()
+                    $('.serve-wrapper').css('background-image', `url("assets/images/serve/background-${index}.jpg")`);
+                }
+
+            })
         }
     </script>
 </body>

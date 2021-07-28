@@ -797,10 +797,39 @@ nav.nav-menu.nav-menu-content ul.parent-ul {
   margin-left: 10px;
 }
 
+.btn-submit,
+.btn-submit:hover,
+.btn-submit:focus {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  width: 135px;
+  height: 40px;
+  background: var(--primary);
+  border: 1px solid var(--primary);
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 19px;
+  text-align: center;
+  color: var(--white)!important;
+  outline: 0;
+  box-shadow: none;
+  text-transform: capitalize;
+  transition: .3s linear;
+}
+
+.btn-submit:hover,
+.btn-submit:focus {
+  color: var(--primary)!important;
+  background: var(--color-less);
+}
+
 /*-------------------------------------
 	Hero
 --------------------------------------*/
-.hero-section {
+.hero-section,.hero-another-section {
   background-image: url('../images/hero-section/hero-bg-img.png');
   background-position: center;
   background-repeat: no-repeat;
@@ -808,17 +837,22 @@ nav.nav-menu.nav-menu-content ul.parent-ul {
   position: relative;
   overflow: hidden;
 }
-.hero-section::before {
+.hero-another-section {
+  background-image: url('../images/hero-section/contact-bg.png');
+}
+.hero-section::before,.hero-another-section::before {
   content: "";
   position: absolute;
   height: 100%;
   width: 100%;
-  background: #1C2880;
-  opacity: 0.8;
+  background: rgba(28, 40, 128,.8);
 }
 .hero-content {
   position: relative;
   padding: 138px 0 0;
+}
+.hero-another-section  .hero-content {
+  padding: 215px 0 210px;
 }
 .hero-content h1 {
   font-weight: 700;
@@ -828,6 +862,13 @@ nav.nav-menu.nav-menu-content ul.parent-ul {
   color: var(--white);
   max-width: 687px;
 }
+.hero-content h2 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 65px;
+  letter-spacing: 0.4px;
+  color: var(--white);
+}
 .hero-content p {
   font-weight: 600;
   font-size: 24px;
@@ -835,6 +876,14 @@ nav.nav-menu.nav-menu-content ul.parent-ul {
   color: var(--white);
   padding: 50px 0;
   max-width: 743px;
+}
+.hero-content p.hero-para {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: var(--white);
+  padding: 15px 0 0;
+  max-width: 500px;
 }
 .hero-scroll-down {
   display: flex;
@@ -1030,15 +1079,30 @@ nav.nav-menu.nav-menu-content ul.parent-ul {
 }
 
 .card-image {
-  margin: 0 auto;
-  padding-top: 40px;
-  padding-bottom: 28px;
-}
-
-.card-image img {
+  position: relative;
   height: 173px;
-  width: 173px !important;
-  display: inline-block !important;
+  width: 173px;
+  background:#F5F8FD;
+  border: 10px solid #AFC9F2;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px auto 28px;
+  overflow: hidden;
+}
+.card-image:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 10px solid #D7E4F9;
+  border-radius: 50%;
+}
+.card-image img {
+  max-width: 55px;
 }
 
 .card-content {
@@ -2307,6 +2371,182 @@ p.image-title {
 }
 .blog-info h5:nth-child(4) {
   margin-bottom: 0px;
+}
+
+/*-------------------------------------
+	Contact Page
+--------------------------------------*/
+.contact-info {
+  padding: 110px 0 85px;
+}
+/* .contact-info-txt */
+.contact-info-txt h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 61px;
+  letter-spacing: 0.4px;
+  color: var(--black);
+  margin-bottom: 23px;
+}
+.contact-info-txt p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--title-text);
+}
+.contact-info-list {
+  margin: 80px 0 0;
+}
+ul.contact-info-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.single-contact-info-list .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+  background-color: rgba(215, 228, 249, 1);
+  margin-right: 30px;
+}
+.single-contact-info-list .icon > img{
+  max-width: 24px;
+}
+.single-contact-info-list p,
+.single-contact-info-list p > a,
+.single-contact-info-list p > a:hover,
+.single-contact-info-list p > a:focus {
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 29px;
+  color: var(--title-text);
+  max-width:280px;
+}
+/* contact-info-form */
+.contact-info-form {
+  padding: 45px 56px;
+  box-shadow: 0px 4px 24px rgba(166, 166, 166, 0.25);
+}
+.contact-info-form  .form-group {
+  margin-bottom: 35px;
+}
+.contact-info-form label {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #000;
+  text-transform: initial;
+  margin-bottom: 7px;
+}
+.contact-info-input,
+.contact-info-input:focus,
+.contact-info-textarea,
+.contact-info-textarea:focus {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #000;
+  padding: 0;
+  height: 57px;
+  padding-left: 15px;
+  border: 1px solid #E5E5EA;
+}
+.contact-info-textarea,
+.contact-info-textarea:focus {
+  height: 135px;
+  padding: 15px;
+}
+
+/* contact-find */
+.contact-find {
+  padding: 32px 0 100px;
+}
+.single-contact-find h2{
+  color: var(--black);
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 65px;
+  letter-spacing: 0.4px;
+  margin-bottom: 30px;
+}
+.single-contact-find p{
+  color: var(--title-text);
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 29px;
+  margin-bottom: 55px;
+}
+.map {
+  height: 350px;
+  border-radius: 17px;
+}
+
+/* .idea-ellipse-section */
+.idea-ellipse-section {
+  position: relative;
+  background: #0E2461;
+  overflow: hidden;
+  z-index: 1;
+}
+.ideas-ellipse-content{
+  padding: 150px 0;
+}
+.ideas-ellipse-content h2 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 65px;
+  letter-spacing: 0.4px;
+  color: var(--white);
+  max-width: 575px;
+}
+.ideas-ellipse-content p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 29px;
+  color: var(--white);
+  max-width: 466px;
+  padding: 56px 0;
+}
+.ellipse {
+  position: absolute;
+}
+.ellipse.ellipse-1 {
+  width: 1777px;
+  height: 1777px;
+  border-radius: 50%;
+  left: -35%;
+  bottom: 0%;
+  background: #153173;
+  z-index: -3;
+}
+.ellipse.ellipse-2 {
+  width: 1405px;
+  height: 1405px;
+  border-radius: 50%;
+  left: -30%;
+  bottom: 20%;
+  background: #1C3B7F;
+  z-index: -3;
+}
+.ellipse.ellipse-3 {
+  width: 972px;
+  height: 972px;
+  border-radius: 50%;
+  left: -15%;
+  bottom: 50%;
+  background: #284B94;
+  z-index: -2;
+}
+
+.idea-img img {
+  position: absolute;
+  height: 100%;
+  width: 350px;
+  top: 0;
+  right: 0;
 }
 
 /*-------------------------------------
