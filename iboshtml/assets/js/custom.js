@@ -199,6 +199,103 @@ $(document).ready(function () {
     dragable: true,
   });
 
+  // technology-content script
+  var owl = $(".technology-content");
+  owl.owlCarousel({
+    items: 6,
+    loop: true,
+    dots: false,
+    nav: false,
+    navText: [
+      "<i class='fa fa-angle-left'></i>",
+      "<i class='fa fa-angle-right'></i>",
+    ],
+    margin: 30,
+    autoplay: true,
+    smartSpeed: 1000,
+    autoplayHoverPause: true,
+
+    // responsive
+
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 3,
+        margin: 0,
+      },
+      399: {
+        items: 3,
+        margin: 0,
+      },
+      445: {
+        items: 3,
+      },
+      767: {
+        items: 4,
+      },
+      992: {
+        items: 5,
+      },
+      1199: {
+        items: 6,
+      },
+    },
+  });
+
+  // single-service-feature-section
+  $(".single-service-feature-section").slick({
+    dots: false,
+    arrows: false,
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 500,
+    speed: 1000,
+    responsive: [
+      {
+        breakpoint: 1199,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 769,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 575,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerMode: true,
+        },
+      },
+      {
+        breakpoint: 399,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerMode: true,
+        },
+      },
+      // You can unslick at a given breakpoint now by adding:
+      // settings: "unslick"
+      // instead of a settings object
+    ],
+  });
+
   /*----------------------------
         Testimonial Slider
   ------------------------------ */

@@ -309,9 +309,13 @@
   }
 
   /* idea-ellipse */
+  .about-idea-ellipse {
+    margin: 10px 0 0;
+  }
   .ideas-ellipse-content h2 {
     font-size: 24px;
     line-height: 32px;
+    max-width: 445px;
   }
   .ideas-ellipse-content p {
     font-size: 16px;
@@ -329,6 +333,144 @@
   .ellipse.ellipse-3 {
     left: -30%;
     bottom: 38%;
+  }
+
+  /* our-story */
+  .our-story {
+    padding: 35px 0 110px;
+  }
+  .single-our-story-txt h2 {
+    font-size: 36px;
+    line-height: 62px;
+  }
+  .single-our-story-txt p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .single-our-story-img img {
+    width: 100%;
+  }
+
+  /* why-about */
+  .single-why-about-wrapper {
+    padding: 80px 0 95px;
+  }
+  .single-why-about-txt h3 {
+    margin: 0 0 16px;
+    font-size: 36px;
+    line-height: 62px;
+  }
+  .single-why-about-txt p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  /* about-vision */
+  .about-vision {
+    padding: 60px 0 25px;
+  }
+  .about-vision-content h2 {
+    font-size: 36px;
+    line-height: 62px;
+    margin-bottom: 32px;
+  }
+  .about-vision-list li > h3 {
+    margin-bottom: 7px;
+  }
+  .about-vision-content-img {
+    top: 15%;
+    width: 285px;
+  }
+
+  /* single-service-details */
+  .single-service-details {
+    padding: 52px 0 0px;
+  }
+  .single-service-details-content h3 {
+    font-size: 30px;
+    line-height: 41px;
+    margin-bottom: 20px;
+  }
+  .single-service-details-content p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  /* .single-service-feature */
+  .single-service-feature {
+    padding: 35px 0 20px;
+  }
+  .single-service-feature-img img {
+    max-width: 40px;
+  }
+  .single-service-feature-txt h3 {
+    margin: 15px 0px;
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .single-service-feature-txt p {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 25px;
+  }
+  .single-service-feature-list > li {
+    margin-bottom: 12px;
+  }
+  .single-service-feature-list > li::before {
+    top: -3px;
+  }
+  .single-service-feature-list > li > p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  /* technology-content */
+  .technology-section {
+    padding: 35px 0 45px;
+  }
+  .single-technology-tools {
+    width: 90px !important;
+    height: 90px;
+  }
+  .owl-carousel .owl-item .single-technology-tools img {
+    max-width: 90px;
+  }
+
+  /* ios app section */
+  .service-details-ios-app {
+    padding: 52px 0px 40px;
+  }
+  .ios-banner ol {
+    margin-top: 10px;
+  }
+  .ios-banner ol li {
+    font-size: 14px;
+    line-height: 19px;
+  }
+  .ios-banner .row .ios-images img {
+    max-width: 48%;
+    width: auto;
+    max-height: 92%;
+  }
+  .ios-banner .row .ios-images img:nth-child(2) {
+    bottom: 140px;
+    right: 10px;
+  }
+
+  /* .service-details-app-development-service */
+  .service-details-app-development-service .bg-circle {
+    left: -85px;
+    top: 400px;
+  }
+  .single-service-idea h4 {
+    font-size: 18px;
+    line-height: 25px;
+    max-width: 210px;
+  }
+  .single-service-idea p {
+    font-size: 12px;
+    line-height: 16px;
+    max-width: 213px;
   }
 }
 
@@ -560,6 +702,11 @@
   .idea-img img {
     display: none;
   }
+
+  /* technology-content */
+  .technology-section {
+    padding: 0px 0 45px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -772,7 +919,7 @@
   .hero-content p.hero-para {
     font-size: 14px;
     line-height: 19px;
-    max-width: 210px;
+    max-width: 272px;
   }
   .hero-content h1 {
     font-size: 24px;
@@ -1108,6 +1255,148 @@
   .ellipse.ellipse-3 {
     left: -60%;
     bottom: 42%;
+  }
+
+  /* our-story */
+  .our-story {
+    padding: 35px 0 52px;
+  }
+  .single-our-story-txt h2 {
+    font-size: 21px;
+    line-height: 29px;
+  }
+  .single-our-story-txt p {
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 25px;
+  }
+
+  /* why-about */
+  .single-why-about-wrapper {
+    padding: 80px 30px;
+  }
+  .single-why-about-txt h3 {
+    margin: 0 0 16px;
+    font-size: 21px;
+    line-height: 29px;
+  }
+  .single-why-about-txt p {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  /* about-vision */
+  .about-vision {
+    padding: 75px 0 55px;
+  }
+  .about-vision-content-img {
+    top: 15%;
+    right: auto;
+    width: 200px;
+    left: 9%;
+  }
+  .about-vision-content h2 {
+    font-size: 21px;
+    line-height: 29px;
+    margin-bottom: 30px;
+  }
+  .about-vision-list li {
+    margin-bottom: 30px;
+  }
+  .about-vision-list li > h3 {
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 18px;
+  }
+  .about-vision-list li > p {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .about-vision-content-img {
+    top: 15%;
+    right: auto;
+    left: 9%;
+    width: 200px;
+  }
+
+  /* single-service-details */
+  .single-service-details {
+    padding: 40px 0 0px;
+  }
+  .single-service-details-content h3 {
+    font-size: 21px;
+    line-height: 29px;
+    max-width: 290px;
+    margin-bottom: 5px;
+  }
+  .single-service-details-content p {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  /* .single-service-feature */
+  .single-service-feature {
+    padding: 23px 0 20px;
+  }
+  .single-service-feature-img img {
+    max-width: 25px;
+  }
+  .single-service-feature-txt h3 {
+    margin: 10px 0px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .single-service-feature-txt p {
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 20px;
+  }
+  .single-service-feature-list > li {
+    margin-bottom: 12px;
+  }
+  .single-service-feature-list > li::before {
+    top: 0px;
+  }
+  .single-service-feature-list > li > p {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  /* technology-content */
+  .single-technology-tools {
+    width: 60px !important;
+    height: 60px;
+  }
+  .owl-carousel .owl-item .single-technology-tools img {
+    max-width: 60px;
+  }
+
+  /* .service-details-app-development-service */
+  .service-details-app-development-service {
+    padding: 75px 0 58px;
+  }
+  .service-details-app-development-service .title-section {
+    max-width: 285px;
+  }
+  .single-service-feature-section {
+    padding: 65px 0 0;
+  }
+  .service-details-app-development-service .bg-circle {
+    left: -295px;
+    top: 425px;
+  }
+  .single-service-idea img {
+    max-width: 52px;
+  }
+  .single-service-idea h4 {
+    font-size: 18px;
+    line-height: 25px;
+    max-width: 210px;
+  }
+  .single-service-idea p {
+    font-size: 12px;
+    line-height: 16px;
+    max-width: 213px;
   }
 }
 
