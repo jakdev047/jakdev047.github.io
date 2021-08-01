@@ -1,2 +1,0 @@
-# iboshtml
-iBOS Html Template
