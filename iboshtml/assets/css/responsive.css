@@ -1,3 +1,13 @@
+@media screen and (max-width: 1599px) {
+  /* error section */
+  .error-code h2 {
+    font-size: 15rem;
+  }
+  .error-section {
+    padding: 200px 0 0;
+  }
+}
+
 @media screen and (max-width: 1399px) {
   /* products */
   .shape .shape-1 {
@@ -23,6 +33,11 @@
   .why-product-choose .ellipse.ellipse-2 {
     left: -100%;
     bottom: 5%;
+  }
+
+  /* error-section */
+  .error-section {
+    padding: 100px 0 0;
   }
 }
 
@@ -212,8 +227,15 @@
   .stories-section-content {
     margin: 36px 0 0;
   }
-  .single-story-txt h2 > a {
+  .single-story-txt h2 > a,
+  .single-case-card .single-industry-card-overlay-txt h2 > a,
+  .single-case-card .single-industry-card-overlay-txt h2 > a:hover,
+  .single-case-card .single-industry-card-overlay-txt h2 > a:focus {
     font-size: 14px;
+    line-height: 19px;
+  }
+  .single-industry-tag-list {
+    margin: 0 0 30px;
   }
 
   /* contact */
@@ -263,6 +285,18 @@
   .more-blog-content {
     max-width: 550px;
     margin: 0 auto 45px;
+  }
+  .single-blog-big-img {
+    height: 350px;
+  }
+  .single-blog-img {
+    height: 270px;
+  }
+  .single-blog-small-img {
+    height: 165px;
+  }
+  .single-blog-float-img {
+    height: 218px;
   }
 
   /* feature */
@@ -695,6 +729,348 @@
   .pro-bms .dp_item[data-position="2"] {
     border-radius: 20px;
   }
+
+  /* industry-card-section */
+  .single-industry-card {
+    max-width: 100%;
+    height: auto;
+  }
+  .single-industry-card .single-story-img > img {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  /* single-industry-section */
+  .single-industry-our-story:after {
+    width: 42%;
+  }
+
+  /* why-digital-boost */
+  .why-digital-boost h2.section-title {
+    max-width: 380px;
+  }
+  .why-digital-boost .single-service-card-img > img {
+    max-width: 50px;
+  }
+  .why-digital-boost .single-service-txt h4 {
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  /* service-why-choose */
+  .service-why-choose-title {
+    display: block;
+  }
+  .service-choose-why-inner-title {
+    display: none;
+  }
+  .service-choose-txt h2 {
+    font-size: 24px;
+    line-height: 33px;
+  }
+  .service-choose-txt p.service-choose-para,
+  .single-service-choose-txt p {
+    font-size: 14px;
+    line-height: 19px;
+  }
+  .single-service-choose-txt h3 {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .service-choose-list li .icon > img {
+    max-width: 45px;
+  }
+
+  /* join-our-team */
+  .join-our-team {
+    padding: 100px 0 155px;
+  }
+  .single-join-our-team-txt h2 {
+    font-size: 48px;
+    line-height: 65px;
+  }
+  .single-join-our-team-txt p {
+    font-size: 16px;
+    line-height: 22px;
+    max-width: 540px;
+  }
+  .single-join-our-team-img {
+    margin: 195px auto 0;
+  }
+
+  /* career-feature */
+  .career-feature {
+    padding: 130px 0 135px;
+  }
+  .career-feature h2.section-title {
+    font-size: 30px;
+    line-height: 41px;
+  }
+  .career-feature p.section-para {
+    font-size: 18px;
+    line-height: 25px;
+    max-width: 564px;
+  }
+  .single-career-feature-img {
+    width: 85px;
+    height: 85px;
+  }
+  .single-career-feature-img > img {
+    max-width: 57px;
+  }
+  .single-career-feature-txt {
+    max-width: 220px;
+  }
+
+  /* open-position */
+  .open-position-section h2.title {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .open-position-list li .inner-text {
+    align-items: baseline;
+    flex-direction: column;
+  }
+  .open-position-list li .inner-text > h6 {
+    margin-bottom: 30px;
+  }
+  .open-position-list li .inner-text > h3 {
+    font-size: 30px;
+    line-height: 41px;
+    margin-bottom: 30px;
+  }
+  .apply-anyway {
+    max-width: 560px;
+  }
+  .apply-anyway p {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .apply-anyway h2 {
+    font-size: 30px;
+    line-height: 41px;
+  }
+  .single-internship-career-img {
+    display: none;
+  }
+
+  /* career-faq */
+  .career-faq-section h2.section-title {
+    font-size: 30px;
+    line-height: 41px;
+  }
+  .career-faq-section p.section-para {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .career-faq-content .single-why-choose-feature-accordion .panel-title a,
+  .career-faq-content .single-why-choose-feature-accordion .panel-title a:hover,
+  .career-faq-content
+    .single-why-choose-feature-accordion
+    .panel-title
+    a:focus {
+    font-size: 21px;
+    line-height: 29px;
+  }
+  .career-faq-content .single-why-choose-feature-accordion p {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .career-faq-content .single-why-choose-feature-accordion .panel-default {
+    padding: 40px 40px 25px;
+  }
+
+  /* services-process */
+  .service-process .tab-content {
+    padding-left: 60px;
+  }
+
+  /* case-study */
+  .single-case-card .single-industry-card-overlay-txt h2 > a,
+  .single-case-card .single-industry-card-overlay-txt h2 > a:hover,
+  .single-case-card .single-industry-card-overlay-txt h2 > a:focus {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  /* single-case-study */
+  .case-study-single-bg .hero-content > img {
+    max-width: 43px;
+    margin-right: 10px;
+  }
+
+  /* study Outline Section */
+  .study-outline {
+    padding: 40px 0 0px;
+  }
+  .outline-heading h2 {
+    font-size: 24px;
+    line-height: 33px;
+  }
+  .study-outline-wrapper .outline-heading h2::after {
+    top: unset;
+    bottom: -12px !important;
+  }
+  .study-outline-wrapper .outline-content p {
+    font-size: 14px;
+    line-height: 19px;
+    padding-bottom: 48px;
+  }
+  .single-study-outline {
+    margin-bottom: 48px;
+  }
+  .single-study-outline p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .single-study-outline {
+    max-width: 330px;
+    height: 140px;
+  }
+
+  /* study overview Section */
+  .overview-content h2 {
+    font-size: 24px;
+    line-height: 33px;
+  }
+  .overview-content h2::after {
+    top: 45px;
+  }
+  .overview-content p {
+    font-size: 14px;
+    line-height: 19px;
+  }
+  .overview-image img {
+    margin-left: -60px;
+    height: 440px;
+  }
+
+  /* study-snapshot */
+  .snapshot-heading h2,
+  .study-snapshot .heading h2 {
+    font-size: 24px;
+    line-height: 33px;
+  }
+  .snapshot-heading h2::after,
+  .study-snapshot .heading h2::after {
+    top: 45px;
+  }
+
+  /* related-project */
+  .related-project-content {
+    padding: 88px 0 0;
+  }
+
+  /* Case Study */
+  .case-study-process {
+    padding: 20px 0 60px;
+  }
+  .case-study-tab {
+    flex-direction: column;
+  }
+  .case-study-tab .nav {
+    flex-direction: row !important;
+    justify-content: space-between;
+    align-items: center;
+  }
+  a.share-btn {
+    font-size: 14px !important;
+    line-height: 19px !important;
+    margin-top: 0;
+    padding: 7px 10px;
+  }
+  .case-study-tab .tab-content {
+    padding-left: 0px;
+    padding-top: 60px;
+  }
+  .case-study-tab .tab-content::before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background: #2c2c2e;
+    top: 10px;
+    left: 0;
+  }
+  .case-study-tab .nav .active {
+    position: relative !important;
+  }
+  .case-study-tab .nav .active::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: #3878df;
+    bottom: -12px;
+    left: 15px;
+    z-index: 999;
+  }
+  .case-study-tab .nav a {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .case-study-tab .tab-content .tab-pane h2 {
+    font-size: 24px;
+    line-height: 33px;
+  }
+  .case-study-tab .tab-content .tab-pane h4 {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .case-study-tab .tab-content .tab-pane p {
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  /* career-details */
+  .career-details-wrapper {
+    padding-top: 30px;
+  }
+  .career-details-wrapper h2 {
+    font-size: 30px;
+    line-height: 41px;
+  }
+  .career-details-wrapper p {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  h4.p-head {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .career-details-wrapper li {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .before-apply {
+    padding: 45px 0;
+    margin-top: 60px;
+  }
+  .before-apply h4 {
+    font-size: 25px;
+    line-height: 34px;
+  }
+  .before-apply p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .before-apply a button {
+    font-size: 14px;
+    line-height: 19px;
+    padding: 20px 36px;
+  }
+
+  /* error-section */
+  .error-code h2 {
+    font-size: 12rem;
+    line-height: 190px;
+    transform: rotate(0deg);
+    text-align: center;
+  }
+  .error-txt {
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -869,6 +1245,10 @@
   .single-story-txt h6 {
     font-size: 10px;
   }
+  .single-industry-card .single-story-txt h6 {
+    font-size: 12px;
+    line-height: 16px;
+  }
 
   /* contact */
   .get-in-touch-section-txt {
@@ -981,6 +1361,11 @@
     min-width: auto;
     max-width: 100%;
     margin-right: 20px;
+  }
+
+  /* join-team-section */
+  .single-join-our-team-img {
+    margin: 145px auto 0;
   }
 }
 
@@ -1220,6 +1605,63 @@
     line-height: normal;
     max-width: 100%;
   }
+
+  /* services-process */
+  .service-process {
+    padding: 84px 0 72px;
+  }
+  .service-process .container .row .col-12 h3 {
+    font-size: 24px;
+    line-height: 33px;
+  }
+  .service-process .container .row .col-12 span {
+    height: 5px;
+    margin-bottom: 45px;
+  }
+  .service-process .container .row .col-12 .nav-pills .active,
+  .service-process .container .row .col-12 .nav-pills .nav-link {
+    font-size: 14px;
+    line-height: 19px;
+  }
+  .service-process .tab-content {
+    padding-left: 20px;
+  }
+  .service-process::before {
+    width: 100%;
+    height: 50%;
+  }
+  .no-js .owl-carousel,
+  .owl-carousel.owl-loaded {
+    margin-top: 120px;
+  }
+  .service-process .owl-carousel .item h3 {
+    font-size: 48px !important;
+    line-height: 65px !important;
+  }
+  .service-process .owl-carousel .item h5 {
+    font-size: 14px !important;
+    line-height: 19px !important;
+    margin-top: 0px;
+  }
+
+  /* study-overview */
+  .overview-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .overview-image {
+    max-width: 100%;
+    padding-top: 25px;
+  }
+  .overview-content {
+    max-width: 100%;
+    padding-left: 0;
+  }
+  .overview-image img {
+    margin-left: 0;
+    height: auto;
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 575px) {
@@ -1412,6 +1854,15 @@
     padding-bottom: 25px;
     border-bottom: 1px solid #c7c7cc;
   }
+  .single-industry-card {
+    border: 1px solid #e5e5ea;
+    margin-bottom: 35px;
+  }
+  .single-industry-card .single-story-txt {
+    max-width: 300px;
+    padding: 35px 11px;
+    border-bottom: 0;
+  }
   .single-story-txt h2 {
     margin-bottom: 7px;
   }
@@ -1484,6 +1935,14 @@
   .single-blog-float-txt > h2 > a:hover,
   .single-blog-float-txt > h2 > a:focus {
     margin: 0px 0 0px;
+  }
+  .single-blog-big-img {
+    height: 143px;
+  }
+  .single-blog-img,
+  .single-blog-small-img,
+  .single-blog-float-img {
+    height: 126px;
   }
 
   /* feature-stories */
@@ -1904,6 +2363,381 @@
   .pro-bms .dp_item[data-position="2"] {
     border-radius: 10px;
   }
+
+  /* error-section */
+  .error-code h2 {
+    font-size: 10rem;
+    line-height: 190px;
+  }
+
+  /* why-digital-boost */
+  .services.why-digital-boost {
+    padding: 0;
+  }
+  .why-digital-boost .single-service-card-img > img {
+    max-width: 40px;
+  }
+  .why-digital-boost .single-service-txt h4 {
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  /* service-why-choose */
+  .service-choose-txt h2 {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .service-choose-txt p.service-choose-para,
+  .single-service-choose-txt p {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .single-service-choose-txt h3 {
+    font-size: 14px;
+    line-height: 19px;
+  }
+  .service-choose-list li .icon > img {
+    max-width: 35px;
+    margin-bottom: 25px;
+  }
+  .service-choose-list li {
+    display: block;
+  }
+
+  /* join-our-team */
+  .join-our-team {
+    padding: 50px 0 155px;
+  }
+  .single-join-our-team-txt h2 {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .single-join-our-team-txt p {
+    font-size: 12px;
+    line-height: 17px;
+    max-width: 290px;
+  }
+  .single-join-our-team-img {
+    margin: 95px auto 0;
+  }
+  .single-join-our-team-img,
+  .single-join-our-team-img > img {
+    max-width: 160px;
+  }
+  .team-img-group img.img-two,
+  .team-img-group img.img-three,
+  .team-img-group img.img-four,
+  .team-img-group img.img-five,
+  .team-img-group img.img-eight {
+    width: 35px;
+    height: 35px;
+  }
+  .team-img-group img.img-six,
+  .team-img-group img.img-seven {
+    width: 17px;
+    height: 17px;
+  }
+  .team-img-group img.img-one {
+    width: 40px;
+    height: 40px;
+  }
+  .btn-career,
+  .btn-career:hover,
+  .btn-career:focus {
+    width: 130px;
+    height: 45px;
+    font-size: 10px;
+    line-height: 14px;
+  }
+  .btn-career > img {
+    max-width: 14px;
+  }
+
+  /* career-feature */
+  .career-feature {
+    padding: 95px 0 70px;
+    margin-bottom: 35px;
+  }
+  .career-feature h2.section-title {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .career-feature p.section-para {
+    font-size: 12px;
+    line-height: 16px;
+    max-width: 290px;
+  }
+  .career-feature-content {
+    padding: 60px 0 0;
+  }
+  .single-career-feature-img {
+    width: 49px;
+    height: 49px;
+  }
+  .single-career-feature-img > img {
+    max-width: 21px;
+  }
+  .single-career-feature-txt {
+    max-width: 130px;
+  }
+
+  /* open-position */
+  .open-position-section h2.title {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .open-position-list li .inner-text > h3 {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .open-position-list li .inner-text > p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .apply-anyway {
+    max-width: 560px;
+  }
+  .apply-anyway p {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .apply-anyway h2 {
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  /* internship-career */
+  .internship-career-section {
+    padding: 78px 0 120px;
+  }
+  .single-internship-career-txt {
+    max-width: 265px;
+  }
+  .single-internship-career-txt h3 {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .single-internship-career-txt p {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .single-internship-career-wrapper {
+    justify-content: flex-start;
+    height: 330px;
+    padding: 0 30px;
+  }
+
+  /* career-faq */
+  .career-faq-section {
+    padding: 0 0 20px;
+  }
+  .career-faq-section h2.section-title {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .career-faq-section p.section-para {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .career-faq-content .single-why-choose-feature-accordion .panel-title a,
+  .career-faq-content .single-why-choose-feature-accordion .panel-title a:hover,
+  .career-faq-content
+    .single-why-choose-feature-accordion
+    .panel-title
+    a:focus {
+    font-size: 14px;
+    line-height: 19px;
+  }
+  .single-why-choose-feature-accordion .panel-title a > span,
+  .single-why-choose-feature-accordion .panel-title a:hover > span,
+  .single-why-choose-feature-accordion .panel-title a:focus > span {
+    max-width: 224px;
+  }
+  .career-faq-content .single-why-choose-feature-accordion .panel-default {
+    padding: 20px 0px;
+    box-shadow: none;
+  }
+  .career-faq-content
+    .single-why-choose-feature-accordion
+    .panel-title
+    a.collapsed:after {
+    width: 10px;
+    height: 10px;
+    bottom: -4px;
+  }
+  .career-faq-content
+    .single-why-choose-feature-accordion
+    .panel-title
+    a:after {
+    width: 10px;
+    height: 10px;
+    bottom: -10px;
+  }
+  .career-faq-content {
+    margin: 30px 0 0;
+  }
+  .career-faq-section .title-section {
+    max-width: 275px;
+  }
+  .career-faq-content .single-why-choose-feature-accordion {
+    padding: 0;
+  }
+
+  /* .single-case-card */
+  .case-portfolio-section {
+    padding: 0px 0 25px;
+  }
+  .single-industry-card {
+    border: 1px solid #e5e5ea;
+  }
+  .single-case-card .single-industry-card .single-story-img > img {
+    height: 130px;
+  }
+  .single-case-card .single-industry-card {
+    height: 130px;
+  }
+  .single-case-card .single-industry-card-overlay .single-story-txt {
+    padding: 15px 16px 15px;
+  }
+  .single-industry-tag-list {
+    display: none;
+  }
+  .case-portfolio-section .no-js .owl-carousel,
+  .case-portfolio-section .owl-carousel.owl-loaded {
+    margin-top: 0;
+  }
+
+  /* single-case-study */
+  .case-study-single-bg .hero-content > img {
+    max-width: 24px;
+  }
+
+  /* study Outline Section */
+  .outline-heading h2 {
+    font-size: 21px;
+    line-height: 29px;
+  }
+  .study-outline-wrapper .outline-content p {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .single-study-outline {
+    margin-bottom: 48px;
+  }
+  .single-study-outline p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .single-study-outline {
+    max-width: 330px;
+    height: 140px;
+  }
+
+  /* study-overview */
+  .study-overview {
+    padding: 20px 0;
+  }
+  .overview-content h2 {
+    font-size: 21px;
+    line-height: 29px;
+  }
+  .overview-content p {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  /* study-sanpshot */
+  .study-snapshot {
+    padding: 40px 0 0px;
+  }
+  .snapshot-heading h2,
+  .study-snapshot .heading h2 {
+    font-size: 21px;
+    line-height: 29px;
+  }
+
+  /* related-project */
+  .related-project-content
+    .single-case-card
+    .single-industry-card
+    .single-story-img
+    > img {
+    height: 290px;
+  }
+  .related-project-content .single-case-card .single-industry-card {
+    height: 382px;
+  }
+  .related-project-content .single-industry-card .single-story-txt {
+    padding: 15px 11px;
+  }
+
+  /* case-study-process */
+  .case-study-process {
+    padding: 10px 0 30px;
+  }
+  .case-study-tab .nav a {
+    font-size: 16px;
+    line-height: 21px;
+  }
+  .case-study-tab .tab-content .tab-pane h2 {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .case-study-tab .tab-content .tab-pane h4 {
+    font-size: 14px;
+    line-height: 19px;
+  }
+  .case-study-tab .tab-content .tab-pane p {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .btn-share-desktop {
+    display: none;
+  }
+  .btn-share-mobile-show {
+    display: inline-block;
+  }
+  a.share-btn.btn.btn-share-mobile-show {
+    width: 85px;
+    margin: 28px 0 0;
+  }
+
+  /* career-details */
+  .career-details-wrapper h2 {
+    font-size: 14px;
+    line-height: 19px;
+  }
+  .career-details-wrapper p {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  h4.p-head {
+    font-size: 14px;
+    line-height: 19px;
+  }
+  .career-details-wrapper li {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .before-apply {
+    padding: 45px 0;
+    margin-top: 60px;
+  }
+  .before-apply h4 {
+    font-size: 25px;
+    line-height: 34px;
+  }
+  .before-apply p {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .before-apply a button {
+    font-size: 12px;
+    line-height: 16px;
+    padding: 13px 10px;
+  }
 }
 
 @media screen and (max-width: 445px) {
@@ -1943,6 +2777,23 @@
   /* partner */
   .single-partner img {
     max-width: 80px;
+  }
+
+  /* error-section */
+  .error-txt h4 {
+    font-size: 48px;
+    line-height: 61px;
+  }
+  .error-txt h3 {
+    font-size: 34px;
+    line-height: 48px;
+    margin-bottom: 15px;
+  }
+  .error-txt a,
+  .error-txt a:hover,
+  .error-txt a:focus {
+    font-size: 16px;
+    line-height: 21px;
   }
 }
 
